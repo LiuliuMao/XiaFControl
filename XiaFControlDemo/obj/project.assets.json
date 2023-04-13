@@ -268,7 +268,7 @@
           }
         }
       },
-      "XiaFControl/1.0.0": {
+      "XiaFControl/1.0.1": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -1053,7 +1053,7 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "XiaFControl/1.0.0": {
+    "XiaFControl/1.0.1": {
       "type": "project",
       "path": "../XiaFControl/XiaFControl.csproj",
       "msbuildProject": "../XiaFControl/XiaFControl.csproj"
@@ -1063,7 +1063,7 @@
     "net6.0-windows7.0": [
       "AvalonEdit >= 6.3.0.90",
       "Prism.DryIoc >= 8.1.97",
-      "XiaFControl >= 1.0.0"
+      "XiaFControl >= 1.0.1"
     ]
   },
   "packageFolders": {
