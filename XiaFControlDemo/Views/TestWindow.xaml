@@ -1,0 +1,44 @@
+﻿<xiaFControl:XiaFWindow x:Class="XiaFControlDemo.Views.TestWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+         xmlns:xiaFControl="clr-namespace:XiaFControl.Controls;assembly=XiaFControl"
+        xmlns:local="clr-namespace:XiaFControlDemo.Views" xmlns:viewmodels="clr-namespace:XiaFControlDemo.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:MainViewModel}"
+                         xmlns:converter="clr-namespace:XiaFControlDemo.Converters"
+                        mc:Ignorable="d"
+        Height="660" Width="1050"
+        Foreground="{DynamicResource DefaultForeground}"
+                        Style="{DynamicResource XiaFWindow}"
+                        WindowStyle="None"
+                        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen" >
+    <Window.Resources>
+        <converter:IsSelectedToIconConverter x:Key="IsSelectedToIcon" />
+    </Window.Resources>
+    <!--可自定义标题栏内容-->
+    <!--WindowChrome.IsHitTestVisibleInChrome = "True" 才可以点击-->
+    <xiaFControl:XiaFWindow.TitleBarContent>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="{Binding Icon,RelativeSource={RelativeSource AncestorType={x:Type Window}}}" 
+                            Height="22" Width="22" Margin="10 0" VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding Title}" Foreground="{StaticResource PrimaryForeground}"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1" WindowChrome.IsHitTestVisibleInChrome="True" HorizontalAlignment="Right" Orientation="Horizontal">
+                <Button Content="亮色"/>
+                <Button Content="暗色"/>
+            </StackPanel>
+        </Grid>
+    </xiaFControl:XiaFWindow.TitleBarContent>
+    <Grid Background="{DynamicResource BodyBackground}">
+        <StackPanel VerticalAlignment="Center">
+            <Button Content="亮色" Click="Button_Click"/>
+            <Button Content="暗色" Click="Button_Click_1"/>
+        </StackPanel>
+    </Grid>
+</xiaFControl:XiaFWindow>

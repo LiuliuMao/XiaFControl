@@ -1,0 +1,37 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:control="clr-namespace:XiaFControl.Controls">
+    <ResourceDictionary.MergedDictionaries>
+        <!--<ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Basic/ThemeColor.xaml" />-->
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/Button.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/ListBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/Icon.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/TextBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/Password.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/TextBlock.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/ComboBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/RadioButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/ToggleButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/TabControl.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/CheckBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/ScrollViewer.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/Menu.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/Card.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/Label.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/Window.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource XiaFButton}"/>
+    <Style TargetType="{x:Type ComboBox}" BasedOn="{StaticResource XiaFComboBox}"/>
+    <Style TargetType="{x:Type ListBox}" BasedOn="{StaticResource XiaFListBox}"/>
+    <Style TargetType="{x:Type PasswordBox}" BasedOn="{StaticResource XiaFPasswordBox}"/>
+    <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource XiaFTextBox}"/>
+    <Style TargetType="{x:Type RadioButton}" BasedOn="{StaticResource XiaFRadioButton}"/>
+    <Style TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource XiaFToggle}"/>
+    <Style TargetType="{x:Type TabItem}" BasedOn="{StaticResource XiaFTabItem}"/>
+    <Style TargetType="{x:Type TabControl}" BasedOn="{StaticResource XiaFTabControl}"/>
+    <Style TargetType="{x:Type CheckBox}" BasedOn="{StaticResource XiaFCheckBox}"/>
+    <Style TargetType="{x:Type ScrollViewer}" BasedOn="{StaticResource XiaFScrollViewer}"/>
+    <Style TargetType="{x:Type Menu}" BasedOn="{StaticResource XiaFMenu}"/>
+    <Style TargetType="{x:Type control:Card}" BasedOn="{StaticResource XiaFCard}"/>
+    <Style TargetType="{x:Type Label}" BasedOn="{StaticResource XiaFLabel}"/>
+</ResourceDictionary>

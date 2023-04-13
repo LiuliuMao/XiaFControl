@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Cw3gZ3TJf7XOAL7ZqC0ui/vYfS41lRhk4ECudQ7P+Fue7eN28AFufXyJLUgWiFbfNiZF/v0YqhEPZvoi1juJzQ==",
+  "success": true,
+  "projectFilePath": "D:\\Company\\TestCode\\XiaFControl\\XiaFControl\\XiaFControl.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\liumao\\.nuget\\packages\\controlzex\\5.0.2\\controlzex.5.0.2.nupkg.sha512",
+    "C:\\Users\\liumao\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
+    "C:\\Users\\liumao\\.nuget\\packages\\system.text.json\\5.0.1\\system.text.json.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

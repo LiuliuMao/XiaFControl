@@ -1,0 +1,31 @@
+﻿<Application x:Class="XiaFControlDemo.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:XiaFControlDemo" xmlns:xiaFControl="clr-namespace:XiaFControl;assembly=XiaFControl"
+             StartupUri="Views/MainView.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+                <xiaFControl:BundledTheme BaseTheme="Dark"
+                                     PrimaryColor="XiaFBlue"/>
+                <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Basic/Generic.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <!--<Color x:Key="LightForegroundColor">#252526</Color>
+            <Color x:Key="LightBackgroundColor">#E6E6E6</Color>
+            <Color x:Key="DarkForegroundColor">#E6E6E6</Color>
+            <Color x:Key="DarkBackgroundColor">#252526</Color>
+
+            <SolidColorBrush x:Key="Light" Color="#6EC6FF"/>
+            <SolidColorBrush x:Key="LightForeground" Color="#000000"/>
+            <SolidColorBrush x:Key="Primary" Color="#2196F3"/>
+            <SolidColorBrush x:Key="PrimaryForeground" Color="#FFFFFF"/>
+            <SolidColorBrush x:Key="Dark" Color="#0069C0"/>
+            <SolidColorBrush x:Key="DarkForeground" Color="#FFFFFF"/>
+            <SolidColorBrush x:Key="Accent" Color="#F50057"/>
+            <SolidColorBrush x:Key="AccentForeground" Color="#FFFFFF"/>-->
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,112 @@
+﻿<xiaFControl:XiaFWindow x:Class="XiaFControlDemo.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:avalonEdit="http://icsharpcode.net/sharpdevelop/avalonedit"
+        xmlns:local="clr-namespace:XiaFControlDemo.Views"
+                         Style="{DynamicResource XiaFWindow}"
+        xmlns:xiaFControl="clr-namespace:XiaFControl.Controls;assembly=XiaFControl"
+                        xmlns:converter="clr-namespace:XiaFControlDemo.Converters"
+                        mc:Ignorable="d" Foreground="{DynamicResource DefaultForeground}"
+        Title="MainView" Height="450" Width="800" Icon="/Resources/Images/小女孩.ico">
+    <Window.Resources>
+        <converter:IsSelectedToIconConverter x:Key="IsSelectedToIcon" />
+    </Window.Resources>
+    <xiaFControl:XiaFWindow.TitleBarContent>
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="{Binding Icon,RelativeSource={RelativeSource AncestorType={x:Type Window}}}" 
+                            Height="22" Width="22" Margin="10 0" VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding Title}" Foreground="{StaticResource PrimaryForeground}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="1" >
+                <ToggleButton Style="{DynamicResource SwitchMidToggle}" Margin="10 0" IsChecked="True" Click="ToggleButton_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Light"/>
+                    </StackPanel>
+                </ToggleButton>
+                <TextBlock Text="Dark" Foreground="{DynamicResource DefaultForeground}"/>
+                <Menu WindowChrome.IsHitTestVisibleInChrome="True" 
+                  Foreground="{DynamicResource DefaultForeground}" >
+                    <MenuItem ItemsSource="{Binding ThemeColors}">
+                        <MenuItem.Header>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="主题" Foreground="{DynamicResource PrimaryForeground}"/>
+                                <xiaFControl:Icon Type="TShirtFill" Foreground="{DynamicResource Accent}" Margin="5 0 0 0"/>
+                            </StackPanel>
+                        </MenuItem.Header>
+                        <MenuItem.ItemContainerStyle>
+                            <Style TargetType="MenuItem" >
+                                <Setter Property="Icon" Value="{Binding IsSeleted,Converter={StaticResource IsSelectedToIcon}}"/>
+                                <Setter Property="Foreground" Value="{Binding Primary}"/>
+                                <Setter Property="Header" Value="{Binding Name}"/>
+                                <Setter Property="Command" Value="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.ChangeThemeColor}" />
+                                <Setter Property="CommandParameter" Value="{Binding}" />
+                            </Style>
+                        </MenuItem.ItemContainerStyle>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuItem.Header>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="帮助" Foreground="{DynamicResource PrimaryForeground}"/>
+                                <xiaFControl:Icon Type="QuestionFill" Foreground="{DynamicResource PrimaryForeground}" Margin="5 0 0 0"/>
+                            </StackPanel>
+                        </MenuItem.Header>
+                        <MenuItem Header="关于" Command="{Binding OpenAboutDialog}"/>
+                    </MenuItem>
+                </Menu>
+            </StackPanel>
+        </Grid>
+    </xiaFControl:XiaFWindow.TitleBarContent>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <xiaFControl:Card Margin="20">
+            <ListBox ItemsSource="{Binding MenuItems}" SelectedItem="{Binding CurrentMenuItem}" SelectedIndex="0"
+                         SelectionChanged="ListBox_SelectionChanged" 
+                         xiaFControl:ListBoxHelper.FocusedBrush="{DynamicResource Accent}"
+                         xiaFControl:ListBoxHelper.FocusedForegroundBrush="{DynamicResource AccentForeground}" 
+                         Style="{StaticResource PopularListBox}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center">
+                            <TextBlock Text="{Binding Name}" Margin="8 5" ToolTip="{Binding Name}" HorizontalAlignment="Center"
+                                           TextTrimming="CharacterEllipsis" Width="130"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </xiaFControl:Card>
+        <xiaFControl:Card Grid.Column="1" Margin="20">
+            <TabControl x:Name="Tab">
+                <TabItem Width="200">
+                    <TabItem.Header>
+                        <TextBlock Text="{Binding CurrentMenuItem.Name}" FontSize="14"/>
+                    </TabItem.Header>
+                    <ContentControl Content="{Binding CurrentMenuItem.Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </TabItem>
+                <TabItem Width="100">
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal" Margin="0">
+                            <xiaFControl:Icon Type="CodeSSlashFill" Margin="0 0 8 0" FontSize="14"/>
+                            <TextBlock Text="Xaml" FontSize="14"/>
+                        </StackPanel>
+                    </TabItem.Header>
+                    <Grid>
+                        <avalonEdit:TextEditor x:Name="textEditor" ShowLineNumbers="True" FontFamily="Consolas" FontSize="10pt" 
+                                               VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                        </avalonEdit:TextEditor>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </xiaFControl:Card>
+    </Grid>
+</xiaFControl:XiaFWindow>
