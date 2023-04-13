@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QpGuHxLBIW3PDY7Dqw3QtLIQ8w4dMRv+RdweBXiJMo0t4kdAUclifaiLG9xHvz9LLIl+xVKAY/v1C5S0/UVz8g==",
+  "dgSpecHash": "EZNXVIMs0OO09V3IYKQW6P6jGIVVnRH9hUKO6HVBgyX3q/bQIXdYyhxi679HnOt3d8JL348W3oZHZo5a+sqEkg==",
   "success": true,
-  "projectFilePath": "D:\\Company\\TestCode\\XiaFControl\\XiaFControlDemo\\XiaFControlDemo.csproj",
+  "projectFilePath": "D:\\Company\\Project\\XiaFControl\\XiaFControlDemo\\XiaFControlDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\liumao\\.nuget\\packages\\avalonedit\\6.3.0.90\\avalonedit.6.3.0.90.nupkg.sha512",
     "C:\\Users\\liumao\\.nuget\\packages\\controlzex\\5.0.2\\controlzex.5.0.2.nupkg.sha512",

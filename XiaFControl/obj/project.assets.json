@@ -1,6 +1,50 @@
 {
   "version": 3,
   "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "ControlzEx/5.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.31"
+        },
+        "frameworkAssemblies": [
+          "System.Web",
+          "System.Web.Extensions"
+        ],
+        "compile": {
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.31": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System",
+          "System.Core",
+          "System.XML",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      }
+    },
     "net6.0-windows7.0": {
       "ControlzEx/5.0.2": {
         "type": "package",
@@ -127,6 +171,9 @@
     }
   },
   "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "ControlzEx >= 5.0.2"
+    ],
     "net6.0-windows7.0": [
       "ControlzEx >= 5.0.2"
     ]
@@ -138,12 +185,13 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Company\\TestCode\\XiaFControl\\XiaFControl\\XiaFControl.csproj",
+      "projectUniqueName": "D:\\Company\\Project\\XiaFControl\\XiaFControl\\XiaFControl.csproj",
       "projectName": "XiaFControl",
-      "projectPath": "D:\\Company\\TestCode\\XiaFControl\\XiaFControl\\XiaFControl.csproj",
+      "projectPath": "D:\\Company\\Project\\XiaFControl\\XiaFControl\\XiaFControl.csproj",
       "packagesPath": "C:\\Users\\liumao\\.nuget\\packages\\",
-      "outputPath": "D:\\Company\\TestCode\\XiaFControl\\XiaFControl\\obj\\",
+      "outputPath": "D:\\Company\\Project\\XiaFControl\\XiaFControl\\obj\\",
       "projectStyle": "PackageReference",
+      "crossTargeting": true,
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
@@ -153,6 +201,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
+        "net472",
         "net6.0-windows"
       ],
       "sources": {
@@ -163,6 +212,10 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "projectReferences": {}
+        },
+        "net472": {
+          "targetAlias": "net472",
           "projectReferences": {}
         }
       },
@@ -196,8 +249,18 @@
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           },
-          "Microsoft.WindowsDesktop.App.WPF": {
+          "Microsoft.WindowsDesktop.App": {
             "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+      },
+      "net472": {
+        "targetAlias": "net472",
+        "dependencies": {
+          "ControlzEx": {
+            "target": "Package",
+            "version": "[5.0.2, )"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"

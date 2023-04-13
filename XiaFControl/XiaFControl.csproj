@@ -1,13 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
-    <UseWPF>true</UseWPF>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>net472;net6.0-windows</TargetFrameworks>
+		<LangVersion>8.0</LangVersion>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Version>1.0.0</Version>
+		<Authors>LiuliuMao</Authors>
+		<UseWindowsForms>true</UseWindowsForms>
+		<RepositoryUrl>https://github.com/LiuliuMao/XiaFControl.git</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/LiuliuMao/XiaFControl</PackageProjectUrl>
+		<PackageIconUrl></PackageIconUrl>
+		<RepositoryType>git</RepositoryType>
+		<Description>XiaF is a control library applied to WPF, currently supporting. net 6.Will be continuously updated.</Description>
 
-  <ItemGroup>
-    <PackageReference Include="ControlzEx" Version="5.0.2" />
-  </ItemGroup>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="ControlzEx" Version="5.0.2" />
+	</ItemGroup>
 
 </Project>

@@ -1,18 +1,19 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Company\\TestCode\\XiaFControl\\XiaFControl\\XiaFControl.csproj": {}
+    "D:\\Company\\Project\\XiaFControl\\XiaFControl\\XiaFControl.csproj": {}
   },
   "projects": {
-    "D:\\Company\\TestCode\\XiaFControl\\XiaFControl\\XiaFControl.csproj": {
+    "D:\\Company\\Project\\XiaFControl\\XiaFControl\\XiaFControl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Company\\TestCode\\XiaFControl\\XiaFControl\\XiaFControl.csproj",
+        "projectUniqueName": "D:\\Company\\Project\\XiaFControl\\XiaFControl\\XiaFControl.csproj",
         "projectName": "XiaFControl",
-        "projectPath": "D:\\Company\\TestCode\\XiaFControl\\XiaFControl\\XiaFControl.csproj",
+        "projectPath": "D:\\Company\\Project\\XiaFControl\\XiaFControl\\XiaFControl.csproj",
         "packagesPath": "C:\\Users\\liumao\\.nuget\\packages\\",
-        "outputPath": "D:\\Company\\TestCode\\XiaFControl\\XiaFControl\\obj\\",
+        "outputPath": "D:\\Company\\Project\\XiaFControl\\XiaFControl\\obj\\",
         "projectStyle": "PackageReference",
+        "crossTargeting": true,
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
@@ -22,6 +23,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
+          "net472",
           "net6.0-windows"
         ],
         "sources": {
@@ -32,6 +34,10 @@
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          },
+          "net472": {
+            "targetAlias": "net472",
             "projectReferences": {}
           }
         },
@@ -65,8 +71,18 @@
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             },
-            "Microsoft.WindowsDesktop.App.WPF": {
+            "Microsoft.WindowsDesktop.App": {
               "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        },
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "ControlzEx": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"

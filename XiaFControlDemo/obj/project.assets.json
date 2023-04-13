@@ -281,7 +281,7 @@
           "bin/placeholder/XiaFControl.dll": {}
         },
         "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
+          "Microsoft.WindowsDesktop.App"
         ]
       }
     }
@@ -1073,11 +1073,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Company\\TestCode\\XiaFControl\\XiaFControlDemo\\XiaFControlDemo.csproj",
+      "projectUniqueName": "D:\\Company\\Project\\XiaFControl\\XiaFControlDemo\\XiaFControlDemo.csproj",
       "projectName": "XiaFControlDemo",
-      "projectPath": "D:\\Company\\TestCode\\XiaFControl\\XiaFControlDemo\\XiaFControlDemo.csproj",
+      "projectPath": "D:\\Company\\Project\\XiaFControl\\XiaFControlDemo\\XiaFControlDemo.csproj",
       "packagesPath": "C:\\Users\\liumao\\.nuget\\packages\\",
-      "outputPath": "D:\\Company\\TestCode\\XiaFControl\\XiaFControlDemo\\obj\\",
+      "outputPath": "D:\\Company\\Project\\XiaFControl\\XiaFControlDemo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1099,8 +1099,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "D:\\Company\\TestCode\\XiaFControl\\XiaFControl\\XiaFControl.csproj": {
-              "projectPath": "D:\\Company\\TestCode\\XiaFControl\\XiaFControl\\XiaFControl.csproj"
+            "D:\\Company\\Project\\XiaFControl\\XiaFControl\\XiaFControl.csproj": {
+              "projectPath": "D:\\Company\\Project\\XiaFControl\\XiaFControl\\XiaFControl.csproj"
             }
           }
         }

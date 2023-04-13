@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Cw3gZ3TJf7XOAL7ZqC0ui/vYfS41lRhk4ECudQ7P+Fue7eN28AFufXyJLUgWiFbfNiZF/v0YqhEPZvoi1juJzQ==",
+  "dgSpecHash": "HF91GODUfTQPCCts9OeofxjRZEqVvtDnWd3FaOiuL2FMQK9nUbRPcv+FIPxvIbYL+bPGzC+E/zsngnkvWubdKw==",
   "success": true,
-  "projectFilePath": "D:\\Company\\TestCode\\XiaFControl\\XiaFControl\\XiaFControl.csproj",
+  "projectFilePath": "D:\\Company\\Project\\XiaFControl\\XiaFControl\\XiaFControl.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\liumao\\.nuget\\packages\\controlzex\\5.0.2\\controlzex.5.0.2.nupkg.sha512",
     "C:\\Users\\liumao\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
