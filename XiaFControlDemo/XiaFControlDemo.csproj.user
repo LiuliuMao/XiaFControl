@@ -10,6 +10,15 @@
     <Compile Update="Views\ButtonDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\DataBarDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\GroupBoxDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\IconDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\InputBoxDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -25,6 +34,15 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\ButtonDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DataBarDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\GroupBoxDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\IconDemo.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\InputBoxDemo.xaml">

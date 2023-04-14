@@ -1,4 +1,4 @@
-﻿D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\GeneratedInternalTypeHelper.g.cs
+﻿
 
 FD:\Company\Project\XiaFControl\XiaFControl\Themes\Basic\Colors\ColorBase.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControl\Themes\Basic\Colors\ColorDark.xaml;;
@@ -8,12 +8,15 @@ FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\Button.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\Card.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\CheckBox.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\ComboBox.xaml;;
+FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\DataGrid.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\Icon.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\Label.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\ListBox.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\Password.xaml;;
+FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\ProgressBar.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\TabControl.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\TextBox.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\ToggleButton.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\Window.xaml;;
+FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\GroupBox.xaml;;
 

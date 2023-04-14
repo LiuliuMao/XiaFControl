@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 
-22-318989135
+2627026878
 
-41380502626
+43-465224111
 205-2039047347
-Themes\Basic\Colors\ColorBase.xaml;Themes\Basic\Colors\ColorDark.xaml;Themes\Basic\Colors\ColorLight.xaml;Themes\Basic\Generic.xaml;Themes\Basic\ThemeColor.xaml;Themes\Styles\Button.xaml;Themes\Styles\Card.xaml;Themes\Styles\CheckBox.xaml;Themes\Styles\ComboBox.xaml;Themes\Styles\Icon.xaml;Themes\Styles\Label.xaml;Themes\Styles\ListBox.xaml;Themes\Styles\Menu.xaml;Themes\Styles\Password.xaml;Themes\Styles\RadioButton.xaml;Themes\Styles\ScrollBar.xaml;Themes\Styles\ScrollViewer.xaml;Themes\Styles\TabControl.xaml;Themes\Styles\TextBlock.xaml;Themes\Styles\TextBox.xaml;Themes\Styles\ToggleButton.xaml;Themes\Styles\Window.xaml;
+Themes\Basic\Colors\ColorBase.xaml;Themes\Basic\Colors\ColorDark.xaml;Themes\Basic\Colors\ColorLight.xaml;Themes\Basic\Generic.xaml;Themes\Basic\ThemeColor.xaml;Themes\Styles\Button.xaml;Themes\Styles\Card.xaml;Themes\Styles\CheckBox.xaml;Themes\Styles\ComboBox.xaml;Themes\Styles\DataGrid.xaml;Themes\Styles\GroupBox.xaml;Themes\Styles\Icon.xaml;Themes\Styles\Label.xaml;Themes\Styles\ListBox.xaml;Themes\Styles\Menu.xaml;Themes\Styles\Password.xaml;Themes\Styles\ProgressBar.xaml;Themes\Styles\RadioButton.xaml;Themes\Styles\ScrollBar.xaml;Themes\Styles\ScrollViewer.xaml;Themes\Styles\Slider.xaml;Themes\Styles\TabControl.xaml;Themes\Styles\TextBlock.xaml;Themes\Styles\TextBox.xaml;Themes\Styles\ToggleButton.xaml;Themes\Styles\Window.xaml;
 
 False
 

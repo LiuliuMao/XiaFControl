@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "c4gEFWPE1cSKSL8PqlNnjV4SZnngBeC01Oo7oefmxxXhUtxKCdfsGjAj6j8RVgSVa0156zeeJaHvizfl2ereYA==",
+  "dgSpecHash": "BzE0rYIZdue5bFXVnX/9DGW8ogHIUEDwRML/7Z9OhRxWfOAIV67lL5Ry9Og/1EtoStyLZPRc1Q7FkZUmegkc6g==",
   "success": true,
   "projectFilePath": "D:\\Company\\Project\\XiaFControl\\XiaFControlDemo\\XiaFControlDemo.csproj",
   "expectedPackageFiles": [
@@ -13,7 +13,15 @@
     "C:\\Users\\liumao\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
     "C:\\Users\\liumao\\.nuget\\packages\\prism.dryioc\\8.1.97\\prism.dryioc.8.1.97.nupkg.sha512",
     "C:\\Users\\liumao\\.nuget\\packages\\prism.wpf\\8.1.97\\prism.wpf.8.1.97.nupkg.sha512",
+    "C:\\Users\\liumao\\.nuget\\packages\\runtime.any.system.io\\4.3.0\\runtime.any.system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\liumao\\.nuget\\packages\\runtime.any.system.reflection\\4.3.0\\runtime.any.system.reflection.4.3.0.nupkg.sha512",
+    "C:\\Users\\liumao\\.nuget\\packages\\runtime.any.system.reflection.primitives\\4.3.0\\runtime.any.system.reflection.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\liumao\\.nuget\\packages\\runtime.any.system.runtime\\4.3.0\\runtime.any.system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\liumao\\.nuget\\packages\\runtime.any.system.text.encoding\\4.3.0\\runtime.any.system.text.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\liumao\\.nuget\\packages\\runtime.any.system.threading.tasks\\4.3.0\\runtime.any.system.threading.tasks.4.3.0.nupkg.sha512",
+    "C:\\Users\\liumao\\.nuget\\packages\\runtime.win7.system.private.uri\\4.3.0\\runtime.win7.system.private.uri.4.3.0.nupkg.sha512",
     "C:\\Users\\liumao\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\liumao\\.nuget\\packages\\system.private.uri\\4.3.0\\system.private.uri.4.3.0.nupkg.sha512",
     "C:\\Users\\liumao\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
     "C:\\Users\\liumao\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
     "C:\\Users\\liumao\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
@@ -21,8 +29,7 @@
     "C:\\Users\\liumao\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\liumao\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\liumao\\.nuget\\packages\\system.text.json\\5.0.1\\system.text.json.5.0.1.nupkg.sha512",
-    "C:\\Users\\liumao\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
-    "C:\\Users\\liumao\\.nuget\\packages\\xiafcontrol\\1.0.0\\xiafcontrol.1.0.0.nupkg.sha512"
+    "C:\\Users\\liumao\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

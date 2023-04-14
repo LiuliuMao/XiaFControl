@@ -1,3 +1,7 @@
+D:\Company\Project\XiaFControl\XiaFControl\bin\Debug\net472\XiaFControl.dll
+D:\Company\Project\XiaFControl\XiaFControl\bin\Debug\net472\XiaFControl.pdb
+D:\Company\Project\XiaFControl\XiaFControl\bin\Debug\net472\ControlzEx.dll
+D:\Company\Project\XiaFControl\XiaFControl\bin\Debug\net472\Microsoft.Xaml.Behaviors.dll
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\XiaFControl.csproj.AssemblyReference.cache
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Basic\ThemeColor.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\Menu.baml
@@ -8,10 +12,6 @@ D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\TextBl
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\GeneratedInternalTypeHelper.g.cs
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\XiaFControl_MarkupCompile.cache
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\XiaFControl_MarkupCompile.lref
-D:\Company\Project\XiaFControl\XiaFControl\bin\Debug\net472\XiaFControl.dll
-D:\Company\Project\XiaFControl\XiaFControl\bin\Debug\net472\XiaFControl.pdb
-D:\Company\Project\XiaFControl\XiaFControl\bin\Debug\net472\ControlzEx.dll
-D:\Company\Project\XiaFControl\XiaFControl\bin\Debug\net472\Microsoft.Xaml.Behaviors.dll
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Basic\Colors\ColorBase.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Basic\Colors\ColorDark.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Basic\Colors\ColorLight.baml
@@ -20,10 +20,12 @@ D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\Button
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\Card.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\CheckBox.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\ComboBox.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\DataGrid.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\Icon.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\Label.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\ListBox.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\Password.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\ProgressBar.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\TabControl.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\TextBox.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\ToggleButton.baml
@@ -36,3 +38,5 @@ D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\XiaFControl.csproj.C
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\XiaFControl.csproj.CopyComplete
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\XiaFControl.dll
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\XiaFControl.pdb
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\Slider.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\GroupBox.baml

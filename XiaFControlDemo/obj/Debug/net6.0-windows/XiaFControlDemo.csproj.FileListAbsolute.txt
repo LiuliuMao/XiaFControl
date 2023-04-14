@@ -52,9 +52,11 @@ D:\Company\Project\XiaFControl\XiaFControlDemo\bin\Debug\net6.0-windows\Prism.dl
 D:\Company\Project\XiaFControl\XiaFControlDemo\bin\Debug\net6.0-windows\Prism.DryIoc.Wpf.dll
 D:\Company\Project\XiaFControl\XiaFControlDemo\bin\Debug\net6.0-windows\Prism.Wpf.dll
 D:\Company\Project\XiaFControl\XiaFControlDemo\bin\Debug\net6.0-windows\XiaFControl.dll
+D:\Company\Project\XiaFControl\XiaFControlDemo\bin\Debug\net6.0-windows\XiaFControl.pdb
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\XiaFControlDemo.csproj.AssemblyReference.cache
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\ButtonDemo.baml
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\ButtonDemo.g.cs
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\DataBarDemo.g.cs
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\InputBoxDemo.g.cs
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\MainView.g.cs
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\SelectBoxDemo.g.cs
@@ -64,6 +66,7 @@ D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Generate
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\XiaFControlDemo_MarkupCompile.cache
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\XiaFControlDemo_MarkupCompile.lref
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\App.baml
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\DataBarDemo.baml
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\InputBoxDemo.baml
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\MainView.baml
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\SelectBoxDemo.baml
@@ -79,3 +82,7 @@ D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\refint\X
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\XiaFControlDemo.pdb
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\XiaFControlDemo.genruntimeconfig.cache
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\ref\XiaFControlDemo.dll
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\IconDemo.g.cs
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\IconDemo.baml
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\GroupBoxDemo.g.cs
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\GroupBoxDemo.baml

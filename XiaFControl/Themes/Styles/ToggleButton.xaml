@@ -204,7 +204,7 @@
                             Height="15" Width="26">
                             <Canvas>
                                 <Ellipse x:Name="littleBall"
-                                         Fill="{DynamicResource DefaultBackground}" 
+                                         Fill="#FFFFFF" 
                                          Height="{Binding RelativeSource={RelativeSource Mode=Self},Path=Width}"
                                          Canvas.Right="11" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
                                          Effect="{StaticResource AllDirectionEffect}">

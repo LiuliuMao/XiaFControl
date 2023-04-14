@@ -3,13 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Printing;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls.Primitives;
 using System.Windows.Controls;
 using XiaFControlDemo.Views;
-using Microsoft.Windows.Themes;
 using System.Windows.Media;
 using System.Windows.Media.Media3D;
 using Prism.Commands;
@@ -67,9 +65,9 @@ namespace XiaFControlDemo.ViewModels
                 new MenuItem{ Name = "按钮",Key=nameof(ButtonDemo), Content=new ButtonDemo()},
                 new MenuItem{ Name = "输入框",Key=nameof(InputBoxDemo), Content=new InputBoxDemo() },
                 new MenuItem{ Name = "选择框",Key=nameof(SelectBoxDemo), Content=new SelectBoxDemo()},
-                //new MenuItem{ Name = "数据条-DataBar",Content=new DataBar()},
-                //new MenuItem{ Name = "图标-Icon",Content=new Views.Icon{ DataContext = new IconViewModel()} },
-                //new MenuItem{ Name = "分组框-GroupBox",Content=new GroupBox() },
+                new MenuItem{ Name = "数据条",Key=nameof(DataBarDemo),Content=new DataBarDemo()},
+                new MenuItem{ Name = "图标",Key=nameof(DataBarDemo),Content=new IconDemo(){ DataContext=new IconViewModel()} },
+                new MenuItem{ Name = "分组框",Key=nameof(GroupBoxDemo),Content=new GroupBoxDemo() },
                 //new MenuItem{ Name = "列表与树-ListsTree",Content=new ListsTree{ DataContext = new ListsViewModel()} },
                 //new MenuItem{ Name = "选项卡-TabControl",Content=new TabControl{ DataContext = new TabControlViewModel()} },
                 //new MenuItem{ Name = "日期时间-DateTimeControl",Content=new DateTimeControl{} },

@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="XiaFControlDemo.Views.IconDemo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:control="clr-namespace:XiaFControl.Controls;assembly=XiaFControl"
+             xmlns:local="clr-namespace:XiaFControlDemo.Views" 
+             xmlns:ex="clr-namespace:XiaFControlDemo.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <GroupBox Header="图标-Icon" Grid.Row="1">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="1" Padding="0 5">
+                <StackPanel Margin="5 20">
+                    <TextBlock Foreground="{DynamicResource DefaultForeground}" Margin="10 10 30 10">
+                    原图标地址:  
+                    <Hyperlink NavigateUri="https://www.iconfont.cn/collections/detail?spm=a313x.7781069.1998910419.d9df05512&amp;cid=25353"
+                               Click="Hyperlink_Click">
+                        REMIX ICON
+                    </Hyperlink>
+                    </TextBlock>
+                    <TextBox Text="{Binding SearchText,UpdateSourceTrigger=PropertyChanged}" control:TextBoxHelper.IsClearable="True"
+                         control:TextBoxHelper.Placeholder="搜索图标" Margin="10">
+                        <control:TextBoxHelper.PreContent>
+                            <Viewbox>
+                                <Button Style="{DynamicResource TextMidButton}" IsDefault="True" Command="{Binding Search}">
+                                    <control:Icon Type="SearchLine"/>
+                                </Button>
+                            </Viewbox>
+                        </control:TextBoxHelper.PreContent>
+                    </TextBox>
+                    <TextBox Text="{Binding CurrentIcon}" Margin="10" control:TextBoxHelper.PreContent="选中"/>
+                </StackPanel>
+            </Border>
+            <ListBox ItemsSource="{Binding IconTypes}" SelectedItem="{Binding CurrentIcon}"
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <ex:VirtualizingWrapPanel/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel ToolTip="{Binding}" HorizontalAlignment="Center" Width="80" Height="60">
+                            <control:Icon Type="{Binding}" Height="28" Width="28" HorizontalAlignment="Center" Margin="5"/>
+                            <TextBlock Text="{Binding}" HorizontalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+    </GroupBox>
+</UserControl>

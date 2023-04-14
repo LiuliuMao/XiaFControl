@@ -29,6 +29,12 @@
     <Page Update="Themes\Styles\ComboBox.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Themes\Styles\DataGrid.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Styles\GroupBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Themes\Styles\Icon.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -44,6 +50,9 @@
     <Page Update="Themes\Styles\Password.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Themes\Styles\ProgressBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Themes\Styles\RadioButton.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -51,6 +60,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Themes\Styles\ScrollViewer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Styles\Slider.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Themes\Styles\TabControl.xaml">

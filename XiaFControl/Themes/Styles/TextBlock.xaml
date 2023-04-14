@@ -17,7 +17,7 @@
         <Setter Property="TextWrapping" Value="NoWrap"/>
         <Setter Property="TextTrimming" Value="CharacterEllipsis"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
-        <!--<Setter Property="Foreground" Value="{DynamicResource DefaultForeground}"/>-->
+        <Setter Property="Foreground" Value="{DynamicResource DefaultForeground}"/>
         <Setter Property="FontSize" Value="13"/>
     </Style>
 
