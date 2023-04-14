@@ -268,17 +268,16 @@
           }
         }
       },
-      "XiaFControl/1.0.1": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
+      "XiaFControl/1.0.0": {
+        "type": "package",
         "dependencies": {
           "ControlzEx": "5.0.2"
         },
         "compile": {
-          "bin/placeholder/XiaFControl.dll": {}
+          "lib/net6.0-windows7.0/XiaFControl.dll": {}
         },
         "runtime": {
-          "bin/placeholder/XiaFControl.dll": {}
+          "lib/net6.0-windows7.0/XiaFControl.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App"
@@ -1053,17 +1052,25 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "XiaFControl/1.0.1": {
-      "type": "project",
-      "path": "../XiaFControl/XiaFControl.csproj",
-      "msbuildProject": "../XiaFControl/XiaFControl.csproj"
+    "XiaFControl/1.0.0": {
+      "sha512": "hUbWyFZfVPM+jEjL2k3u4fWRPD+NYQvkUeU2DogpRwLpS3Z+rxGGQQ3jlot9WVcubKNTZIxtb2GTyrjjoi/wdw==",
+      "type": "package",
+      "path": "xiafcontrol/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/XiaFControl.dll",
+        "lib/net6.0-windows7.0/XiaFControl.dll",
+        "xiafcontrol.1.0.0.nupkg.sha512",
+        "xiafcontrol.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "AvalonEdit >= 6.3.0.90",
       "Prism.DryIoc >= 8.1.97",
-      "XiaFControl >= 1.0.1"
+      "XiaFControl >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1098,11 +1105,7 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {
-            "D:\\Company\\Project\\XiaFControl\\XiaFControl\\XiaFControl.csproj": {
-              "projectPath": "D:\\Company\\Project\\XiaFControl\\XiaFControl\\XiaFControl.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -1122,6 +1125,10 @@
           "Prism.DryIoc": {
             "target": "Package",
             "version": "[8.1.97, )"
+          },
+          "XiaFControl": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           }
         },
         "imports": [

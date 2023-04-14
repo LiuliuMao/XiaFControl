@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Company\TestCode\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\
 XiaFControlDemo
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\Company\TestCode\XiaFControl\XiaFControlDemo\App.xaml
+D:\Company\Project\XiaFControl\XiaFControlDemo\App.xaml
 51942015631
 
 972493405
-211-1682566643
+211-1046948589
 Views\ButtonDemo.xaml;Views\InputBoxDemo.xaml;Views\MainView.xaml;Views\SelectBoxDemo.xaml;Views\TestWindow.xaml;
 
 False

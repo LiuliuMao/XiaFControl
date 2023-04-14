@@ -14,10 +14,7 @@
   <ItemGroup>
     <PackageReference Include="AvalonEdit" Version="6.3.0.90" />
     <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\XiaFControl\XiaFControl.csproj" />
+    <PackageReference Include="XiaFControl" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>
