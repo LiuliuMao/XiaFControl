@@ -2,6 +2,12 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Page Update="Controls\MessageBoxWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\MessageWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Themes\Basic\Colors\ColorDark.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -44,6 +50,15 @@
     <Page Update="Themes\Styles\DateTimePicker.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Themes\Styles\DialogBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Styles\Expander.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Styles\ExpanderResizer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Themes\Styles\GroupBox.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -62,10 +77,16 @@
     <Page Update="Themes\Styles\Menu.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Themes\Styles\MessageBoxCard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Styles\MessageCard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Themes\Styles\PageBar.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Themes\Styles\Password.xaml">
+    <Page Update="Themes\Styles\PasswordBox.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Themes\Styles\ProgressBar.xaml">
@@ -83,6 +104,9 @@
     <Page Update="Themes\Styles\Slider.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Themes\Styles\StatusBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Themes\Styles\TabControl.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -96,6 +120,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Themes\Styles\ToggleButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Styles\ToolBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Styles\ToolTip.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Themes\Styles\TreeView.xaml">

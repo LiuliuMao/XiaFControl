@@ -23,7 +23,6 @@ D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\DataGr
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\Icon.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\Label.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\ListBox.baml
-D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\Password.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\ProgressBar.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\TabControl.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\TextBox.baml
@@ -48,3 +47,16 @@ D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\TimePi
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\Clock.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\PageBar.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\ContextMenu.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Controls\MessageBoxWindow.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Controls\MessageWindow.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Controls\MessageBoxWindow.g.cs
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Controls\MessageWindow.g.cs
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\DialogBox.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\MessageBoxCard.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\MessageCard.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\PasswordBox.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\Expander.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\ExpanderResizer.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\ToolTip.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\ToolBar.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\StatusBar.baml

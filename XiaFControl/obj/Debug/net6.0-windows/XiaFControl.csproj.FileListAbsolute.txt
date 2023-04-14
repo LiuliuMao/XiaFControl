@@ -60,7 +60,6 @@ D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Style
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\Icon.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\Label.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\ListBox.baml
-D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\Password.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\ProgressBar.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\TabControl.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\TextBox.baml
@@ -86,3 +85,16 @@ D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Style
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\Clock.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\PageBar.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\ContextMenu.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Controls\MessageBoxWindow.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Controls\MessageWindow.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Controls\MessageBoxWindow.g.cs
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Controls\MessageWindow.g.cs
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\DialogBox.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\MessageBoxCard.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\MessageCard.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\PasswordBox.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\Expander.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\ExpanderResizer.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\ToolTip.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\ToolBar.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\StatusBar.baml

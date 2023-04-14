@@ -1,0 +1,61 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:control="clr-namespace:XiaFControl.Controls">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Basic/ThemeColor.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/Button.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/Icon.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style x:Key="XiaFDialogBox" TargetType="control:DialogBox">
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="CornerRadius" Value="2.5"/>
+        <Setter Property="Background" Value="{DynamicResource DefaultBackground}"/>
+        <Setter Property="Foreground" Value="{DynamicResource DefaultForeground}"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="control:DialogBox">
+                    <Border x:Name="PART_RootBorder" Visibility="Hidden">
+                        <Border x:Name="PART_CardBorder" Background="{TemplateBinding Background}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="{TemplateBinding CornerRadius}"
+                                Visibility="Hidden" Effect="{StaticResource AllDirectionEffect}"
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                            <Border.RenderTransform>
+                                <TranslateTransform />
+                            </Border.RenderTransform>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <DockPanel>
+                                    <TextBlock Text="{TemplateBinding Title}" FontSize="16" DockPanel.Dock="Left" Margin="15 5"/>
+                                    <Button x:Name="PART_CloseButton" Style="{StaticResource TextMidButton}" Width="32"
+                                            HorizontalAlignment="Right" Foreground="{DynamicResource DefaultForeground}"
+                                            Visibility="{TemplateBinding IsShowCloseButton,Converter={StaticResource boolToVisibility}}">
+                                        <control:Icon Type="CloseLine"/>
+                                    </Button>
+                                </DockPanel>
+
+                                <ContentPresenter x:Name="contentPresenter" Focusable="False" Grid.Row="1"
+                                                  RecognizesAccessKey="True" Margin="{TemplateBinding Padding}"
+                                                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                            </Grid>
+                        </Border>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+</ResourceDictionary>

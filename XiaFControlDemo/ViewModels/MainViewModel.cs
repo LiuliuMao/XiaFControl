@@ -73,10 +73,10 @@ namespace XiaFControlDemo.ViewModels
                 new MenuItem{ Name = "日期时间",Key=nameof(DateTimeControlDemo),Content=new DateTimeControlDemo{} },
                 new MenuItem{ Name = "菜单栏",Key=nameof(DateTimeControlDemo),Content=new MenuBarDemo{} },
                 new MenuItem{ Name = "文本块",Key=nameof(TextBlockDemo),Content=new TextBlockDemo{}},
-                new MenuItem{ Name = "页码条",Content=new Views.PageBarDemo{ DataContext = new PageBarDemo()} },
-                new MenuItem{ Name = "消息提示-MessageInfo",Content=new MessageInfo{} },
-                //new MenuItem{ Name = "消息框-MessageBoxView",Content = new MessageBoxView{ DataContext= new MessageBoxViewModel()} },
-                //new MenuItem{ Name = "对话框-DialogView",Content = new DialogView{ DataContext= new DialogViewModel()} }
+                new MenuItem{ Name = "页码条",Key=nameof(PageBarDemo),Content=new PageBarDemo{ DataContext = new PageBarDemo()}},
+                new MenuItem{ Name = "消息提示",Key=nameof(MessageInfoDemo),Content=new MessageInfoDemo{} },
+                new MenuItem{ Name = "消息框",Key=nameof(MessageBoxDemo),Content = new MessageBoxDemo{ DataContext= new MessageBoxViewModel()} },
+                new MenuItem{ Name = "对话框",Key=nameof(DialogDemo),Content = new DialogDemo{ DataContext= new DialogViewModel()} }
             };
             CurrentMenuItem = MenuItems[0];
             IBaseTheme baseTheme = null;

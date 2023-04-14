@@ -53,3 +53,11 @@ D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\MenuBarDem
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\MenuBarDemo.baml
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\PageBarDemo.g.cs
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\PageBarDemo.baml
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\MessageBoxDemo.g.cs
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\MessageInfoDemo.g.cs
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\MessageBoxDemo.baml
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\MessageInfoDemo.baml
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\DialogContent.g.cs
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\DialogDemo.g.cs
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\DialogContent.baml
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\DialogDemo.baml

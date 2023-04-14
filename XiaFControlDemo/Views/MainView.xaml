@@ -106,5 +106,9 @@
                 </TabItem>
             </TabControl>
         </xiaFControl:Card>
+
+        <xiaFControl:MessageContainer Identifier="MessageContainer" Grid.ColumnSpan="2"/>
+        <xiaFControl:MessageBoxContainer Identifier="DialogContaioner" Grid.ColumnSpan="2"/>
+        <xiaFControl:DialogBox Identifier="MainDialog" Title="主对话框" Grid.ColumnSpan="2"/>
     </Grid>
 </xiaFControl:XiaFWindow>

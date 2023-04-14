@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 
-381315151083
+44882068884
 
-58-1020860442
+601178797828
 205-2039047347
-Controls\MessageBoxWindow.xaml;Controls\MessageWindow.xaml;Themes\Basic\Colors\ColorDark.xaml;Themes\Basic\Colors\ColorLight.xaml;Themes\Basic\Generic.xaml;Themes\Basic\ThemeColor.xaml;Themes\Styles\Button.xaml;Themes\Styles\Calendar.xaml;Themes\Styles\Card.xaml;Themes\Styles\CheckBox.xaml;Themes\Styles\Clock.xaml;Themes\Styles\ComboBox.xaml;Themes\Styles\ContextMenu.xaml;Themes\Styles\DataGrid.xaml;Themes\Styles\DatePicker.xaml;Themes\Styles\DateTimePicker.xaml;Themes\Styles\GroupBox.xaml;Themes\Styles\Icon.xaml;Themes\Styles\Label.xaml;Themes\Styles\ListBox.xaml;Themes\Styles\ListView.xaml;Themes\Styles\Menu.xaml;Themes\Styles\MessageBoxCard.xaml;Themes\Styles\MessageCard.xaml;Themes\Styles\PageBar.xaml;Themes\Styles\Password.xaml;Themes\Styles\ProgressBar.xaml;Themes\Styles\RadioButton.xaml;Themes\Styles\ScrollBar.xaml;Themes\Styles\ScrollViewer.xaml;Themes\Styles\Slider.xaml;Themes\Styles\TabControl.xaml;Themes\Styles\TextBlock.xaml;Themes\Styles\TextBox.xaml;Themes\Styles\TimePicker.xaml;Themes\Styles\ToggleButton.xaml;Themes\Styles\TreeView.xaml;Themes\Styles\Window.xaml;
+Controls\MessageBoxWindow.xaml;Controls\MessageWindow.xaml;Themes\Basic\Colors\ColorDark.xaml;Themes\Basic\Colors\ColorLight.xaml;Themes\Basic\Generic.xaml;Themes\Basic\ThemeColor.xaml;Themes\Styles\Button.xaml;Themes\Styles\Calendar.xaml;Themes\Styles\Card.xaml;Themes\Styles\CheckBox.xaml;Themes\Styles\Clock.xaml;Themes\Styles\ComboBox.xaml;Themes\Styles\ContextMenu.xaml;Themes\Styles\DataGrid.xaml;Themes\Styles\DatePicker.xaml;Themes\Styles\DateTimePicker.xaml;Themes\Styles\DialogBox.xaml;Themes\Styles\Expander.xaml;Themes\Styles\ExpanderResizer.xaml;Themes\Styles\GroupBox.xaml;Themes\Styles\Icon.xaml;Themes\Styles\Label.xaml;Themes\Styles\ListBox.xaml;Themes\Styles\ListView.xaml;Themes\Styles\Menu.xaml;Themes\Styles\MessageBoxCard.xaml;Themes\Styles\MessageCard.xaml;Themes\Styles\PageBar.xaml;Themes\Styles\PasswordBox.xaml;Themes\Styles\ProgressBar.xaml;Themes\Styles\RadioButton.xaml;Themes\Styles\ScrollBar.xaml;Themes\Styles\ScrollViewer.xaml;Themes\Styles\Slider.xaml;Themes\Styles\StatusBar.xaml;Themes\Styles\TabControl.xaml;Themes\Styles\TextBlock.xaml;Themes\Styles\TextBox.xaml;Themes\Styles\TimePicker.xaml;Themes\Styles\ToggleButton.xaml;Themes\Styles\ToolBar.xaml;Themes\Styles\ToolTip.xaml;Themes\Styles\TreeView.xaml;Themes\Styles\Window.xaml;
 
 False
 

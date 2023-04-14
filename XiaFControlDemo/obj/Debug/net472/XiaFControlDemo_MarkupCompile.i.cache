@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETFRAMEWORK;NET472;
 D:\Company\Project\XiaFControl\XiaFControlDemo\App.xaml
-14-2020936180
+18-1778688742
 
-249832196
+31-2064561631
 311338728161
-Views\ButtonDemo.xaml;Views\DataBarDemo.xaml;Views\DateTimeControlDemo.xaml;Views\GroupBoxDemo.xaml;Views\IconDemo.xaml;Views\InputBoxDemo.xaml;Views\ListsTreeDemo.xaml;Views\MainView.xaml;Views\MenuBarDemo.xaml;Views\PageBarDemo.xaml;Views\SelectBoxDemo.xaml;Views\TabControlDemo.xaml;Views\TestWindow.xaml;Views\TextBlockDemo.xaml;
+Views\ButtonDemo.xaml;Views\DataBarDemo.xaml;Views\DateTimeControlDemo.xaml;Views\DialogContent.xaml;Views\DialogDemo.xaml;Views\GroupBoxDemo.xaml;Views\IconDemo.xaml;Views\InputBoxDemo.xaml;Views\ListsTreeDemo.xaml;Views\MainView.xaml;Views\MenuBarDemo.xaml;Views\MessageBoxDemo.xaml;Views\MessageInfoDemo.xaml;Views\PageBarDemo.xaml;Views\SelectBoxDemo.xaml;Views\TabControlDemo.xaml;Views\TestWindow.xaml;Views\TextBlockDemo.xaml;
 
-True
+False
 

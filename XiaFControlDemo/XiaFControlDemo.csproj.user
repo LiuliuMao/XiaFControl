@@ -16,6 +16,12 @@
     <Compile Update="Views\DateTimeControlDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\DialogContent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\DialogDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\GroupBoxDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -32,6 +38,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\MenuBarDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MessageBoxDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MessageInfoDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\PageBarDemo.xaml.cs">
@@ -60,6 +72,12 @@
     <Page Update="Views\DateTimeControlDemo.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\DialogContent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DialogDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\GroupBoxDemo.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -76,6 +94,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\MenuBarDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MessageBoxDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MessageInfoDemo.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\PageBarDemo.xaml">
