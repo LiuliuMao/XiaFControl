@@ -43,3 +43,13 @@ D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\GroupBoxDe
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\GroupBoxDemo.baml
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\ListsTreeDemo.g.cs
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\ListsTreeDemo.baml
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\TabControlDemo.g.cs
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\TabControlDemo.baml
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\DateTimeControlDemo.g.cs
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\DateTimeControlDemo.baml
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\TextBlockDemo.g.cs
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\TextBlockDemo.baml
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\MenuBarDemo.g.cs
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\MenuBarDemo.baml
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\PageBarDemo.g.cs
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\PageBarDemo.baml

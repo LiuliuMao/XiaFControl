@@ -17,16 +17,31 @@
     <Page Update="Themes\Styles\Button.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Themes\Styles\Calendar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Themes\Styles\Card.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Themes\Styles\CheckBox.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Themes\Styles\Clock.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Themes\Styles\ComboBox.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Themes\Styles\ContextMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Themes\Styles\DataGrid.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Styles\DatePicker.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Styles\DateTimePicker.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Themes\Styles\GroupBox.xaml">
@@ -45,6 +60,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Themes\Styles\Menu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Styles\PageBar.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Themes\Styles\Password.xaml">
@@ -72,6 +90,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Themes\Styles\TextBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Styles\TimePicker.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Themes\Styles\ToggleButton.xaml">

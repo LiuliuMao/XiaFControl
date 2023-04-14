@@ -79,3 +79,10 @@ D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Style
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\GroupBox.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\ListView.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\TreeView.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\Calendar.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\DatePicker.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\DateTimePicker.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\TimePicker.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\Clock.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\PageBar.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\ContextMenu.baml

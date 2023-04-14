@@ -15,6 +15,8 @@
         <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/ToggleButton.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/TabControl.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/CheckBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/TimePicker.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/Calendar.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/ScrollViewer.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/Menu.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/Card.xaml"/>
@@ -25,6 +27,11 @@
         <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/ProgressBar.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/Slider.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/GroupBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/DatePicker.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/DateTimePicker.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/Clock.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/PageBar.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/ContextMenu.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/Window.xaml"/>
     </ResourceDictionary.MergedDictionaries>
     <Style TargetType="{x:Type Button}" BasedOn="{StaticResource XiaFButton}"/>
@@ -37,14 +44,20 @@
     <Style TargetType="{x:Type Slider}" BasedOn="{StaticResource XiaFSlider}"/>
     <Style TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource XiaFToggle}"/>
     <Style TargetType="{x:Type TabItem}" BasedOn="{StaticResource XiaFTabItem}"/>
+    <Style TargetType="{x:Type Calendar}" BasedOn="{StaticResource XiaFCalendar}"/>
     <Style TargetType="{x:Type TabControl}" BasedOn="{StaticResource XiaFTabControl}"/>
     <Style TargetType="{x:Type CheckBox}" BasedOn="{StaticResource XiaFCheckBox}"/>
     <Style TargetType="{x:Type ScrollViewer}" BasedOn="{StaticResource XiaFScrollViewer}"/>
+    <Style TargetType="{x:Type control:Clock}" BasedOn="{StaticResource XiaFClock}"/>
     <Style TargetType="{x:Type Menu}" BasedOn="{StaticResource XiaFMenu}"/>
     <Style TargetType="{x:Type control:Card}" BasedOn="{StaticResource XiaFCard}"/>
     <Style TargetType="{x:Type Label}" BasedOn="{StaticResource XiaFLabel}"/>
     <Style TargetType="{x:Type ListView}" BasedOn="{StaticResource XiaFListView}"/>
     <Style TargetType="{x:Type TreeView}" BasedOn="{StaticResource XiaFTreeView}"/>
     <Style TargetType="{x:Type DataGrid}" BasedOn="{StaticResource XiaFDataGrid}"/>
+    <Style TargetType="{x:Type control:TimePicker}" BasedOn="{StaticResource XiaFTimePicker}"/>
+    <Style TargetType="{x:Type control:DateTimePicker}" BasedOn="{StaticResource XiaFDateTimePicker}"/>
+    <Style TargetType="{x:Type DatePicker}" BasedOn="{StaticResource XiaFDatePicker}"/>
+    <Style TargetType="{x:Type control:PageBar}" BasedOn="{StaticResource XiaFPageBar}"/>
     <Style TargetType="{x:Type ProgressBar}" BasedOn="{StaticResource XiaFProgressBar}"/>
 </ResourceDictionary>

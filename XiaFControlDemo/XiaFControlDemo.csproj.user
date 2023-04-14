@@ -13,6 +13,9 @@
     <Compile Update="Views\DataBarDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\DateTimeControlDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\GroupBoxDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -28,10 +31,22 @@
     <Compile Update="Views\MainView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\MenuBarDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PageBarDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\SelectBoxDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\TabControlDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\TestWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\TextBlockDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -40,6 +55,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\DataBarDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DateTimeControlDemo.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\GroupBoxDemo.xaml">
@@ -57,10 +75,22 @@
     <Page Update="Views\MainView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\MenuBarDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PageBarDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\SelectBoxDemo.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\TabControlDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\TestWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\TextBlockDemo.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

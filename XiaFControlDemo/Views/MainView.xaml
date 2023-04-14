@@ -9,7 +9,7 @@
         xmlns:xiaFControl="clr-namespace:XiaFControl.Controls;assembly=XiaFControl"
                         xmlns:converter="clr-namespace:XiaFControlDemo.Converters"
                         mc:Ignorable="d" Foreground="{DynamicResource DefaultForeground}"
-        Title="MainView" Height="680" Width="1200" Icon="/Resources/Images/小女孩.ico">
+        Title="MainView" Height="680" Width="1120" Icon="/Resources/Images/小女孩.ico">
     <Window.Resources>
         <converter:IsSelectedToIconConverter x:Key="IsSelectedToIcon" />
     </Window.Resources>
@@ -67,11 +67,9 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="10*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <xiaFControl:Card Margin="20">
+        <xiaFControl:Card Margin="20 20 10 20" CornerRadius="8">
             <ListBox ItemsSource="{Binding MenuItems}" SelectedItem="{Binding CurrentMenuItem}" SelectedIndex="0"
                          SelectionChanged="ListBox_SelectionChanged" 
                          xiaFControl:ListBoxHelper.FocusedBrush="{DynamicResource Accent}"
@@ -79,15 +77,13 @@
                          Style="{StaticResource PopularListBox}">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center">
-                            <TextBlock Text="{Binding Name}" Margin="8 5" ToolTip="{Binding Name}" HorizontalAlignment="Center"
-                                           TextTrimming="CharacterEllipsis" Width="130"/>
-                        </StackPanel>
+                        <TextBlock Text="{Binding Name}" Margin="8 5" ToolTip="{Binding Name}"
+                                           TextTrimming="CharacterEllipsis"/>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
         </xiaFControl:Card>
-        <xiaFControl:Card Grid.Column="2">
+        <xiaFControl:Card Grid.Column="1" Margin="0 20 20 20" CornerRadius="8">
             <TabControl x:Name="Tab">
                 <TabItem Width="200">
                     <TabItem.Header>
@@ -104,7 +100,7 @@
                     </TabItem.Header>
                     <Grid>
                         <avalonEdit:TextEditor x:Name="textEditor" ShowLineNumbers="True" FontFamily="Consolas" FontSize="10pt" 
-                                               VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                                               VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Background="{DynamicResource DefaultBackground}" Foreground="{DynamicResource DefaultForeground}">
                         </avalonEdit:TextEditor>
                     </Grid>
                 </TabItem>
