@@ -28,7 +28,10 @@ namespace XiaFControlDemo.Views
             try
             {
                 ListBox listBox = sender as ListBox;
-                string name = $"Views/{(listBox.SelectedItem as ViewModels.MenuItem).Key}.xaml";
+                var item = listBox.SelectedItem;
+                if (item == null)
+                    return;
+                string name = $"Views/{(item as ViewModels.MenuItem).Key}.xaml";
 
                 string baseDir = AppDomain.CurrentDomain.BaseDirectory;
                 int index = baseDir.IndexOf(PROJECT_NAME);

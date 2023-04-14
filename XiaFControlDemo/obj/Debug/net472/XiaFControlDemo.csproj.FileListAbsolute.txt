@@ -61,3 +61,5 @@ D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\DialogCont
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\DialogDemo.g.cs
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\DialogContent.baml
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\DialogDemo.baml
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Resources\Xamls\Language_en.baml
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Resources\Xamls\Language_zh.baml

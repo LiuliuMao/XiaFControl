@@ -61,6 +61,12 @@
                         <MenuItem Header="关于" Command="{Binding OpenAboutDialog}"/>
                     </MenuItem>
                 </Menu>
+                <Menu WindowChrome.IsHitTestVisibleInChrome="True" Foreground="{DynamicResource DefaultForeground}" >
+                    <MenuItem Header="Language">
+                        <MenuItem Header="中文简体" Command="{Binding LanguageCommand}" CommandParameter="中文简体"/>
+                        <MenuItem Header="English" Command="{Binding LanguageCommand}" CommandParameter="English"/>
+                    </MenuItem>
+                </Menu>
             </StackPanel>
         </Grid>
     </xiaFControl:XiaFWindow.TitleBarContent>
@@ -77,7 +83,7 @@
                          Style="{StaticResource PopularListBox}">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding Name}" Margin="8 5" ToolTip="{Binding Name}"
+                        <TextBlock Text="{Binding Name,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Margin="8 5" ToolTip="{Binding Name,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                                            TextTrimming="CharacterEllipsis"/>
                     </DataTemplate>
                 </ListBox.ItemTemplate>

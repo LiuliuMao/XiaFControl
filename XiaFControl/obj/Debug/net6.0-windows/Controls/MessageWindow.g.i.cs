@@ -61,7 +61,7 @@ namespace XiaFControl.Controls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/XiaFControl;V1.0.1.0;component/controls/messagewindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/XiaFControl;component/controls/messagewindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Controls\MessageWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

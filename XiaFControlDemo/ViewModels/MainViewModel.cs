@@ -17,6 +17,7 @@ using ControlzEx.Theming;
 using XiaFControl.Services;
 using XiaFControl.Extensions;
 using XiaFControl.ThemeColor;
+using System.Windows;
 
 namespace XiaFControlDemo.ViewModels
 {
@@ -60,24 +61,8 @@ namespace XiaFControlDemo.ViewModels
         {
             Title = "XiaF UI";
             theme = paletteHelper.GetTheme();
-            MenuItems = new ObservableCollection<MenuItem>
-            {
-                new MenuItem{ Name = "按钮",Key=nameof(ButtonDemo), Content=new ButtonDemo()},
-                new MenuItem{ Name = "输入框",Key=nameof(InputBoxDemo), Content=new InputBoxDemo() },
-                new MenuItem{ Name = "选择框",Key=nameof(SelectBoxDemo), Content=new SelectBoxDemo()},
-                new MenuItem{ Name = "数据条",Key=nameof(DataBarDemo),Content=new DataBarDemo()},
-                new MenuItem{ Name = "图标",Key=nameof(DataBarDemo),Content=new IconDemo(){ DataContext=new IconViewModel()} },
-                new MenuItem{ Name = "分组框",Key=nameof(GroupBoxDemo),Content=new GroupBoxDemo() },
-                new MenuItem{ Name = "列表与树",Key=nameof(ListsTreeDemo),Content=new ListsTreeDemo{ DataContext = new ListsViewModel()} },
-                new MenuItem{ Name = "选项卡",Key=nameof(TabControlDemo),Content=new TabControlDemo{ DataContext = new TabControlViewModel()} },
-                new MenuItem{ Name = "日期时间",Key=nameof(DateTimeControlDemo),Content=new DateTimeControlDemo{} },
-                new MenuItem{ Name = "菜单栏",Key=nameof(DateTimeControlDemo),Content=new MenuBarDemo{} },
-                new MenuItem{ Name = "文本块",Key=nameof(TextBlockDemo),Content=new TextBlockDemo{}},
-                new MenuItem{ Name = "页码条",Key=nameof(PageBarDemo),Content=new PageBarDemo{ DataContext = new PageBarDemo()}},
-                new MenuItem{ Name = "消息提示",Key=nameof(MessageInfoDemo),Content=new MessageInfoDemo{} },
-                new MenuItem{ Name = "消息框",Key=nameof(MessageBoxDemo),Content = new MessageBoxDemo{ DataContext= new MessageBoxViewModel()} },
-                new MenuItem{ Name = "对话框",Key=nameof(DialogDemo),Content = new DialogDemo{ DataContext= new DialogViewModel()} }
-            };
+            LanguageCommand = new DelegateCommand<string>(SetLanguage);
+            RefreshMenuList();
             CurrentMenuItem = MenuItems[0];
             IBaseTheme baseTheme = null;
             if (theme.BaseTheme == BaseTheme.Light)
@@ -130,6 +115,27 @@ namespace XiaFControlDemo.ViewModels
                 },
             };
         }
+        private void RefreshMenuList()
+        {
+            MenuItems = new ObservableCollection<MenuItem>
+            {
+                new MenuItem{ Name = GetLanguageContent(nameof(ButtonDemo)),Key=nameof(ButtonDemo), Content=new ButtonDemo()},
+                new MenuItem{ Name = GetLanguageContent(nameof(InputBoxDemo)),Key=nameof(InputBoxDemo), Content=new InputBoxDemo() },
+                new MenuItem{ Name = GetLanguageContent(nameof(SelectBoxDemo)),Key=nameof(SelectBoxDemo), Content=new SelectBoxDemo()},
+                new MenuItem{ Name = GetLanguageContent(nameof(DataBarDemo)),Key=nameof(DataBarDemo),Content=new DataBarDemo()},
+                new MenuItem{ Name = GetLanguageContent(nameof(IconDemo)),Key=nameof(IconDemo),Content=new IconDemo(){ DataContext=new IconViewModel()} },
+                new MenuItem{ Name = GetLanguageContent(nameof(GroupBoxDemo)),Key=nameof(GroupBoxDemo),Content=new GroupBoxDemo() },
+                new MenuItem{ Name = GetLanguageContent(nameof(ListsTreeDemo)),Key=nameof(ListsTreeDemo),Content=new ListsTreeDemo{ DataContext = new ListsViewModel()} },
+                new MenuItem{ Name = GetLanguageContent(nameof(TabControlDemo)),Key=nameof(TabControlDemo),Content=new TabControlDemo{ DataContext = new TabControlViewModel()} },
+                new MenuItem{ Name = GetLanguageContent(nameof(DateTimeControlDemo)),Key=nameof(DateTimeControlDemo),Content=new DateTimeControlDemo{} },
+                new MenuItem{ Name = GetLanguageContent(nameof(MenuBarDemo)),Key=nameof(MenuBarDemo),Content=new MenuBarDemo{} },
+                new MenuItem{ Name = GetLanguageContent(nameof(TextBlockDemo)),Key=nameof(TextBlockDemo),Content=new TextBlockDemo{}},
+                new MenuItem{ Name = GetLanguageContent(nameof(PageBarDemo)),Key=nameof(PageBarDemo),Content=new PageBarDemo{ DataContext = new PageBarDemo()}},
+                new MenuItem{ Name = GetLanguageContent(nameof(MessageInfoDemo)),Key=nameof(MessageInfoDemo),Content=new MessageInfoDemo{} },
+                new MenuItem{ Name = GetLanguageContent(nameof(MessageBoxDemo)),Key=nameof(MessageBoxDemo),Content = new MessageBoxDemo{ DataContext= new MessageBoxViewModel()} },
+                new MenuItem{ Name = GetLanguageContent(nameof(DialogDemo)),Key=nameof(DialogDemo),Content = new DialogDemo{ DataContext= new DialogViewModel()} }
+            };
+        }
         private ObservableCollection<ThemeColor> themeColors;
         public ObservableCollection<ThemeColor> ThemeColors
         {
@@ -140,6 +146,26 @@ namespace XiaFControlDemo.ViewModels
                 RaisePropertyChanged();
             }
         }
+        public DelegateCommand<string> LanguageCommand { get; set; }
+        private void SetLanguage(string language)
+        {
+            var xaml = Application.Current.Resources.MergedDictionaries.FirstOrDefault(p => p.Source.LocalPath.Contains("language_")|| p.Source.LocalPath.Contains("Language_"));
+            if (language == "中文简体")
+            {
+                if (xaml != null)
+                    xaml.Source = new Uri("pack://application:,,,/XiaFControlDemo;component/resources/xamls/Language_zh.xaml");
+            }
+            else
+            {
+                if (xaml != null)
+                    xaml.Source = new Uri("pack://application:,,,/XiaFControlDemo;component/resources/xamls/language_en.xaml");
+            }
+            foreach (var item in MenuItems)
+            {
+                item.Name = GetLanguageContent(item.Key);
+            }
+        }
+
         private DelegateCommand<ThemeColor> changeThemeColor;
         public DelegateCommand<ThemeColor> ChangeThemeColor => changeThemeColor ?? (changeThemeColor = new DelegateCommand<ThemeColor>(ChangeThemeColorExecute));
         private void ChangeThemeColorExecute(object obj)
@@ -161,54 +187,23 @@ namespace XiaFControlDemo.ViewModels
 
             themeColor.IsSeleted = true;
         }
-        //private void SetColor(IBaseTheme baseTheme)
-        //{
-        //    switch (paletteHelper.PrimaryColor)
-        //    {
-        //        case PrimaryColor.XiaFBlue:
-        //            baseTheme.Primary = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#2196F3"));
-        //            baseTheme.Light = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#6EC6FF"));
-        //            baseTheme.Dark = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#0069C0"));
-        //            baseTheme.Accent = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#F50057"));
-        //            break;
-        //        case PrimaryColor.XiaFRed:
-        //            baseTheme.Primary = new SolidColorBrush(Color.FromRgb(0xE5, 0x39, 0x35));
-        //            baseTheme.Light = new SolidColorBrush(Color.FromRgb(0xFF, 0x6F, 0x60));
-        //            baseTheme.Dark = new SolidColorBrush(Color.FromRgb(0xAB, 0x00, 0x0D));
-        //            baseTheme.Accent = new SolidColorBrush(Color.FromRgb(0x39, 0x49, 0xAB));
-        //            break;
-        //        case PrimaryColor.XiaFGreen:
-        //            baseTheme.Primary = new SolidColorBrush(Color.FromRgb(0x0B, 0xA3, 0x61));
-        //            baseTheme.Light = new SolidColorBrush(Color.FromRgb(0x56, 0xD5, 0x8F));
-        //            baseTheme.Dark = new SolidColorBrush(Color.FromRgb(0x00, 0x73, 0x36));
-        //            baseTheme.Accent = new SolidColorBrush(Color.FromRgb(0x79, 0x55, 0x48));
-        //            break;
-        //        case PrimaryColor.XiaFBlack:
-        //            baseTheme.Primary = new SolidColorBrush(Color.FromRgb(0x26, 0x32, 0x38));
-        //            baseTheme.Light = new SolidColorBrush(Color.FromRgb(0x4F, 0x5B, 0x62));
-        //            baseTheme.Dark = new SolidColorBrush(Color.FromRgb(0x00, 0x0A, 0x12));
-        //            baseTheme.Accent = new SolidColorBrush(Color.FromRgb(0xAD, 0x14, 0x57));
-        //            break;
-        //        case PrimaryColor.XiaFPink:
-        //            baseTheme.Primary = new SolidColorBrush(Color.FromRgb(0xFB, 0x72, 0x99));
-        //            baseTheme.Light = new SolidColorBrush(Color.FromRgb(0xFF, 0xA4, 0xCA));
-        //            baseTheme.Dark = new SolidColorBrush(Color.FromRgb(0xC4, 0x40, 0x6B));
-        //            baseTheme.Accent = new SolidColorBrush(Color.FromRgb(0x73, 0xC9, 0xE5));
-        //            break;
-        //        case PrimaryColor.XiaFPurple:
-        //            break;
-        //        case PrimaryColor.XiaFOther:
-        //            break;
-        //        default:
-        //            break;
-        //    }
-        //}
+        private string GetLanguageContent(string key)
+        {
+            var res = Application.Current.Resources[key];
+            if (res != null)
+                return res.ToString();
+            else
+                return "";
+        }
     }
-    public class MenuItem
+    public class MenuItem : ChangedBase
     {
-        public string Name { get; set; }
-        public string Key { get; set; }
-        public object Content { get; set; }
+        private string name;
+        public string Name { get { return name; } set { UpdateProper(ref name, value); } }
+        private string key;
+        public string Key { get { return key; } set { UpdateProper(ref key, value); } }
+        private object content;
+        public object Content { get { return content; } set { UpdateProper(ref content, value); } }
     }
 
     public class ThemeColor

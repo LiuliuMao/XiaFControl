@@ -63,6 +63,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Resources\Xamls\Language_en.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Xamls\Language_zh.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\ButtonDemo.xaml">
       <SubType>Designer</SubType>
     </Page>

@@ -123,7 +123,7 @@
           }
         }
       },
-      "XiaFControl/1.0.1": {
+      "XiaFControl/1.1.1": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
@@ -259,7 +259,7 @@
           }
         }
       },
-      "XiaFControl/1.0.1": {
+      "XiaFControl/1.1.1": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
@@ -540,7 +540,7 @@
           }
         }
       },
-      "XiaFControl/1.0.1": {
+      "XiaFControl/1.1.1": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -907,7 +907,7 @@
           }
         }
       },
-      "XiaFControl/1.0.1": {
+      "XiaFControl/1.1.1": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -1884,7 +1884,7 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "XiaFControl/1.0.1": {
+    "XiaFControl/1.1.1": {
       "type": "project",
       "path": "../XiaFControl/XiaFControl.csproj",
       "msbuildProject": "../XiaFControl/XiaFControl.csproj"
@@ -1894,12 +1894,12 @@
     ".NETFramework,Version=v4.7.2": [
       "AvalonEdit >= 6.3.0.90",
       "Prism.DryIoc >= 8.1.97",
-      "XiaFControl >= 1.0.1"
+      "XiaFControl >= 1.1.1"
     ],
     "net6.0-windows7.0": [
       "AvalonEdit >= 6.3.0.90",
       "Prism.DryIoc >= 8.1.97",
-      "XiaFControl >= 1.0.1"
+      "XiaFControl >= 1.1.1"
     ]
   },
   "packageFolders": {
@@ -1943,7 +1943,7 @@
           }
         },
         "net472": {
-          "targetAlias": "NET472",
+          "targetAlias": "net472",
           "projectReferences": {
             "D:\\Company\\Project\\XiaFControl\\XiaFControl\\XiaFControl.csproj": {
               "projectPath": "D:\\Company\\Project\\XiaFControl\\XiaFControl\\XiaFControl.csproj"
@@ -1992,7 +1992,7 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       },
       "net472": {
-        "targetAlias": "NET472",
+        "targetAlias": "net472",
         "dependencies": {
           "AvalonEdit": {
             "target": "Package",
