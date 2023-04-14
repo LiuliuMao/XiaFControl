@@ -5,9 +5,6 @@
     <Page Update="Themes\Basic\Colors\ColorDark.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Themes\Basic\Colors\ColorBase.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="Themes\Basic\Colors\ColorLight.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -44,6 +41,9 @@
     <Page Update="Themes\Styles\ListBox.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Themes\Styles\ListView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Themes\Styles\Menu.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -75,6 +75,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Themes\Styles\ToggleButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Styles\TreeView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Themes\Styles\Window.xaml">

@@ -12,7 +12,6 @@ D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\TextBl
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\GeneratedInternalTypeHelper.g.cs
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\XiaFControl_MarkupCompile.cache
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\XiaFControl_MarkupCompile.lref
-D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Basic\Colors\ColorBase.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Basic\Colors\ColorDark.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Basic\Colors\ColorLight.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Basic\Generic.baml
@@ -40,3 +39,5 @@ D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\XiaFControl.dll
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\XiaFControl.pdb
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\Slider.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\GroupBox.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\ListView.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net472\Themes\Styles\TreeView.baml

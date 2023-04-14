@@ -19,6 +19,8 @@
         <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/Menu.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/Card.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/Label.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/ListView.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/TreeView.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/DataGrid.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/ProgressBar.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Styles/Slider.xaml"/>
@@ -41,6 +43,8 @@
     <Style TargetType="{x:Type Menu}" BasedOn="{StaticResource XiaFMenu}"/>
     <Style TargetType="{x:Type control:Card}" BasedOn="{StaticResource XiaFCard}"/>
     <Style TargetType="{x:Type Label}" BasedOn="{StaticResource XiaFLabel}"/>
+    <Style TargetType="{x:Type ListView}" BasedOn="{StaticResource XiaFListView}"/>
+    <Style TargetType="{x:Type TreeView}" BasedOn="{StaticResource XiaFTreeView}"/>
     <Style TargetType="{x:Type DataGrid}" BasedOn="{StaticResource XiaFDataGrid}"/>
     <Style TargetType="{x:Type ProgressBar}" BasedOn="{StaticResource XiaFProgressBar}"/>
 </ResourceDictionary>

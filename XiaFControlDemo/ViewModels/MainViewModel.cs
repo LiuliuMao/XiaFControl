@@ -68,7 +68,7 @@ namespace XiaFControlDemo.ViewModels
                 new MenuItem{ Name = "数据条",Key=nameof(DataBarDemo),Content=new DataBarDemo()},
                 new MenuItem{ Name = "图标",Key=nameof(DataBarDemo),Content=new IconDemo(){ DataContext=new IconViewModel()} },
                 new MenuItem{ Name = "分组框",Key=nameof(GroupBoxDemo),Content=new GroupBoxDemo() },
-                //new MenuItem{ Name = "列表与树-ListsTree",Content=new ListsTree{ DataContext = new ListsViewModel()} },
+                new MenuItem{ Name = "列表与树",Key=nameof(ListsTreeDemo),Content=new ListsTreeDemo{ DataContext = new ListsViewModel()} },
                 //new MenuItem{ Name = "选项卡-TabControl",Content=new TabControl{ DataContext = new TabControlViewModel()} },
                 //new MenuItem{ Name = "日期时间-DateTimeControl",Content=new DateTimeControl{} },
                 //new MenuItem{ Name = "菜单栏-MenuBar",Content=new MenuBar{} },

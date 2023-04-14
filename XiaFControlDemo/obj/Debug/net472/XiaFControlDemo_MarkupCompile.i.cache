@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETFRAMEWORK;NET472;
 D:\Company\Project\XiaFControl\XiaFControlDemo\App.xaml
-873795528
+9282451151
 
-16-223099782
+18404143198
 311338728161
-Views\ButtonDemo.xaml;Views\DataBarDemo.xaml;Views\GroupBoxDemo.xaml;Views\IconDemo.xaml;Views\InputBoxDemo.xaml;Views\MainView.xaml;Views\SelectBoxDemo.xaml;Views\TestWindow.xaml;
+Views\ButtonDemo.xaml;Views\DataBarDemo.xaml;Views\GroupBoxDemo.xaml;Views\IconDemo.xaml;Views\InputBoxDemo.xaml;Views\ListsTreeDemo.xaml;Views\MainView.xaml;Views\SelectBoxDemo.xaml;Views\TestWindow.xaml;
 
-True
+False
 

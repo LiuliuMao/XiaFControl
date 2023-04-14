@@ -1,6 +1,5 @@
 ﻿
 
-FD:\Company\Project\XiaFControl\XiaFControl\Themes\Basic\Colors\ColorBase.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControl\Themes\Basic\Colors\ColorDark.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControl\Themes\Basic\Colors\ColorLight.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControl\Themes\Basic\Generic.xaml;;
@@ -19,4 +18,6 @@ FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\TextBox.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\ToggleButton.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\Window.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\GroupBox.xaml;;
+FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\ListView.xaml;;
+FD:\Company\Project\XiaFControl\XiaFControl\Themes\Styles\TreeView.xaml;;
 

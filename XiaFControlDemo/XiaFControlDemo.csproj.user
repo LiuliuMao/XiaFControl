@@ -22,6 +22,9 @@
     <Compile Update="Views\InputBoxDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\ListsTreeDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\MainView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -46,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\InputBoxDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ListsTreeDemo.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\MainView.xaml">

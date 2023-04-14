@@ -49,7 +49,6 @@ D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Style
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\XiaFControl_MarkupCompile.cache
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\XiaFControl_MarkupCompile.lref
-D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Basic\Colors\ColorBase.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Basic\Colors\ColorDark.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Basic\Colors\ColorLight.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Basic\Generic.baml
@@ -78,3 +77,5 @@ D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\XiaFControl.
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\ref\XiaFControl.dll
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\Slider.baml
 D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\GroupBox.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\ListView.baml
+D:\Company\Project\XiaFControl\XiaFControl\obj\Debug\net6.0-windows\Themes\Styles\TreeView.baml

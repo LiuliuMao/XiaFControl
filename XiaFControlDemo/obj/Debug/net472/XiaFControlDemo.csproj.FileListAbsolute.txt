@@ -41,3 +41,5 @@ D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\IconDemo.g
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\IconDemo.baml
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\GroupBoxDemo.g.cs
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\GroupBoxDemo.baml
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\ListsTreeDemo.g.cs
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net472\Views\ListsTreeDemo.baml
