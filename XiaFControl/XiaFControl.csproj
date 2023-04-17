@@ -6,7 +6,7 @@
 		<Nullable>enable</Nullable>
 		<UseWPF>true</UseWPF>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Version>1.1.1</Version>
+		<Version>1.1.2</Version>
 		<Authors>LiuliuMao</Authors>
 		<UseWindowsForms>true</UseWindowsForms>
 		<RepositoryUrl>https://github.com/LiuliuMao/XiaFControl.git</RepositoryUrl>
