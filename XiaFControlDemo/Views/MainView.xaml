@@ -26,9 +26,26 @@
                 <TextBlock Text="{Binding Title}" Foreground="{StaticResource PrimaryForeground}"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="1" >
-               
+                <Menu WindowChrome.IsHitTestVisibleInChrome="True" 
+                  Foreground="{DynamicResource DefaultForeground}" >
+                    <MenuItem >
+                        <MenuItem.Header>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="帮助" Foreground="#FFFFFF"/>
+                                <xiaFControl:Icon Type="QuestionFill" Foreground="#FFFFFF" Margin="5 0 0 0"/>
+                            </StackPanel>
+                        </MenuItem.Header>
+                        <MenuItem Header="关于" />
+                    </MenuItem>
+                </Menu>
                 <Menu WindowChrome.IsHitTestVisibleInChrome="True" Foreground="{DynamicResource DefaultForeground}" >
-                    <MenuItem Header="Language">
+                    <MenuItem >
+                        <MenuItem.Header>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Language" Foreground="#FFFFFF"/>
+                                <xiaFControl:Icon Type="CharacterRecognitionFill" Foreground="#FFFFFF" Margin="5 0 0 0"/>
+                            </StackPanel>
+                        </MenuItem.Header>
                         <MenuItem Header="中文简体" Command="{Binding LanguageCommand}" CommandParameter="中文简体"/>
                         <MenuItem Header="English" Command="{Binding LanguageCommand}" CommandParameter="English"/>
                     </MenuItem>

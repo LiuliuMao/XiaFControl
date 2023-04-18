@@ -269,15 +269,16 @@
         }
       },
       "XiaFControl/1.1.3": {
-        "type": "package",
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "ControlzEx": "5.0.2"
         },
         "compile": {
-          "lib/net6.0-windows7.0/XiaFControl.dll": {}
+          "bin/placeholder/XiaFControl.dll": {}
         },
         "runtime": {
-          "lib/net6.0-windows7.0/XiaFControl.dll": {}
+          "bin/placeholder/XiaFControl.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App"
@@ -1053,17 +1054,9 @@
       ]
     },
     "XiaFControl/1.1.3": {
-      "sha512": "P5/9VF80Y90GEY7tk1nOg4I8CdJxBiKTvwWOjo32w7Nm7pwuHAFoTGlx9XZy9ZDtrbofgvcgNlYkcVCpqV2Qtg==",
-      "type": "package",
-      "path": "xiafcontrol/1.1.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net472/XiaFControl.dll",
-        "lib/net6.0-windows7.0/XiaFControl.dll",
-        "xiafcontrol.1.1.3.nupkg.sha512",
-        "xiafcontrol.nuspec"
-      ]
+      "type": "project",
+      "path": "../../XiaFControlCode/XiaFControl/XiaFControl.csproj",
+      "msbuildProject": "../../XiaFControlCode/XiaFControl/XiaFControl.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1105,7 +1098,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Company\\Project\\XiaFControlCode\\XiaFControl\\XiaFControl.csproj": {
+              "projectPath": "D:\\Company\\Project\\XiaFControlCode\\XiaFControl\\XiaFControl.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1125,10 +1122,6 @@
           "Prism.DryIoc": {
             "target": "Package",
             "version": "[8.1.97, )"
-          },
-          "XiaFControl": {
-            "target": "Package",
-            "version": "[1.1.3, )"
           }
         },
         "imports": [
