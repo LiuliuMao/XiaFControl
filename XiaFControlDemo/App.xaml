@@ -10,7 +10,7 @@
                 <xiaFControl:BundledTheme BaseTheme="Dark"
                                      PrimaryColor="XiaFBlue"/>
                 <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Basic/Generic.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/XiaFControlDemo;component/resources/xamls/language_zh.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/XiaFControlDemo;component/resources/xamls/language_en.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

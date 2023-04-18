@@ -55,70 +55,18 @@ namespace XiaFControlDemo.ViewModels
             }
         }
 
-        PaletteHelper paletteHelper = new PaletteHelper();
-        ITheme theme;
         public MainViewModel()
         {
             Title = "XiaF UI";
-            theme = paletteHelper.GetTheme();
             LanguageCommand = new DelegateCommand<string>(SetLanguage);
             RefreshMenuList();
             CurrentMenuItem = MenuItems[0];
-            IBaseTheme baseTheme = null;
-            if (theme.BaseTheme == BaseTheme.Light)
-                baseTheme = new XiaFLightTheme();
-            else
-                baseTheme = new XiaFDarkTheme();
-            ThemeColors = new ObservableCollection<ThemeColor>
-            {
-                new ThemeColor
-                {
-                    Name = "默认蓝",
-                    PrimaryColor = PrimaryColor.XiaFBlue,
-                    Primary= paletteHelper.GetThemeColor(PrimaryColor.XiaFBlue,baseTheme).Primary,
-                    IsSeleted =false
-                },
-                new ThemeColor
-                {
-                    Name = "酷安绿",
-                    PrimaryColor = PrimaryColor.XiaFGreen,
-                    Primary= paletteHelper.GetThemeColor(PrimaryColor.XiaFGreen,baseTheme).Primary,
-                    IsSeleted =false
-                },
-                new ThemeColor
-                {
-                    Name = "姨妈红",
-                    PrimaryColor = PrimaryColor.XiaFRed,
-                    Primary= paletteHelper.GetThemeColor(PrimaryColor.XiaFRed,baseTheme).Primary,
-                    IsSeleted =false
-                },
-                new ThemeColor
-                {
-                    Name = "基佬紫",
-                    PrimaryColor = PrimaryColor.XiaFPurple,
-                    Primary= paletteHelper.GetThemeColor(PrimaryColor.XiaFPurple,baseTheme).Primary,
-                    IsSeleted =false
-                },
-                new ThemeColor
-                {
-                    Name = "哔哩粉",
-                    PrimaryColor = PrimaryColor.XiaFPink,
-                    Primary= paletteHelper.GetThemeColor(PrimaryColor.XiaFPink,baseTheme).Primary,
-                    IsSeleted =false
-                },
-                new ThemeColor
-                {
-                    Name = "高端黑",
-                    PrimaryColor = PrimaryColor.XiaFBlack,
-                    Primary= paletteHelper.GetThemeColor(PrimaryColor.XiaFBlack,baseTheme).Primary,
-                    IsSeleted =false
-                },
-            };
         }
         private void RefreshMenuList()
         {
             MenuItems = new ObservableCollection<MenuItem>
             {
+                new MenuItem{ Name = GetLanguageContent(nameof(ColorTool)),Key=nameof(ColorTool), Content=new ColorTool(){ DataContext=new ColorToolViewModel() } },
                 new MenuItem{ Name = GetLanguageContent(nameof(ButtonDemo)),Key=nameof(ButtonDemo), Content=new ButtonDemo()},
                 new MenuItem{ Name = GetLanguageContent(nameof(InputBoxDemo)),Key=nameof(InputBoxDemo), Content=new InputBoxDemo() },
                 new MenuItem{ Name = GetLanguageContent(nameof(SelectBoxDemo)),Key=nameof(SelectBoxDemo), Content=new SelectBoxDemo()},
@@ -136,20 +84,11 @@ namespace XiaFControlDemo.ViewModels
                 new MenuItem{ Name = GetLanguageContent(nameof(DialogDemo)),Key=nameof(DialogDemo),Content = new DialogDemo{ DataContext= new DialogViewModel()} }
             };
         }
-        private ObservableCollection<ThemeColor> themeColors;
-        public ObservableCollection<ThemeColor> ThemeColors
-        {
-            get => themeColors;
-            set
-            {
-                themeColors = value;
-                RaisePropertyChanged();
-            }
-        }
+       
         public DelegateCommand<string> LanguageCommand { get; set; }
         private void SetLanguage(string language)
         {
-            var xaml = Application.Current.Resources.MergedDictionaries.FirstOrDefault(p => p.Source.LocalPath.Contains("language_")|| p.Source.LocalPath.Contains("Language_"));
+            var xaml = Application.Current.Resources.MergedDictionaries.FirstOrDefault(p => p.Source.LocalPath.Contains("language_") || p.Source.LocalPath.Contains("Language_"));
             if (language == "中文简体")
             {
                 if (xaml != null)
@@ -166,27 +105,7 @@ namespace XiaFControlDemo.ViewModels
             }
         }
 
-        private DelegateCommand<ThemeColor> changeThemeColor;
-        public DelegateCommand<ThemeColor> ChangeThemeColor => changeThemeColor ?? (changeThemeColor = new DelegateCommand<ThemeColor>(ChangeThemeColorExecute));
-        private void ChangeThemeColorExecute(object obj)
-        {
-            ThemeColor themeColor = obj as ThemeColor;
-
-            if (themeColor.IsSeleted)
-            {
-                return;
-            }
-            theme = paletteHelper.GetTheme();
-            paletteHelper.BaseTheme = theme.BaseTheme;
-            paletteHelper.PrimaryColor = themeColor.PrimaryColor;
-            paletteHelper.SetTheme();
-            foreach (var item in ThemeColors)
-            {
-                item.IsSeleted = false;
-            }
-
-            themeColor.IsSeleted = true;
-        }
+      
         private string GetLanguageContent(string key)
         {
             var res = Application.Current.Resources[key];

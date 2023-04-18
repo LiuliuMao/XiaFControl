@@ -45,23 +45,5 @@ namespace XiaFControlDemo.Views
             }
             catch (Exception) { }
         }
-
-     
-        private void ToggleButton_Click(object sender, RoutedEventArgs e)
-        {
-            ToggleButton toggleButton = sender as ToggleButton;
-            PaletteHelper paletteHelper = new PaletteHelper();
-            var theme = paletteHelper.GetTheme();
-            if (toggleButton.IsChecked == true)
-            {
-                paletteHelper.BaseTheme = BaseTheme.Dark;
-            }
-            else
-            {
-                paletteHelper.BaseTheme = BaseTheme.Light;
-            }
-            paletteHelper.PrimaryColor = theme.PrimaryColor;
-            paletteHelper.SetTheme();
-        }
     }
 }

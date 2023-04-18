@@ -26,41 +26,7 @@
                 <TextBlock Text="{Binding Title}" Foreground="{StaticResource PrimaryForeground}"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="1" >
-                <ToggleButton Style="{DynamicResource SwitchMidToggle}" Margin="10 0" IsChecked="True" Click="ToggleButton_Click">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Light"/>
-                    </StackPanel>
-                </ToggleButton>
-                <TextBlock Text="Dark" Foreground="{DynamicResource DefaultForeground}"/>
-                <Menu WindowChrome.IsHitTestVisibleInChrome="True" 
-                  Foreground="{DynamicResource DefaultForeground}" >
-                    <MenuItem ItemsSource="{Binding ThemeColors}">
-                        <MenuItem.Header>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="主题" Foreground="{DynamicResource PrimaryForeground}"/>
-                                <xiaFControl:Icon Type="TShirtFill" Foreground="{DynamicResource Accent}" Margin="5 0 0 0"/>
-                            </StackPanel>
-                        </MenuItem.Header>
-                        <MenuItem.ItemContainerStyle>
-                            <Style TargetType="MenuItem" >
-                                <Setter Property="Icon" Value="{Binding IsSeleted,Converter={StaticResource IsSelectedToIcon}}"/>
-                                <Setter Property="Foreground" Value="{Binding Primary}"/>
-                                <Setter Property="Header" Value="{Binding Name}"/>
-                                <Setter Property="Command" Value="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.ChangeThemeColor}" />
-                                <Setter Property="CommandParameter" Value="{Binding}" />
-                            </Style>
-                        </MenuItem.ItemContainerStyle>
-                    </MenuItem>
-                    <MenuItem>
-                        <MenuItem.Header>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="帮助" Foreground="{DynamicResource PrimaryForeground}"/>
-                                <xiaFControl:Icon Type="QuestionFill" Foreground="{DynamicResource PrimaryForeground}" Margin="5 0 0 0"/>
-                            </StackPanel>
-                        </MenuItem.Header>
-                        <MenuItem Header="关于" Command="{Binding OpenAboutDialog}"/>
-                    </MenuItem>
-                </Menu>
+               
                 <Menu WindowChrome.IsHitTestVisibleInChrome="True" Foreground="{DynamicResource DefaultForeground}" >
                     <MenuItem Header="Language">
                         <MenuItem Header="中文简体" Command="{Binding LanguageCommand}" CommandParameter="中文简体"/>
@@ -95,7 +61,7 @@
                     <TabItem.Header>
                         <TextBlock Text="{Binding CurrentMenuItem.Name}" FontSize="14"/>
                     </TabItem.Header>
-                    <ContentControl Content="{Binding CurrentMenuItem.Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <ContentControl Margin="20" Content="{Binding CurrentMenuItem.Content}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
                 </TabItem>
                 <TabItem Width="100">
                     <TabItem.Header>

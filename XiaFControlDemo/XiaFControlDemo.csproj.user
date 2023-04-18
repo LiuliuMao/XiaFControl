@@ -10,6 +10,9 @@
     <Compile Update="Views\ButtonDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\ColorTool.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\DataBarDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -61,9 +64,6 @@
     <Compile Update="Views\TextBlockDemo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\ThemeDemo.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Resources\Xamls\Language_en.xaml">
@@ -73,6 +73,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\ButtonDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ColorTool.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\DataBarDemo.xaml">
@@ -124,9 +127,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\TextBlockDemo.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Views\ThemeDemo.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -13,7 +13,6 @@ namespace XiaFControl.Extensions
     {
         public BaseTheme BaseTheme { get; set; } = BaseTheme.Light;
         public PrimaryColor PrimaryColor { get; set; } = PrimaryColor.XiaFBlue;
-        public XiaFLightTheme XiaFLightTheme { get; set; }
-        public XiaFDarkTheme XiaFDarkTheme { get; set; }
+        public XiaFThemeColor XiaFThemeColor { get; set; }
     }
 }

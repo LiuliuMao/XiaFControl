@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETFRAMEWORK;NET472;
 D:\Company\Project\XiaFControl\XiaFControlDemo\App.xaml
-21-1594465760
+21790342796
 
-31870122130
+32-107620256
 311338728161
-Resources\Xamls\Language_en.xaml;Resources\Xamls\Language_zh.xaml;Views\ButtonDemo.xaml;Views\DataBarDemo.xaml;Views\DateTimeControlDemo.xaml;Views\DialogContent.xaml;Views\DialogDemo.xaml;Views\GroupBoxDemo.xaml;Views\IconDemo.xaml;Views\InputBoxDemo.xaml;Views\ListsTreeDemo.xaml;Views\MainView.xaml;Views\MenuBarDemo.xaml;Views\MessageBoxDemo.xaml;Views\MessageInfoDemo.xaml;Views\PageBarDemo.xaml;Views\SelectBoxDemo.xaml;Views\TabControlDemo.xaml;Views\TestWindow.xaml;Views\TextBlockDemo.xaml;Views\ThemeDemo.xaml;
+Resources\Xamls\Language_en.xaml;Resources\Xamls\Language_zh.xaml;Views\ButtonDemo.xaml;Views\ColorTool.xaml;Views\DataBarDemo.xaml;Views\DateTimeControlDemo.xaml;Views\DialogContent.xaml;Views\DialogDemo.xaml;Views\GroupBoxDemo.xaml;Views\IconDemo.xaml;Views\InputBoxDemo.xaml;Views\ListsTreeDemo.xaml;Views\MainView.xaml;Views\MenuBarDemo.xaml;Views\MessageBoxDemo.xaml;Views\MessageInfoDemo.xaml;Views\PageBarDemo.xaml;Views\SelectBoxDemo.xaml;Views\TabControlDemo.xaml;Views\TestWindow.xaml;Views\TextBlockDemo.xaml;
 
 False
 

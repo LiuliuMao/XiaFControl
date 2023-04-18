@@ -23,22 +23,7 @@ namespace XiaFControl.Extensions
             {
                 bundledTheme.BaseTheme = baseTheme;
                 bundledTheme.PrimaryColor = primaryColor;
-                IBaseTheme colorData = null;
-                switch (baseTheme)
-                {
-                    case BaseTheme.Light:
-                        colorData = bundledTheme.XiaFLightTheme;
-                        break;
-                    case BaseTheme.Dark:
-                        colorData = bundledTheme.XiaFDarkTheme;
-                        break;
-                    default:
-                        colorData = bundledTheme.XiaFLightTheme;
-                        break;
-                }
-                //resourceDictionary[nameof(ThemeColorKey.BodyBackgroundColor)] = colorData.WindowBackgroundColor;
-                //resourceDictionary[nameof(ThemeColorKey.ThemeForegroundColor)] = colorData.ThemeForegroundColor;
-                //resourceDictionary[nameof(ThemeColorKey.ThemeBackgroundColor)] = colorData.ThemeBackgroundColor;
+                IBaseTheme colorData = bundledTheme.XiaFThemeColor;
                 primaryColor.SetThemePrimary(colorData);
             }
             return true;
@@ -72,8 +57,7 @@ namespace XiaFControl.Extensions
                     ITheme theme = new ITheme();
                     theme.BaseTheme = dic.BaseTheme ?? BaseTheme.Light;
                     theme.PrimaryColor = dic.PrimaryColor ?? PrimaryColor.XiaFBlue;
-                    theme.XiaFDarkTheme = dic.XiaFDarkTheme;
-                    theme.XiaFLightTheme = dic.XiaFLightTheme;
+                    theme.XiaFThemeColor = dic.XiaFThemeColor;
                     return theme;
                 }
             }

@@ -17,6 +17,10 @@ namespace XiaFControl
 {
     public class BundledTheme : ResourceDictionary, IXiaFThemeDictionary
     {
+        public BundledTheme()
+        { 
+        
+        }
         private BaseTheme? _baseTheme;
         public BaseTheme? BaseTheme
         {
@@ -31,8 +35,7 @@ namespace XiaFControl
             }
         }
 
-        public XiaFLightTheme XiaFLightTheme = new XiaFLightTheme();
-        public XiaFDarkTheme XiaFDarkTheme = new XiaFDarkTheme();
+        public XiaFThemeColor XiaFThemeColor = new XiaFThemeColor();
 
         private PrimaryColor? _primaryColor;
         public PrimaryColor? PrimaryColor

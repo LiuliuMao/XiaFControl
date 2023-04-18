@@ -2,6 +2,7 @@
                     xmlns:sys="clr-namespace:System;assembly=mscorlib"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <sys:String x:Key="Language">语言</sys:String>
+    <sys:String x:Key="ColorTool">主题设置</sys:String>
     <sys:String x:Key="ButtonDemo">按钮</sys:String>
     <sys:String x:Key="InputBoxDemo">输入框</sys:String>
     <sys:String x:Key="SelectBoxDemo">选择框</sys:String>
