@@ -31,6 +31,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Shell;
 using XiaFControl.Controls;
+using XiaFControlDemo.Controls;
+using XiaFControlDemo.Converters;
+using XiaFControlDemo.ViewModels;
 using XiaFControlDemo.Views;
 
 
