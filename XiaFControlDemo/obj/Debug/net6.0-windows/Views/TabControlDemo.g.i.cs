@@ -55,7 +55,7 @@ namespace XiaFControlDemo.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/XiaFControlDemo;V1.0.0.0;component/views/tabcontroldemo.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/XiaFControlDemo;component/views/tabcontroldemo.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\TabControlDemo.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

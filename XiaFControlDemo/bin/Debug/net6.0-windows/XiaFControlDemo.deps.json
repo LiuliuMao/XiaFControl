@@ -155,10 +155,7 @@
           "ControlzEx": "5.0.2"
         },
         "runtime": {
-          "lib/net6.0-windows7.0/XiaFControl.dll": {
-            "assemblyVersion": "1.1.3.0",
-            "fileVersion": "1.1.3.0"
-          }
+          "XiaFControl.dll": {}
         }
       }
     }
@@ -296,11 +293,9 @@
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
     "XiaFControl/1.1.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-P5/9VF80Y90GEY7tk1nOg4I8CdJxBiKTvwWOjo32w7Nm7pwuHAFoTGlx9XZy9ZDtrbofgvcgNlYkcVCpqV2Qtg==",
-      "path": "xiafcontrol/1.1.3",
-      "hashPath": "xiafcontrol.1.1.3.nupkg.sha512"
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

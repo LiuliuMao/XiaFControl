@@ -109,3 +109,4 @@ D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\refint\X
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\XiaFControlDemo.pdb
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\XiaFControlDemo.genruntimeconfig.cache
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\ref\XiaFControlDemo.dll
+D:\Company\Project\XiaFControl\XiaFControlDemo\bin\Debug\net6.0-windows\XiaFControl.pdb
