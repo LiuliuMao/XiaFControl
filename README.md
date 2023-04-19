@@ -11,8 +11,8 @@
 
 ## 贡献者
 
-<a href="https://github.com/ghost1372" target="_blank"><img style="border-radius:50%!important" width="64px" alt="ghost1372" src="https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/girl.png"></a>s.githubusercontent.com/u/44890163?s=64&v=4"></a>
-<a href="https://github.com/ghost1372" target="_blank"><img style="border-radius:50%!important" width="64px" alt="ghost1372" src="https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/58766277.jpg"></a>s.githubusercontent.com/u/44890163?s=64&v=4"></a>
+<a href="https://github.com/ghost1372" target="_blank"><img style="border-radius:50%!important" width="64px" alt="ghost1372" src="https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/girl.png"></a></a>
+<a href="https://github.com/ghost1372" target="_blank"><img style="border-radius:50%!important" width="64px" alt="ghost1372" src="https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/58766277.jpg"></a></a>
 
 ## 赞助者
 
@@ -21,6 +21,7 @@
 ## 使用HandyControl的项目
 
 <a href="https://getquicker.net" target="_blank"><img width="70px" alt="quicker" src="https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControlcar.png"></a>
+
 如果你的项目没有被列出，请告知我们! 😀
 
 ## 用法
