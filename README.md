@@ -11,12 +11,12 @@
 
 ## 贡献者
 
-<a href="https://github.com/ghost1372" target="_blank"><img style="border-radius:50%!important" width="64px" alt="ghost1372" src="https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/girl.png"></a></a>
-<a href="https://github.com/ghost1372" target="_blank"><img style="border-radius:50%!important" width="64px" alt="ghost1372" src="https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/58766277.jpg"></a></a>
+<a href="https://github.com/LiuliuMao" target="_blank"><img style="border-radius:50%!important" width="64px" alt="ghost1372" src="https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/girl.png"></a></a>
+<a href="https://github.com/justliuzm" target="_blank"><img style="border-radius:50%!important" width="64px" alt="ghost1372" src="https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/58766277.jpg"></a></a>
 
 ## 赞助者
 
-<a href="https://github.com/bigorange1900" target="_blank"><img style="border-radius:50%!important" width="64px" alt="bigorange1900" src="https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/girl.png"></a>
+<a href="https://github.com/LiuliuMao" target="_blank"><img style="border-radius:50%!important" width="64px" alt="bigorange1900" src="https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/girl.png"></a>
 
 ## 使用HandyControl的项目
 
