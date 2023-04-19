@@ -17,12 +17,8 @@
 ## 赞助者
 
 <a href="https://github.com/LiuliuMao" target="_blank"><img style="border-radius:50%!important" width="64px" alt="bigorange1900" src="https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/girl.png"></a>
+<a href="https://github.com/fengdeyingzi" target="_blank"><img style="border-radius:50%!important" width="64px" alt="bigorange1900" src="https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/18662432.jpg"></a>
 
-## 使用HandyControl的项目
-
-<a href="https://getquicker.net" target="_blank"><img width="70px" alt="quicker" src="https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControlcar.png"></a>
-
-如果你的项目没有被列出，请告知我们! 😀
 
 ## 用法
 
