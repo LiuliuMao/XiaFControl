@@ -52,7 +52,7 @@ Step 3: 添加命名空间:
 ![dialog](https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/dialog.png)
 ![group](https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/group.png)
 ![icon](https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/icon.png)
-![input](https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/input.png)
+![input](https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/input2.png)
 ![listtree](https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/listtree.png)
 ![menu](https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/menu.png)
 ![message](https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/message.png)

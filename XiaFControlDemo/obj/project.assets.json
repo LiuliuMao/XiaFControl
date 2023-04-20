@@ -88,6 +88,18 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "NetCore5.0.Microsoft.Expression.Drawing/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0-windows7.0/Microsoft.Expression.Drawing.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Microsoft.Expression.Drawing.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "Prism.Core/8.1.97": {
         "type": "package",
         "compile": {
@@ -268,10 +280,11 @@
           }
         }
       },
-      "XiaFControl/1.1.3": {
+      "XiaFControl/1.1.5": {
         "type": "package",
         "dependencies": {
-          "ControlzEx": "5.0.2"
+          "ControlzEx": "5.0.2",
+          "NetCore5.0.Microsoft.Expression.Drawing": "1.0.0"
         },
         "compile": {
           "lib/net6.0-windows7.0/XiaFControl.dll": {}
@@ -413,6 +426,18 @@
         "microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
         "microsoft.xaml.behaviors.wpf.nuspec",
         "tools/Install.ps1"
+      ]
+    },
+    "NetCore5.0.Microsoft.Expression.Drawing/1.0.0": {
+      "sha512": "SHY17L9IiD72MlD7obgHXCfAR16wWCHObHIiMUnWpqx9wC60ChyGrL9zUv2jp2tSJcY88nlB8kJuNIy3ykTyrw==",
+      "type": "package",
+      "path": "netcore5.0.microsoft.expression.drawing/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0-windows7.0/Microsoft.Expression.Drawing.dll",
+        "netcore5.0.microsoft.expression.drawing.1.0.0.nupkg.sha512",
+        "netcore5.0.microsoft.expression.drawing.nuspec"
       ]
     },
     "Prism.Core/8.1.97": {
@@ -1052,16 +1077,17 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "XiaFControl/1.1.3": {
-      "sha512": "P5/9VF80Y90GEY7tk1nOg4I8CdJxBiKTvwWOjo32w7Nm7pwuHAFoTGlx9XZy9ZDtrbofgvcgNlYkcVCpqV2Qtg==",
+    "XiaFControl/1.1.5": {
+      "sha512": "f/1z9DsnzJ1aFB7onZBbwJECwoTF5NBH7d3bf3GsJosft9kSf2iZnN8NjDQMLxBeOrHGeORo40R7vzFEHSqwlA==",
       "type": "package",
-      "path": "xiafcontrol/1.1.3",
+      "path": "xiafcontrol/1.1.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "lib/net45/XiaFControl.dll",
         "lib/net472/XiaFControl.dll",
         "lib/net6.0-windows7.0/XiaFControl.dll",
-        "xiafcontrol.1.1.3.nupkg.sha512",
+        "xiafcontrol.1.1.5.nupkg.sha512",
         "xiafcontrol.nuspec"
       ]
     }
@@ -1070,7 +1096,7 @@
     "net6.0-windows7.0": [
       "AvalonEdit >= 6.3.0.90",
       "Prism.DryIoc >= 8.1.97",
-      "XiaFControl >= 1.1.3"
+      "XiaFControl >= 1.1.5"
     ]
   },
   "packageFolders": {
@@ -1128,7 +1154,7 @@
           },
           "XiaFControl": {
             "target": "Package",
-            "version": "[1.1.3, )"
+            "version": "[1.1.5, )"
           }
         },
         "imports": [

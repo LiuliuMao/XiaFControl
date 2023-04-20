@@ -1,6 +1,7 @@
 ﻿D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 FD:\Company\Project\XiaFControl\XiaFControlDemo\App.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControlDemo\Views\ColorTool.xaml;;
+FD:\Company\Project\XiaFControl\XiaFControlDemo\Views\DashboardDemo.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControlDemo\Views\DataBarDemo.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControlDemo\Views\DateTimeControlDemo.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControlDemo\Views\DialogContent.xaml;;
@@ -13,6 +14,7 @@ FD:\Company\Project\XiaFControl\XiaFControlDemo\Views\MainView.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControlDemo\Views\MenuBarDemo.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControlDemo\Views\MessageBoxDemo.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControlDemo\Views\MessageInfoDemo.xaml;;
+FD:\Company\Project\XiaFControl\XiaFControlDemo\Views\MultiSelectComboBox.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControlDemo\Views\PageBarDemo.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControlDemo\Views\SelectBoxDemo.xaml;;
 FD:\Company\Project\XiaFControl\XiaFControlDemo\Views\TabControlDemo.xaml;;
