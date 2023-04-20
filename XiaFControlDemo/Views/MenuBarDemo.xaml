@@ -99,13 +99,13 @@
                             </RadioButton>
                         </ToolBar>
                         <ToolBar>
-                            <ToggleButton x:Name="ItalicToggle" IsChecked="{Binding IsItalic}" Checked="ItalicToggle_Checked" Unchecked="ItalicToggle_Unchecked">
+                            <ToggleButton x:Name="ItalicToggle" IsChecked="False" Checked="ItalicToggle_Checked" Unchecked="ItalicToggle_Unchecked">
                                 <xiaFControl:Icon Type="Italic"/>
                             </ToggleButton>
-                            <ToggleButton x:Name="UnderlineToggle" IsChecked="{Binding IsUnderline}" Checked="UnderlineToggle_Checked" Unchecked="UnderlineToggle_Unchecked">
+                            <ToggleButton x:Name="UnderlineToggle" IsChecked="False" Checked="UnderlineToggle_Checked" Unchecked="UnderlineToggle_Unchecked">
                                 <xiaFControl:Icon Type="Underline"/>
                             </ToggleButton>
-                            <ToggleButton x:Name="BoldToggle" IsChecked="{Binding IsBold}" Checked="BoldToggle_Checked" Unchecked="BoldToggle_Unchecked">
+                            <ToggleButton x:Name="BoldToggle" IsChecked="False" Checked="BoldToggle_Checked" Unchecked="BoldToggle_Unchecked">
                                 <xiaFControl:Icon Type="Bold"/>
                             </ToggleButton>
                         </ToolBar>

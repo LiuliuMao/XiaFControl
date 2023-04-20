@@ -11,57 +11,59 @@
                   Style="{StaticResource XiaFSmallScrollViewer}">
         <Grid>
             <GroupBox Header="消息-Message" Margin="0 0 0 10">
-                <StackPanel Margin="5">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="全局弹出" Width="100" Margin="10" HorizontalAlignment="Center"/>
-                        <TextBlock Text="指定容器弹出" Width="100" Margin="10" HorizontalAlignment="Center"/>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <Button x:Name="MessageBtn" Content="基础消息" Width="100" Margin="10" 
+                <Grid>
+                    <StackPanel Margin="5">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="全局弹出" Width="100" Margin="10" HorizontalAlignment="Center"/>
+                            <TextBlock Text="指定容器弹出" Width="100" Margin="10" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:Name="MessageBtn" Content="基础消息" Width="100" Margin="10" 
                                 Style="{StaticResource LightButton}" Click="MessageBtn_Click"/>
-                        <Button x:Name="MessageContainerBtn" Content="基础消息" Width="100" Margin="10"
+                            <Button x:Name="MessageContainerBtn" Content="基础消息" Width="100" Margin="10"
                                 Style="{StaticResource LightButton}" Click="MessageContainerBtn_Click"/>
-                        <xiaFControl:MessageCard Content="message" IsClearable="True"/>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <Button x:Name="InfoBtn" Content="提示消息" Width="100" Margin="10"
+                            <xiaFControl:MessageCard Content="message" IsClearable="True"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" >
+                            <Button x:Name="InfoBtn" Content="提示消息" Width="100" Margin="10"
                                 Background="{StaticResource InfoBrush}" Click="InfoBtn_Click"/>
-                        <Button x:Name="InfoContainerBtn" Content="提示消息" Width="100" Margin="10"
+                            <Button x:Name="InfoContainerBtn" Content="提示消息" Width="100" Margin="10"
                                 Background="{StaticResource InfoBrush}" Click="InfoContainerBtn_Click"/>
-                        <xiaFControl:MessageCard Content="info" Style="{StaticResource InfoMessage}" IsClearable="True"/>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <Button x:Name="WaringBtn" Content="警告消息" Width="100" Margin="10" 
+                            <xiaFControl:MessageCard Content="info" Style="{StaticResource InfoMessage}" IsClearable="True"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:Name="WaringBtn" Content="警告消息" Width="100" Margin="10" 
                                 Background="{StaticResource WarningBrush}" Click="WaringBtn_Click"/>
-                        <Button x:Name="WaringContainerBtn" Content="警告消息" Width="100" Margin="10" 
+                            <Button x:Name="WaringContainerBtn" Content="警告消息" Width="100" Margin="10" 
                                 Background="{StaticResource WarningBrush}" Click="WaringContainerBtn_Click"/>
-                        <xiaFControl:MessageCard Content="warning" Style="{StaticResource WarningMessage}" IsClearable="True"/>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <Button x:Name="SuccessBtn" Content="成功消息" Width="100" Margin="10" 
+                            <xiaFControl:MessageCard Content="warning" Style="{StaticResource WarningMessage}" IsClearable="True"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:Name="SuccessBtn" Content="成功消息" Width="100" Margin="10" 
                                 Background="{StaticResource SuccessBrush}" Click="SuccessBtn_Click"/>
-                        <Button x:Name="SuccessContainerBtn" Content="成功消息" Width="100" Margin="10" 
+                            <Button x:Name="SuccessContainerBtn" Content="成功消息" Width="100" Margin="10" 
                                 Background="{StaticResource SuccessBrush}" Click="SuccessContainerBtn_Click"/>
-                        <xiaFControl:MessageCard Content="success" Style="{StaticResource SuccessMessage}" IsClearable="True"/>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <Button x:Name="ErrorBtn" Content="错误消息" Width="100" Margin="10"
+                            <xiaFControl:MessageCard Content="success" Style="{StaticResource SuccessMessage}" IsClearable="True"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:Name="ErrorBtn" Content="错误消息" Width="100" Margin="10"
                                 Background="{StaticResource ErrorBrush}" Click="ErrorBtn_Click"/>
-                        <Button x:Name="ErrorContaionBtn" Content="错误消息" Width="100" Margin="10"
+                            <Button x:Name="ErrorContaionBtn" Content="错误消息" Width="100" Margin="10"
                                 Background="{StaticResource ErrorBrush}" Click="ErrorContaionBtn_Click"/>
-                        <xiaFControl:MessageCard Content="error" Style="{StaticResource ErrorMessage}" IsClearable="True"/>
+                            <xiaFControl:MessageCard Content="error" Style="{StaticResource ErrorMessage}" IsClearable="True"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:Name="ControlBtn" Content="自定义" Width="100" Margin="10" Click="ControlBtn_Click"/>
+                            <Button x:Name="ControlContaionBtn" Content="自定义" Width="100" Margin="10" Click="ControlContaionBtn_Click"/>
+                            <xiaFControl:MessageCard IsClearable="True">
+                                <StackPanel Margin="5" x:Name="CustomContent">
+                                    <TextBlock Style="{StaticResource Head4TextBlock}" Text="标题"/>
+                                    <TextBlock Text="自定义控件内容"/>
+                                </StackPanel>
+                            </xiaFControl:MessageCard>
+                        </StackPanel>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <Button x:Name="ControlBtn" Content="自定义" Width="100" Margin="10" Click="ControlBtn_Click"/>
-                        <Button x:Name="ControlContaionBtn" Content="自定义" Width="100" Margin="10" Click="ControlContaionBtn_Click"/>
-                        <xiaFControl:MessageCard IsClearable="True">
-                            <StackPanel Margin="5" x:Name="CustomContent">
-                                <TextBlock Style="{StaticResource Head4TextBlock}" Text="标题"/>
-                                <TextBlock Text="自定义控件内容"/>
-                            </StackPanel>
-                        </xiaFControl:MessageCard>
-                    </StackPanel>
-                </StackPanel>
+                </Grid>
             </GroupBox>
         </Grid>
     </ScrollViewer>

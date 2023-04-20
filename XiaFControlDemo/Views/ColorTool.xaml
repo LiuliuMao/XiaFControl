@@ -19,7 +19,7 @@
             <RowDefinition Height="auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <GroupBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Header="主题"  Style="{StaticResource ColorHeaderGroupBox}">
+        <GroupBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Header="{DynamicResource zhuti}"  Style="{StaticResource ColorHeaderGroupBox}">
             <StackPanel Orientation="Horizontal">
                 <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="0">
                     <ToggleButton x:Name="themeToggle" Style="{DynamicResource SwitchMidToggle}" Command="{Binding ChangeTheme}" IsChecked="True" 
@@ -35,7 +35,7 @@
                     <MenuItem ItemsSource="{Binding ThemeColors}">
                         <MenuItem.Header>
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="主题" Foreground="{DynamicResource Primary}"/>
+                                <TextBlock Text="{DynamicResource zhuti}" Foreground="{DynamicResource Primary}"/>
                                 <xiaFControl:Icon Type="TShirtFill" Foreground="{DynamicResource Primary}" Margin="5 0 0 0"/>
                             </StackPanel>
                         </MenuItem.Header>
@@ -52,7 +52,7 @@
                 </Menu>
             </StackPanel>
         </GroupBox>
-        <GroupBox Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Header="自定义主题色" Margin="0 20 0 0" Style="{StaticResource ColorHeaderGroupBox}">
+        <GroupBox Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Header="{DynamicResource zidingyizhutise}" Margin="0 20 0 0" Style="{StaticResource ColorHeaderGroupBox}">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition/>
@@ -153,7 +153,7 @@
                         </TextBox>
                     </Grid>
                 </GroupBox>
-                <Button Content="确定" Grid.Row="4" Width="100" Command="{Binding ColorCommand}"/>
+                <Button Content="{DynamicResource queding}" Grid.Row="4" Width="100" Command="{Binding ColorCommand}"/>
             </Grid>
         </GroupBox>
     </Grid>

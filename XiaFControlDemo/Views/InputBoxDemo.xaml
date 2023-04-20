@@ -6,7 +6,7 @@
               xmlns:xiaFControl="clr-namespace:XiaFControl.Controls;assembly=XiaFControl"
              xmlns:local="clr-namespace:XiaFControlDemo.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="800" d:DesignWidth="800">
     <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
         <Grid>
             <Grid.RowDefinitions>
@@ -36,7 +36,7 @@
                          xiaFControl:TextBoxHelper.Placeholder="大文本框" />
             </GroupBox>
             <GroupBox Header="验证错误文本框-TextBox" Grid.Column="0" Grid.Row="2" Margin="0 0 10 10">
-                <TextBox Text="{Binding Number,UpdateSourceTrigger=PropertyChanged}" Width="150" 
+                <TextBox Text="55" Width="150" 
                      xiaFControl:TextBoxHelper.Placeholder="绑定了 int 类型" HorizontalAlignment="Left" Margin="5 10"/>
             </GroupBox>
             <GroupBox Header="带提示文本框-TextBox-PasswordBox" Margin="0 0 0 10" Grid.Row="2" Grid.Column="1">
@@ -48,7 +48,7 @@
                     </TextBox>
                     <PasswordBox Width="150" xiaFControl:TextBoxHelper.Placeholder="密码" Margin="10 0"
                                  xiaFControl:PasswordHelper.ShowSwitchButton="True"
-                                 xiaFControl:PasswordHelper.Password="{Binding TestPassword}">
+                                 xiaFControl:PasswordHelper.Password="xiafcontrol">
                         <xiaFControl:TextBoxHelper.PreContent>
                             <xiaFControl:Icon Type="LockPasswordFill"/>
                         </xiaFControl:TextBoxHelper.PreContent>
@@ -156,6 +156,11 @@
                             <ComboBoxItem Content="60"/>
                             <ComboBoxItem Content="70"/>
                         </ComboBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="10">
+                        <Label Content="多选下拉框" Margin=" 0 0 10 0"/>
+                        <xiaFControl:MultiSelectComboBox Width="100"  Margin="0 0 10 0" ItemsSource="{Binding DataList}" SelectedItems="{Binding SelectedItems}">
+                        </xiaFControl:MultiSelectComboBox>
                     </StackPanel>
                 </StackPanel>
             </GroupBox>
