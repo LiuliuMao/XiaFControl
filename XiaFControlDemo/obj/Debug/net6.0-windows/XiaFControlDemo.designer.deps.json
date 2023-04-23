@@ -167,15 +167,15 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "XiaFControl/1.1.5": {
+      "XiaFControl/1.1.6": {
         "dependencies": {
           "ControlzEx": "5.0.2",
           "NetCore5.0.Microsoft.Expression.Drawing": "1.0.0"
         },
         "runtime": {
           "lib/net6.0-windows7.0/XiaFControl.dll": {
-            "assemblyVersion": "1.1.5.0",
-            "fileVersion": "1.1.5.0"
+            "assemblyVersion": "1.1.6.0",
+            "fileVersion": "1.1.6.0"
           }
         }
       }
@@ -315,12 +315,12 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
-    "XiaFControl/1.1.5": {
+    "XiaFControl/1.1.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-f/1z9DsnzJ1aFB7onZBbwJECwoTF5NBH7d3bf3GsJosft9kSf2iZnN8NjDQMLxBeOrHGeORo40R7vzFEHSqwlA==",
-      "path": "xiafcontrol/1.1.5",
-      "hashPath": "xiafcontrol.1.1.5.nupkg.sha512"
+      "sha512": "sha512-xnVsnXMMCEm6SxKGG2e4mkfw5BZLYoX2jBG0pBbLDDfameuiqjP5zRRz6i2Ih3h4wGZzTSM2kHcwjB31/jXXHw==",
+      "path": "xiafcontrol/1.1.6",
+      "hashPath": "xiafcontrol.1.1.6.nupkg.sha512"
     }
   }
 }
