@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3uwnup7TO3pKaJZptL77Kw/7nZeO6FwGqxxIznN0bDENq/wz7bLYq3VDfwS05+rfaO6kw4k+jY8p1l+ExCIkVQ==",
+  "dgSpecHash": "ncmujFRnw/pYKZCjjNoKFMLq3RG11tvdk0vWYTCa/ziqbAR3MkU5RfTQjaMlFmi0yVBQFvrkvPl+HslcewhPZg==",
   "success": true,
   "projectFilePath": "D:\\Company\\Project\\XiaFControl\\XiaFControlDemo\\XiaFControlDemo.csproj",
   "expectedPackageFiles": [
@@ -23,7 +23,7 @@
     "C:\\Users\\liumao\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\liumao\\.nuget\\packages\\system.text.json\\5.0.1\\system.text.json.5.0.1.nupkg.sha512",
     "C:\\Users\\liumao\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
-    "C:\\Users\\liumao\\.nuget\\packages\\xiafcontrol\\1.1.7\\xiafcontrol.1.1.7.nupkg.sha512"
+    "C:\\Users\\liumao\\.nuget\\packages\\xiafcontrol\\1.1.8\\xiafcontrol.1.1.8.nupkg.sha512"
   ],
   "logs": []
 }

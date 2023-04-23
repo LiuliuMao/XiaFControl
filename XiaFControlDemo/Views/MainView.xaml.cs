@@ -19,7 +19,8 @@ namespace XiaFControlDemo.Views
         public MainView()
         {
             InitializeComponent();
-            this.version.Text = "V" + Application.ResourceAssembly.GetName().Version.ToString();
+            PaletteHelper paletteHelper = new PaletteHelper();
+            this.version.Text = "V" + paletteHelper.GetVersion();
             this.DataContext = new MainViewModel();
         }
 
