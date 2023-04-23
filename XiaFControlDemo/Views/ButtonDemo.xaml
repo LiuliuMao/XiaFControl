@@ -17,25 +17,28 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <GroupBox Header="Button" Margin="0 0 0 10">
+            <GroupBox Header="普通按钮-Button" Margin="0 0 0 10">
                 <StackPanel Orientation="Horizontal" Margin="5">
-                    <Button x:Name="button" Width="100" IsDefault="True" ToolTip="hello" Margin="5">
-                        普通
+                    <Button Width="100" Style="{DynamicResource DefaultButton}" Margin="5">
+                        普通按钮
                     </Button>
-                    <Button Width="100" Style="{DynamicResource LightButton}" Margin="5">亮色</Button>
-                    <Button Width="100" Style="{DynamicResource DarkButton}" Margin="5">暗色</Button>
-                    <Button Width="100" Style="{DynamicResource AccentButton}" Margin="5">强调</Button>
+                    <Button x:Name="button" Width="100" ToolTip="hello" Margin="5">
+                        默认按钮
+                    </Button>
+                    <Button Width="100" Style="{DynamicResource LightButton}" Margin="5">亮色按钮</Button>
+                    <Button Width="100" Style="{DynamicResource DarkButton}" Margin="5">暗色按钮</Button>
+                    <Button Width="100" Style="{DynamicResource AccentButton}" Margin="5">强调按钮</Button>
                 </StackPanel>
             </GroupBox>
-            <GroupBox Header="Button" Margin="0 0 0 10" Grid.Row="1">
+            <GroupBox Header="圆角按钮-Button" Margin="0 0 0 10" Grid.Row="1">
                 <StackPanel Orientation="Horizontal" Margin="5">
-                    <Button Width="100" control:ButtonHelper.CornerRadius="14" Margin="6">普通</Button>
-                    <Button Width="100" Style="{DynamicResource LightButton}" control:ButtonHelper.CornerRadius="14" Margin="6">亮色</Button>
-                    <Button Width="100" Style="{DynamicResource DarkButton}"  control:ButtonHelper.CornerRadius="14" Margin="6">暗色</Button>
-                    <Button Width="100" Style="{DynamicResource AccentButton}"  control:ButtonHelper.CornerRadius="14" Margin="6">强调</Button>
+                    <Button Width="100" control:ButtonHelper.CornerRadius="14" Margin="6">普通按钮</Button>
+                    <Button Width="100" Style="{DynamicResource LightButton}" control:ButtonHelper.CornerRadius="14" Margin="6">亮色按钮</Button>
+                    <Button Width="100" Style="{DynamicResource DarkButton}"  control:ButtonHelper.CornerRadius="14" Margin="6">暗色按钮</Button>
+                    <Button Width="100" Style="{DynamicResource AccentButton}"  control:ButtonHelper.CornerRadius="14" Margin="6">强调按钮</Button>
                 </StackPanel>
             </GroupBox>
-            <GroupBox Header="Button" Margin="0 0 0 10" Grid.Row="2">
+            <GroupBox Header="文字按钮-Button" Margin="0 0 0 10" Grid.Row="2">
                 <StackPanel Orientation="Horizontal" Margin="5">
                     <Button Width="100" Style="{DynamicResource TextMidButton}" Margin="6">文字按钮</Button>
                     <Button Width="100" Style="{DynamicResource TextLightButton}" Margin="6">文字按钮</Button>
@@ -43,19 +46,19 @@
                     <Button Width="100" Style="{DynamicResource TextAccentButton}" Margin="6">文字按钮</Button>
                 </StackPanel>
             </GroupBox>
-            <GroupBox Header="Button" Margin="0 0 0 10" Grid.Row="3">
+            <GroupBox Header="圆型按钮-Button" Margin="0 0 0 10" Grid.Row="3">
                 <StackPanel Orientation="Horizontal" Margin="5">
-                    <Button Style="{DynamicResource CircleMidButton}" control:ButtonHelper.CircleDima="40" Margin="10 0">
-                        <control:Icon Type="AlipayLine" Height="30" Width="30"/>
+                    <Button Style="{DynamicResource CircleMidButton}" Margin="10 0">
+                        <control:Icon Type="QqFill"/>
                     </Button>
                     <Button Style="{DynamicResource CircleLightButton}" control:ButtonHelper.CircleDima="40" Margin="10 0">
-                        <control:Icon Type="AlipayFill" Height="30" Width="30"/>
+                        <control:Icon Type="WechatFill" Height="30" Width="30"/>
                     </Button>
-                    <Button Style="{DynamicResource CircleDarkButton}" control:ButtonHelper.CircleDima="40" Margin="10 0">
-                        <control:Icon Type="Chat4Fill" Height="30" Width="30"/>
+                    <Button Style="{DynamicResource CircleDarkButton}" control:ButtonHelper.CircleDima="50" Margin="10 0">
+                        <control:Icon Type="WeiboFill" Height="40" Width="40"/>
                     </Button>
-                    <Button Style="{DynamicResource CircleAccentButton}" control:ButtonHelper.CircleDima="40" Margin="10 0">
-                        <control:Icon Type="GithubFill" Height="30" Width="30"/>
+                    <Button Style="{DynamicResource CircleAccentButton}" control:ButtonHelper.CircleDima="60" Margin="10 0">
+                        <control:Icon Type="GithubFill" Height="50" Width="50"/>
                     </Button>
                 </StackPanel>
             </GroupBox>

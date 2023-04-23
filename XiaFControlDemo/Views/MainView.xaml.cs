@@ -19,6 +19,7 @@ namespace XiaFControlDemo.Views
         public MainView()
         {
             InitializeComponent();
+            this.version.Text = "V" + Application.ResourceAssembly.GetName().Version.ToString();
             this.DataContext = new MainViewModel();
         }
 

@@ -66,22 +66,22 @@ namespace XiaFControlDemo.ViewModels
         {
             MenuItems = new ObservableCollection<MenuItem>
             {
-                new MenuItem{ Name = GetLanguageContent(nameof(ColorTool)),Key=nameof(ColorTool), Content=new ColorTool(){ DataContext=new ColorToolViewModel() } },
-                new MenuItem{ Name = GetLanguageContent(nameof(ButtonDemo)),Key=nameof(ButtonDemo), Content=new ButtonDemo()},
-                new MenuItem{ Name = GetLanguageContent(nameof(InputBoxDemo)),Key=nameof(InputBoxDemo), Content=new InputBoxDemo(){ DataContext=new InputViewModel()} },
-                new MenuItem{ Name = GetLanguageContent(nameof(SelectBoxDemo)),Key=nameof(SelectBoxDemo), Content=new SelectBoxDemo()},
-                new MenuItem{ Name = GetLanguageContent(nameof(DataBarDemo)),Key=nameof(DataBarDemo),Content=new DataBarDemo()},
-                new MenuItem{ Name = GetLanguageContent(nameof(IconDemo)),Key=nameof(IconDemo),Content=new IconDemo(){ DataContext=new IconViewModel()} },
-                new MenuItem{ Name = GetLanguageContent(nameof(GroupBoxDemo)),Key=nameof(GroupBoxDemo),Content=new GroupBoxDemo() },
-                new MenuItem{ Name = GetLanguageContent(nameof(ListsTreeDemo)),Key=nameof(ListsTreeDemo),Content=new ListsTreeDemo{ DataContext = new ListsViewModel()} },
-                new MenuItem{ Name = GetLanguageContent(nameof(TabControlDemo)),Key=nameof(TabControlDemo),Content=new TabControlDemo{ DataContext = new TabControlViewModel()} },
-                new MenuItem{ Name = GetLanguageContent(nameof(DateTimeControlDemo)),Key=nameof(DateTimeControlDemo),Content=new DateTimeControlDemo{} },
-                new MenuItem{ Name = GetLanguageContent(nameof(MenuBarDemo)),Key=nameof(MenuBarDemo),Content=new MenuBarDemo{} },
-                new MenuItem{ Name = GetLanguageContent(nameof(TextBlockDemo)),Key=nameof(TextBlockDemo),Content=new TextBlockDemo{}},
-                new MenuItem{ Name = GetLanguageContent(nameof(PageBarDemo)),Key=nameof(PageBarDemo),Content=new PageBarDemo{ DataContext = new PageBarViewModel()}},
-                new MenuItem{ Name = GetLanguageContent(nameof(MessageInfoDemo)),Key=nameof(MessageInfoDemo),Content=new MessageInfoDemo{} },
-                new MenuItem{ Name = GetLanguageContent(nameof(MessageBoxDemo)),Key=nameof(MessageBoxDemo),Content = new MessageBoxDemo{ DataContext= new MessageBoxViewModel()} },
-                new MenuItem{ Name = GetLanguageContent(nameof(DialogDemo)),Key=nameof(DialogDemo),Content = new DialogDemo{ DataContext= new DialogViewModel()} },
+                new MenuItem{ Icon="BrushLine", Name = GetLanguageContent(nameof(ColorTool)),Key=nameof(ColorTool), Content=new ColorTool(){ DataContext=new ColorToolViewModel() } },
+                new MenuItem{ Icon="EditBoxLine", Name = GetLanguageContent(nameof(ButtonDemo)),Key=nameof(ButtonDemo), Content=new ButtonDemo()},
+                new MenuItem{ Icon="InputMethodLine", Name = GetLanguageContent(nameof(InputBoxDemo)),Key=nameof(InputBoxDemo), Content=new InputBoxDemo(){ DataContext=new InputViewModel()} },
+                new MenuItem{ Icon="BankCardLine", Name = GetLanguageContent(nameof(SelectBoxDemo)),Key=nameof(SelectBoxDemo), Content=new SelectBoxDemo()},
+                new MenuItem{ Icon="DatabaseLine", Name = GetLanguageContent(nameof(DataBarDemo)),Key=nameof(DataBarDemo),Content=new DataBarDemo()},
+                new MenuItem{ Icon="PaletteFill", Name = GetLanguageContent(nameof(IconDemo)),Key=nameof(IconDemo),Content=new IconDemo(){ DataContext=new IconViewModel()} },
+                new MenuItem{ Icon="CheckboxMultipleBlankLine", Name = GetLanguageContent(nameof(GroupBoxDemo)),Key=nameof(GroupBoxDemo),Content=new GroupBoxDemo() },
+                new MenuItem{ Icon="NodeTree", Name = GetLanguageContent(nameof(ListsTreeDemo)),Key=nameof(ListsTreeDemo),Content=new ListsTreeDemo{ DataContext = new ListsViewModel()} },
+                new MenuItem{ Icon="RestoreLine", Name = GetLanguageContent(nameof(TabControlDemo)),Key=nameof(TabControlDemo),Content=new TabControlDemo{ DataContext = new TabControlViewModel()} },
+                new MenuItem{ Icon="TimeLine", Name = GetLanguageContent(nameof(DateTimeControlDemo)),Key=nameof(DateTimeControlDemo),Content=new DateTimeControlDemo{} },
+                new MenuItem{ Icon="Menu2Line", Name = GetLanguageContent(nameof(MenuBarDemo)),Key=nameof(MenuBarDemo),Content=new MenuBarDemo{} },
+                new MenuItem{ Icon="Text", Name = GetLanguageContent(nameof(TextBlockDemo)),Key=nameof(TextBlockDemo),Content=new TextBlockDemo{}},
+                new MenuItem{ Icon="PagesLine", Name = GetLanguageContent(nameof(PageBarDemo)),Key=nameof(PageBarDemo),Content=new PageBarDemo{ DataContext = new PageBarViewModel()}},
+                new MenuItem{ Icon="InformationLine", Name = GetLanguageContent(nameof(MessageInfoDemo)),Key=nameof(MessageInfoDemo),Content=new MessageInfoDemo{} },
+                new MenuItem{ Icon="CheckboxFill", Name = GetLanguageContent(nameof(MessageBoxDemo)),Key=nameof(MessageBoxDemo),Content = new MessageBoxDemo{ DataContext= new MessageBoxViewModel()} },
+                new MenuItem{ Icon="CopperDiamondFill", Name = GetLanguageContent(nameof(DialogDemo)),Key=nameof(DialogDemo),Content = new DialogDemo{ DataContext= new DialogViewModel()} },
                 //new MenuItem{ Name = GetLanguageContent(nameof(DashboardDemo)),Key=nameof(DashboardDemo),Content = new DashboardDemo() }
             };
         }
@@ -118,6 +118,8 @@ namespace XiaFControlDemo.ViewModels
     }
     public class MenuItem : ChangedBase
     {
+        private string icon;
+        public string Icon { get { return icon; } set { UpdateProper(ref icon, value); } }
         private string name;
         public string Name { get { return name; } set { UpdateProper(ref name, value); } }
         private string key;
