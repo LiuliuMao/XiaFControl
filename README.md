@@ -9,6 +9,10 @@
 
 * [以XiaFControl的名义为慈善事业做贡献（请联系我们上赞助墙）](http://www.chinacharityfederation.org/ConfirmDonation/0.html?zhijie=3)
 
+### 打赏
+
+* [打赏：为我们买防脱发洗发水（请联系我们上赞助墙）](https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/pay.png)
+
 ## 贡献者
 
 <a href="https://github.com/LiuliuMao" target="_blank"><img style="border-radius:50%!important" width="64px" alt="ghost1372" src="https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/girl.png"></a></a>
