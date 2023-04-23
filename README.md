@@ -11,7 +11,7 @@
 
 ### 打赏
 
-* [打赏：为我们买防脱发洗发水（请联系我们上赞助墙）](https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/pay.png)
+![打赏](https://raw.githubusercontent.com/LiuliuMao/LMFiles/master/XiaFControl/pay.png)
 
 ## 贡献者
 
