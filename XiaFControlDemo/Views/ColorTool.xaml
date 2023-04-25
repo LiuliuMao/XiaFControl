@@ -22,7 +22,7 @@
         <GroupBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Header="{DynamicResource zhuti}"  Style="{StaticResource ColorHeaderGroupBox}">
             <StackPanel Orientation="Horizontal">
                 <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="0">
-                    <ToggleButton x:Name="themeToggle" Style="{DynamicResource SwitchMidToggle}" Command="{Binding ChangeTheme}" IsChecked="True" 
+                    <ToggleButton x:Name="themeToggle" Style="{DynamicResource SwitchMidToggle}" Command="{Binding ChangeTheme}" IsChecked="False" 
                               CommandParameter="{Binding ElementName=themeToggle,Path=IsChecked}">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="Light"/>

@@ -20,9 +20,12 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <GroupBox Header="基础文本框-TextBox" Margin="0 0 0 10" Grid.Row="0">
+            <GroupBox Header="基础文本框-TextBox" Margin="0 0 0 10" Grid.Row="0" Grid.ColumnSpan="2">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="5">
-                    <TextBox Width="150"/>
+                    <TextBox Width="150" xiaFControl:TextBoxHelper.Placeholder="默认"/>
+                    <TextBox Width="150" Style="{DynamicResource LightTextBox}" Margin="10 0" xiaFControl:TextBoxHelper.Placeholder="亮色"/>
+                    <TextBox Width="150" Style="{DynamicResource DarkTextBox}" Margin="10 0" xiaFControl:TextBoxHelper.Placeholder="暗色"/>
+                    <TextBox Width="150" Style="{DynamicResource AccentTextBox}" Margin="10 0" xiaFControl:TextBoxHelper.Placeholder="强调色"/>
                 </StackPanel>
             </GroupBox>
             <GroupBox Header="带清除按钮文本框-TextBox" Margin="0 0 0 10" Grid.Row="1">
@@ -31,8 +34,8 @@
                          xiaFControl:TextBoxHelper.Placeholder="可清除"/>
                 </StackPanel>
             </GroupBox>
-            <GroupBox Header="大文本框-TextBox" Grid.Column="1" Grid.RowSpan="2" Margin="10 0 0 10">
-                <TextBox Width="Auto" Height="150" Style="{StaticResource BigTextBox}"
+            <GroupBox Header="大文本框-TextBox" Grid.Row="1" Grid.Column="1" Margin="10 0 0 10">
+                <TextBox Width="Auto" Height="50" Style="{StaticResource BigTextBox}"
                          xiaFControl:TextBoxHelper.Placeholder="大文本框" />
             </GroupBox>
             <GroupBox Header="验证错误文本框-TextBox" Grid.Column="0" Grid.Row="2" Margin="0 0 10 10">
@@ -55,6 +58,8 @@
                     </PasswordBox>
                 </StackPanel>
             </GroupBox>
+            
+           
             <GroupBox Header="前置后置内容文本框-TextBox" Margin="0 0 0 10" Grid.Row="3" Grid.ColumnSpan="2">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="5">
                     <TextBox Width="150">
@@ -70,98 +75,6 @@
                             </Button>
                         </xiaFControl:TextBoxHelper.PostContent>
                     </TextBox>
-                </StackPanel>
-            </GroupBox>
-            <GroupBox Header="下拉框-ComboBox" Margin="0 0 0 10" Grid.Row="4" Grid.ColumnSpan="2">
-                <StackPanel>
-                    <StackPanel Orientation="Horizontal" Margin="5">
-                        <Label Content="不可编辑" Margin="0 0 10 0"/>
-                        <ComboBox Width="100" Margin="0 0 10 0">
-                            <ComboBoxItem Content="选项一"/>
-                            <ComboBoxItem Content="选项二"/>
-                            <ComboBoxItem Content="选项三"/>
-                        </ComboBox>
-                        <ComboBox Width="100" Margin="0 0 10 0" xiaFControl:ComboBoxHelper.Placeholder="提示" 
-                              xiaFControl:ComboBoxHelper.FocusedBrush="{DynamicResource Light}">
-                            <ComboBoxItem Content="选项一"/>
-                            <ComboBoxItem Content="选项二"/>
-                            <ComboBoxItem Content="选项三"/>
-                        </ComboBox>
-                        <ComboBox Width="110" Margin="0 0 10 0" xiaFControl:ComboBoxHelper.Placeholder="可清除"
-                              xiaFControl:ComboBoxHelper.IsClearable="True"
-                              xiaFControl:ComboBoxHelper.FocusedBrush="{DynamicResource Dark}">
-                            <ComboBoxItem Content="沙茶酱"/>
-                            <ComboBoxItem Content="鱼露"/>
-                            <ComboBoxItem Content="豆酱"/>
-                        </ComboBox>
-                        <ComboBox x:Name="heightCombo" Width="120" IsEditable="False" Margin="0 0 10 0"
-                              xiaFControl:ComboBoxHelper.PreContent="身高" xiaFControl:ComboBoxHelper.PostContent="cm"
-                              xiaFControl:ComboBoxHelper.FocusedBrush="{DynamicResource Accent}" >
-                        </ComboBox>
-
-                        <ComboBox Width="150" Margin="0 0 10 0" 
-                              xiaFControl:ComboBoxHelper.Placeholder="运动" 
-                              xiaFControl:ComboBoxHelper.IsClearable="True"
-                              xiaFControl:ComboBoxHelper.FocusedBrush="Green">
-                            <ComboBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <xiaFControl:Icon Type="RunLine"/>
-                                    <TextBlock Text="跑步"/>
-                                </StackPanel>
-                            </ComboBoxItem>
-                            <ComboBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <xiaFControl:Icon Type="PingPongFill"/>
-                                    <TextBlock Text="乒乓球"/>
-                                </StackPanel>
-                            </ComboBoxItem>
-                            <ComboBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <xiaFControl:Icon Type="BasketballFill"/>
-                                    <TextBlock Text="篮球"/>
-                                </StackPanel>
-                            </ComboBoxItem>
-                        </ComboBox>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal" Margin="10">
-                        <Label Content="可编辑" Margin=" 0 0 10 0"/>
-                        <ComboBox Width="100" IsEditable="True" Margin="0 0 10 0">
-                            <ComboBoxItem Content="选项一"/>
-                            <ComboBoxItem Content="选项二"/>
-                            <ComboBoxItem Content="选项三"/>
-                        </ComboBox>
-
-                        <ComboBox Width="150" IsEditable="True" Margin="0 0 10 0"
-                              xiaFControl:ComboBoxHelper.IsClearable="True"
-                              xiaFControl:ComboBoxHelper.Placeholder="可清除"
-                              xiaFControl:ComboBoxHelper.FocusedBrush="{DynamicResource Light}">
-                            <ComboBoxItem Content="选项一"/>
-                            <ComboBoxItem Content="选项二"/>
-                            <ComboBoxItem Content="选项三"/>
-                        </ComboBox>
-
-                        <ComboBox Width="120" IsEditable="True" Margin="0 0 10 0"
-                              xiaFControl:ComboBoxHelper.PreContent="选择"
-                              xiaFControl:ComboBoxHelper.FocusedBrush="{DynamicResource Dark}">
-                            <ComboBoxItem Content="选项一"/>
-                            <ComboBoxItem Content="选项二"/>
-                            <ComboBoxItem Content="选项三"/>
-                        </ComboBox>
-
-                        <ComboBox Width="120" IsEditable="True" Margin="0 0 10 0" 
-                          xiaFControl:ComboBoxHelper.PreContent="体重" 
-                          xiaFControl:ComboBoxHelper.PostContent="kg"
-                          xiaFControl:ComboBoxHelper.FocusedBrush="{DynamicResource Accent}">
-                            <ComboBoxItem Content="50"/>
-                            <ComboBoxItem Content="60"/>
-                            <ComboBoxItem Content="70"/>
-                        </ComboBox>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal" Margin="10">
-                        <Label Content="多选下拉框" Margin=" 0 0 10 0"/>
-                        <xiaFControl:MultiSelectComboBox Width="100"  Margin="0 0 10 0" ItemsSource="{Binding DataList}" SelectedItems="{Binding SelectedItems}">
-                        </xiaFControl:MultiSelectComboBox>
-                    </StackPanel>
                 </StackPanel>
             </GroupBox>
         </Grid>

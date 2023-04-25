@@ -69,6 +69,7 @@ namespace XiaFControlDemo.ViewModels
                 new MenuItem{ Icon="BrushLine", Name = GetLanguageContent(nameof(ColorTool)),Key=nameof(ColorTool), Content=new ColorTool(){ DataContext=new ColorToolViewModel() } },
                 new MenuItem{ Icon="EditBoxLine", Name = GetLanguageContent(nameof(ButtonDemo)),Key=nameof(ButtonDemo), Content=new ButtonDemo()},
                 new MenuItem{ Icon="InputMethodLine", Name = GetLanguageContent(nameof(InputBoxDemo)),Key=nameof(InputBoxDemo), Content=new InputBoxDemo(){ DataContext=new InputViewModel()} },
+                new MenuItem{ Icon="ListUnordered", Name = GetLanguageContent(nameof(ComboBoxDemo)),Key=nameof(ComboBoxDemo), Content=new ComboBoxDemo(){ DataContext=new InputViewModel()} },
                 new MenuItem{ Icon="BankCardLine", Name = GetLanguageContent(nameof(SelectBoxDemo)),Key=nameof(SelectBoxDemo), Content=new SelectBoxDemo()},
                 new MenuItem{ Icon="DatabaseLine", Name = GetLanguageContent(nameof(DataBarDemo)),Key=nameof(DataBarDemo),Content=new DataBarDemo()},
                 new MenuItem{ Icon="PaletteFill", Name = GetLanguageContent(nameof(IconDemo)),Key=nameof(IconDemo),Content=new IconDemo(){ DataContext=new IconViewModel()} },
@@ -82,14 +83,15 @@ namespace XiaFControlDemo.ViewModels
                 new MenuItem{ Icon="InformationLine", Name = GetLanguageContent(nameof(MessageInfoDemo)),Key=nameof(MessageInfoDemo),Content=new MessageInfoDemo{} },
                 new MenuItem{ Icon="CheckboxFill", Name = GetLanguageContent(nameof(MessageBoxDemo)),Key=nameof(MessageBoxDemo),Content = new MessageBoxDemo{ DataContext= new MessageBoxViewModel()} },
                 new MenuItem{ Icon="CopperDiamondFill", Name = GetLanguageContent(nameof(DialogDemo)),Key=nameof(DialogDemo),Content = new DialogDemo{ DataContext= new DialogViewModel()} },
-                //new MenuItem{ Name = GetLanguageContent(nameof(DashboardDemo)),Key=nameof(DashboardDemo),Content = new DashboardDemo() }
+                //new MenuItem{ Icon="MenuUnfoldLine", Name = GetLanguageContent(nameof(HamburgerMenuDemo)),Key=nameof(HamburgerMenuDemo),Content = new HamburgerMenuDemo(){ DataContext=new HamburgerMenuViewModel()} },
+                new MenuItem{ Icon="ListOrdered", Name = GetLanguageContent(nameof(StepBarDemo)),Key=nameof(StepBarDemo),Content = new StepBarDemo{ DataContext= new StepBarViewModel()} }
             };
         }
-       
+
         public DelegateCommand<string> LanguageCommand { get; set; }
         private void SetLanguage(string language)
         {
-            var xaml = Application.Current.Resources.MergedDictionaries.FirstOrDefault(p => p.Source.LocalPath.Contains("language_") || p.Source.LocalPath.Contains("Language_"));
+            var xaml = Application.Current.Resources.MergedDictionaries.FirstOrDefault(p => p.Source != null && (p.Source.LocalPath.Contains("language_") || p.Source.LocalPath.Contains("Language_")));
             if (language == "中文简体")
             {
                 if (xaml != null)
@@ -106,7 +108,7 @@ namespace XiaFControlDemo.ViewModels
             }
         }
 
-      
+
         private string GetLanguageContent(string key)
         {
             var res = Application.Current.Resources[key];

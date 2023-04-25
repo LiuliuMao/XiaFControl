@@ -35,8 +35,8 @@ Step 2: 在 App.xaml 中添加如下代码:
 <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <xiaFControl:BundledTheme BaseTheme="Dark" PrimaryColor="XiaFBlue"/>
-                <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Basic/Generic.xaml" />
+                 <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Basic/Generic.xaml" />
+                <xiaFControl:BundledTheme BaseTheme="Light" PrimaryColor="XiaFPurple"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

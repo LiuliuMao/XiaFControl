@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
 using System.Windows.Media.Media3D;
@@ -20,10 +21,9 @@ namespace XiaFControlDemo.ViewModels
 {
     public class ColorToolViewModel : BindableBase
     {
-        PaletteHelper paletteHelper = new PaletteHelper();
-        ITheme theme;
         public ColorToolViewModel()
         {
+            PaletteHelper paletteHelper = new PaletteHelper();
             ColorCommand = new DelegateCommand(SetCustomerColor);
             IBaseTheme baseTheme = new XiaFThemeColor();
             ThemeColors = new ObservableCollection<ThemeColor>
@@ -87,15 +87,20 @@ namespace XiaFControlDemo.ViewModels
         public DelegateCommand<ThemeColor> ChangeThemeColor => changeThemeColor ?? (changeThemeColor = new DelegateCommand<ThemeColor>(ChangeThemeColorExecute));
         private void ChangeThemeColorExecute(object obj)
         {
+            PaletteHelper paletteHelper = new PaletteHelper();
             ThemeColor themeColor = obj as ThemeColor;
             if (themeColor.IsSeleted)
             {
                 return;
             }
-            theme = paletteHelper.GetTheme();
-            paletteHelper.BaseTheme = theme.BaseTheme;
-            paletteHelper.PrimaryColor = themeColor.PrimaryColor;
-            paletteHelper.SetTheme();
+            var theme = paletteHelper.GetTheme();
+            theme.PrimaryColor = themeColor.PrimaryColor;
+
+
+            //theme = paletteHelper.GetTheme();
+            //paletteHelper.BaseTheme = theme.BaseTheme;
+            //paletteHelper.PrimaryColor = themeColor.PrimaryColor;
+            //paletteHelper.SetThemeColor();
             foreach (var item in ThemeColors)
             {
                 item.IsSeleted = false;
@@ -107,18 +112,32 @@ namespace XiaFControlDemo.ViewModels
         public DelegateCommand<bool?> ChangeTheme => changeTheme ?? (changeTheme = new DelegateCommand<bool?>(ChangeThemeExecute));
         private void ChangeThemeExecute(bool? IsChecked)
         {
+            var resourceDictionaries = Application.Current.Resources.MergedDictionaries;
             PaletteHelper paletteHelper = new PaletteHelper();
             var theme = paletteHelper.GetTheme();
             if (IsChecked == true)
             {
-                paletteHelper.BaseTheme = BaseTheme.Dark;
+                theme.BaseTheme = BaseTheme.Dark;
             }
             else
             {
-                paletteHelper.BaseTheme = BaseTheme.Light;
+                theme.BaseTheme = BaseTheme.Light;
             }
-            paletteHelper.PrimaryColor = theme.PrimaryColor;
-            paletteHelper.SetTheme();
+            //System.Windows.Application.Current.Resources[nameof(ThemeColorKey.ThemeForegroundColor)] = (Color)ColorConverter.ConvertFromString("#FFFFFF");
+            //System.Windows.Application.Current.Resources[nameof(ThemeColorKey.ThemeBackgroundColor)] = (Color)ColorConverter.ConvertFromString("#1C1C1C");
+            //System.Windows.Application.Current.Resources[nameof(ThemeColorKey.WindowBackgroundColor)] = (Color)ColorConverter.ConvertFromString("#2D2D30");
+            //PaletteHelper paletteHelper = new PaletteHelper();
+            //var theme = paletteHelper.GetTheme();
+            //if (IsChecked == true)
+            //{
+            //    paletteHelper.BaseTheme = BaseTheme.Dark;
+            //}
+            //else
+            //{
+            //    paletteHelper.BaseTheme = BaseTheme.Light;
+            //}
+            //paletteHelper.PrimaryColor = theme.PrimaryColor;
+            //paletteHelper.SetTheme();
         }
 
         #region 自定义主题色
@@ -127,17 +146,23 @@ namespace XiaFControlDemo.ViewModels
         {
             PaletteHelper paletteHelper = new PaletteHelper();
             var theme = paletteHelper.GetTheme();
-            paletteHelper.BaseTheme = theme.BaseTheme;
-            paletteHelper.PrimaryColor = PrimaryColor.XiaFOther;
-            theme.XiaFThemeColor.Primary = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#" + Primary));
-            theme.XiaFThemeColor.PrimaryForeground = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#" + PrimaryForeground));
-            theme.XiaFThemeColor.Light = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#" + Light));
-            theme.XiaFThemeColor.LightForeground = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#" + LightForeground));
-            theme.XiaFThemeColor.Dark = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#" + Dark));
-            theme.XiaFThemeColor.DarkForeground = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#" + DarkForeground));
-            theme.XiaFThemeColor.Accent = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#" + Accent));
-            theme.XiaFThemeColor.AccentForeground = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#" + AccentForeground));
-            paletteHelper.SetTheme();
+            if (!string.IsNullOrWhiteSpace(Primary))
+                theme.XiaFThemeColor.Primary = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#" + Primary));
+            if (!string.IsNullOrWhiteSpace(PrimaryForeground))
+                theme.XiaFThemeColor.PrimaryForeground = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#" + PrimaryForeground));
+            if (!string.IsNullOrWhiteSpace(Light))
+                theme.XiaFThemeColor.Light = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#" + Light));
+            if (!string.IsNullOrWhiteSpace(LightForeground))
+                theme.XiaFThemeColor.LightForeground = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#" + LightForeground));
+            if (!string.IsNullOrWhiteSpace(Dark))
+                theme.XiaFThemeColor.Dark = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#" + Dark));
+            if (!string.IsNullOrWhiteSpace(DarkForeground))
+                theme.XiaFThemeColor.DarkForeground = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#" + DarkForeground));
+            if (!string.IsNullOrWhiteSpace(Accent))
+                theme.XiaFThemeColor.Accent = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#" + Accent));
+            if (!string.IsNullOrWhiteSpace(AccentForeground))
+                theme.XiaFThemeColor.AccentForeground = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#" + AccentForeground));
+            theme.PrimaryColor = PrimaryColor.XiaFOther;
         }
         private string _Primary { get; set; }
         public string Primary

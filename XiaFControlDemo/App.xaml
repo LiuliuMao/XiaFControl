@@ -8,10 +8,9 @@
         <ResourceDictionary>
 
             <ResourceDictionary.MergedDictionaries>
-                <xiaFControl:BundledTheme BaseTheme="Dark"
-                                     PrimaryColor="XiaFBlue"/>
                 <ResourceDictionary Source="pack://application:,,,/XiaFControl;component/Themes/Basic/Generic.xaml" />
-                
+                <xiaFControl:BundledTheme BaseTheme="Light"
+                                     PrimaryColor="XiaFPurple"/>
                 <ResourceDictionary Source="pack://application:,,,/XiaFControlDemo;component/resources/xamls/language_en.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>

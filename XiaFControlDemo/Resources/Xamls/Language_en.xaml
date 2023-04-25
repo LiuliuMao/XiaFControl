@@ -1,10 +1,12 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:sys="clr-namespace:System;assembly=mscorlib"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--menu-->
     <sys:String x:Key="Language">Language</sys:String>
     <sys:String x:Key="ColorTool">Color tool</sys:String>
-    <sys:String x:Key="ButtonDemo">Button</sys:String> 
+    <sys:String x:Key="ButtonDemo">Button</sys:String>
     <sys:String x:Key="InputBoxDemo">Input</sys:String>
+    <sys:String x:Key="ComboBoxDemo">ComboBox</sys:String>
     <sys:String x:Key="SelectBoxDemo">Select</sys:String>
     <sys:String x:Key="DataBarDemo">Data bar</sys:String>
     <sys:String x:Key="IconDemo">Icon</sys:String>
@@ -18,4 +20,12 @@
     <sys:String x:Key="MessageInfoDemo">Message info</sys:String>
     <sys:String x:Key="MessageBoxDemo">Message box</sys:String>
     <sys:String x:Key="DialogDemo">Dialogue</sys:String>
+    <sys:String x:Key="DashboardDemo">Dashboard</sys:String>
+    <sys:String x:Key="HamburgerMenuDemo">Hamburger</sys:String>
+    <sys:String x:Key="StepBarDemo">StepBar</sys:String>
+
+    <!--text-->
+    <sys:String x:Key="zhuti">主题</sys:String>
+    <sys:String x:Key="zidingyizhutise">自定义主题色</sys:String>
+    <sys:String x:Key="queding">确定</sys:String>
 </ResourceDictionary>

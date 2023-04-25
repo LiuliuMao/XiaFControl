@@ -1,0 +1,87 @@
+﻿<UserControl x:Class="XiaFControlDemo.Views.StepBarDemo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:xiaFControl="clr-namespace:XiaFControl.Controls;assembly=XiaFControl"
+             xmlns:local="clr-namespace:XiaFControlDemo.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <Grid Margin="10"
+                  xiaFControl:GridHelper.ColumnDefinitions="*, Auto"
+                  xiaFControl:PanelHelper.Spacing="10">
+                <StackPanel>
+                    <Button Width="100"
+                            Margin="10"
+                            HorizontalAlignment="Center"
+                            Command="{Binding NextStepCommand}"
+                            Content="下一步" />
+
+                    <GroupBox Header="垂直步骤条 - StepBar">
+                        <StackPanel>
+                            <xiaFControl:StepBar Margin="10" CurrentIndex="{Binding CurrentIndex}">
+                                <xiaFControl:StepBarItem Description="description 1">Step 1</xiaFControl:StepBarItem>
+                                <xiaFControl:StepBarItem Description="description 2">Step 2</xiaFControl:StepBarItem>
+                                <xiaFControl:StepBarItem Description="description 3">Step 3</xiaFControl:StepBarItem>
+                                <xiaFControl:StepBarItem Description="description 4">Step 4</xiaFControl:StepBarItem>
+                                <xiaFControl:StepBarItem Description="description 5">Step 5</xiaFControl:StepBarItem>
+                            </xiaFControl:StepBar>
+
+                            <xiaFControl:StepBar Margin="10"
+                                            HorizontalContentAlignment="Left"
+                                            xiaFControl:ControlHelper.FocusedBrush="{DynamicResource Dark}"
+                                            CurrentIndex="{Binding CurrentIndex}"
+                                            DescriptionStringFormat="时间: {0}"
+                                            DisplayDescriptionPath="Description"
+                                            DisplayMemberPath="Content"
+                                            ItemsSource="{Binding Models}" />
+
+                            <xiaFControl:StepBar Margin="10" CurrentIndex="{Binding CurrentIndex}">
+                                <xiaFControl:StepBarItem IconType="BikeFill">脚踏车</xiaFControl:StepBarItem>
+                                <xiaFControl:StepBarItem IconType="EBike2Fill">电动车</xiaFControl:StepBarItem>
+                                <xiaFControl:StepBarItem IconType="MotorbikeFill">摩托车</xiaFControl:StepBarItem>
+                                <xiaFControl:StepBarItem IconType="CarFill">小汽车</xiaFControl:StepBarItem>
+                                <xiaFControl:StepBarItem IconType="TruckFill">货车</xiaFControl:StepBarItem>
+                            </xiaFControl:StepBar>
+                        </StackPanel>
+                    </GroupBox>
+                </StackPanel>
+
+                <GroupBox Grid.Column="1" Header="垂直步骤条 - StepBar">
+                    <StackPanel Orientation="Horizontal">
+                        <xiaFControl:StepBar Margin="10"
+                                        CurrentIndex="{Binding CurrentIndex}"
+                                        Orientation="Vertical">
+                            <xiaFControl:StepBarItem Description="description 1">Step 1</xiaFControl:StepBarItem>
+                            <xiaFControl:StepBarItem Description="description 2">Step 2</xiaFControl:StepBarItem>
+                            <xiaFControl:StepBarItem Description="description 3">Step 3</xiaFControl:StepBarItem>
+                            <xiaFControl:StepBarItem Description="description 4">Step 4</xiaFControl:StepBarItem>
+                            <xiaFControl:StepBarItem Description="description 5">Step 5</xiaFControl:StepBarItem>
+                        </xiaFControl:StepBar>
+
+                        <xiaFControl:StepBar Margin="10"
+                                        VerticalContentAlignment="Bottom"
+                                        CurrentIndex="{Binding CurrentIndex}"
+                                        DisplayDescriptionPath="Description"
+                                        DisplayMemberPath="Content"
+                                        ItemsSource="{Binding Models}"
+                                        Orientation="Vertical" />
+
+                        <xiaFControl:StepBar Margin="10"
+                                        xiaFControl:ControlHelper.FocusedBrush="{DynamicResource Accent}"
+                                        CurrentIndex="{Binding CurrentIndex}"
+                                        Orientation="Vertical">
+                            <xiaFControl:StepBarItem IconType="SunFill">晴</xiaFControl:StepBarItem>
+                            <xiaFControl:StepBarItem IconType="CloudyFill">多云</xiaFControl:StepBarItem>
+                            <xiaFControl:StepBarItem IconType="ThunderstormsFill">雷阵雨</xiaFControl:StepBarItem>
+                            <xiaFControl:StepBarItem IconType="HeavyShowersFill">大雨</xiaFControl:StepBarItem>
+                            <xiaFControl:StepBarItem IconType="RainbowFill">彩虹</xiaFControl:StepBarItem>
+                        </xiaFControl:StepBar>
+                    </StackPanel>
+                </GroupBox>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

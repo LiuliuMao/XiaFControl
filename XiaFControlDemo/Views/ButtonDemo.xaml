@@ -18,7 +18,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <GroupBox Header="普通按钮-Button" Margin="0 0 0 10">
-                <StackPanel Orientation="Horizontal" Margin="5">
+                <WrapPanel Orientation="Horizontal" Margin="5" Width="500" HorizontalAlignment="Left">
                     <Button Width="100" Style="{DynamicResource DefaultButton}" Margin="5">
                         普通按钮
                     </Button>
@@ -27,8 +27,11 @@
                     </Button>
                     <Button Width="100" Style="{DynamicResource LightButton}" Margin="5">亮色按钮</Button>
                     <Button Width="100" Style="{DynamicResource DarkButton}" Margin="5">暗色按钮</Button>
-                    <Button Width="100" Style="{DynamicResource AccentButton}" Margin="5">强调按钮</Button>
-                </StackPanel>
+                    <Button Width="100" Background="{DynamicResource InfoBrush}" Margin="5">消息按钮</Button>
+                    <Button Width="100" Background="{DynamicResource WarningBrush}" Margin="5">警告按钮</Button>
+                    <Button Width="100" Background="{DynamicResource SuccessBrush}" Margin="5">成功按钮</Button>
+                    <Button Width="100" Background="{DynamicResource ErrorBrush}" Margin="5">错误按钮</Button>
+                </WrapPanel>
             </GroupBox>
             <GroupBox Header="圆角按钮-Button" Margin="0 0 0 10" Grid.Row="1">
                 <StackPanel Orientation="Horizontal" Margin="5">

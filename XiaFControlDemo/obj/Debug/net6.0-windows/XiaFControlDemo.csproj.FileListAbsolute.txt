@@ -114,3 +114,9 @@ D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\Da
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\MultiSelectComboBox.g.cs
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\DashboardDemo.baml
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\MultiSelectComboBox.baml
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\ComboBoxDemo.g.cs
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\HamburgerMenuDemo.g.cs
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\StepBarDemo.g.cs
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\ComboBoxDemo.baml
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\HamburgerMenuDemo.baml
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\StepBarDemo.baml

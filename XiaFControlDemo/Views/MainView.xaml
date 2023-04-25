@@ -23,7 +23,7 @@
                 <Image Source="{Binding Icon,RelativeSource={RelativeSource AncestorType={x:Type Window}}}" 
                             Height="22" Width="22" Margin="10 0" VerticalAlignment="Center"/>
                 <TextBlock Text="{Binding Title}" Foreground="{StaticResource PrimaryForeground}"/>
-                <TextBlock Margin="5 0 0 0" x:Name="version"/>
+                <TextBlock Margin="5 0 0 0" x:Name="version" Foreground="{DynamicResource PrimaryForeground}"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="1" >
                 <Menu WindowChrome.IsHitTestVisibleInChrome="True" 
@@ -66,8 +66,8 @@
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel MinWidth="120" Orientation="Horizontal">
-                            <xiaFControl:Icon Type="{Binding Icon}" Foreground="#666666" Height="18" Width="18"/>
-                            <TextBlock HorizontalAlignment="Center" Text="{Binding Name,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Margin="8 5" ToolTip="{Binding Name,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
+                            <xiaFControl:Icon Type="{Binding Icon}" Height="18" Width="18"/>
+                            <TextBlock HorizontalAlignment="Center" Text="{Binding Name,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Margin="8 5"
                                            TextTrimming="CharacterEllipsis"/>
                         </StackPanel>
                     </DataTemplate>

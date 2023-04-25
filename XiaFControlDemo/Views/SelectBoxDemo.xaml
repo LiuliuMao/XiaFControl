@@ -39,6 +39,9 @@
                     <RadioButton IsEnabled="False" GroupName="selete">
                         不可用
                     </RadioButton>
+                    <RadioButton Style="{StaticResource LightRadio}" Margin="10 0" Content="亮色" />
+                    <RadioButton Style="{StaticResource DarkRadio}" Margin="10 0" Content="暗色" />
+                    <RadioButton Style="{StaticResource AccentRadio}" Margin="10 0" Content="强调色" />
                 </StackPanel>
             </GroupBox>
             <GroupBox Header="切换按钮-ToggleButton" Margin="0 0 0 10" Grid.Row='1'>

@@ -31,18 +31,18 @@ namespace XiaFControlDemo.Views
         {
             PaletteHelper paletteHelper = new PaletteHelper();
             var theme= paletteHelper.GetTheme();
-            paletteHelper.BaseTheme = BaseTheme.Light;
-            paletteHelper.PrimaryColor = theme.PrimaryColor;
-            paletteHelper.SetTheme();
+            theme.BaseTheme = BaseTheme.Light;
+            //paletteHelper.PrimaryColor = theme.PrimaryColor;
+            //paletteHelper.SetTheme();
         }
 
         private void night_Checked(object sender, RoutedEventArgs e)
         {
             PaletteHelper paletteHelper = new PaletteHelper();
             var theme = paletteHelper.GetTheme();
-            paletteHelper.BaseTheme = BaseTheme.Dark;
-            paletteHelper.PrimaryColor = theme.PrimaryColor;
-            paletteHelper.SetTheme();
+            theme.BaseTheme = BaseTheme.Dark;
+            //paletteHelper.PrimaryColor = theme.PrimaryColor;
+            //paletteHelper.SetTheme();
         }
     }
 }

@@ -5,6 +5,7 @@
     <sys:String x:Key="ColorTool">主题设置</sys:String>
     <sys:String x:Key="ButtonDemo">按钮</sys:String>
     <sys:String x:Key="InputBoxDemo">输入框</sys:String>
+    <sys:String x:Key="ComboBoxDemo">下拉框</sys:String>
     <sys:String x:Key="SelectBoxDemo">选择框</sys:String>
     <sys:String x:Key="DataBarDemo">数据条</sys:String>
     <sys:String x:Key="IconDemo">图标</sys:String>
@@ -18,4 +19,12 @@
     <sys:String x:Key="MessageInfoDemo">消息提示</sys:String>
     <sys:String x:Key="MessageBoxDemo">消息框</sys:String>
     <sys:String x:Key="DialogDemo">对话框</sys:String>
+    <sys:String x:Key="DashboardDemo">仪表盘</sys:String>
+    <sys:String x:Key="HamburgerMenuDemo">汉堡包</sys:String>
+    <sys:String x:Key="StepBarDemo">步骤条</sys:String> 
+
+    <!--text-->
+    <sys:String x:Key="zhuti">主题</sys:String>
+    <sys:String x:Key="zidingyizhutise">自定义主题色</sys:String>
+    <sys:String x:Key="queding">确定</sys:String>
 </ResourceDictionary>
