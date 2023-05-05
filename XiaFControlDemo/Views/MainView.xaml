@@ -68,7 +68,7 @@
                         <StackPanel MinWidth="120" Orientation="Horizontal">
                             <xiaFControl:Icon Type="{Binding Icon}" Height="18" Width="18"/>
                             <TextBlock HorizontalAlignment="Center" Text="{Binding Name,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Margin="8 5"
-                                           TextTrimming="CharacterEllipsis"/>
+                                           TextTrimming="CharacterEllipsis" Style="{Binding}"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
