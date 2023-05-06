@@ -34,6 +34,17 @@ namespace XiaFControlDemo.ViewModels
                 RaisePropertyChanged();
             }
         }
+        private ObservableCollection<string> items;
+        public ObservableCollection<string> Items
+        {
+            get => items;
+            set
+            {
+                items = value;
+                RaisePropertyChanged();
+            }
+        }
+
         private ObservableCollection<MenuItem> menuItems;
         public ObservableCollection<MenuItem> MenuItems
         {
@@ -60,6 +71,13 @@ namespace XiaFControlDemo.ViewModels
             Title = "XiaF UI";
             LanguageCommand = new DelegateCommand<string>(SetLanguage);
             RefreshMenuList();
+            Items = new ObservableCollection<string>
+        {
+            "显示        ",
+            "声音        ",
+            "通知和操作  ",
+            "电源和睡眠  ",
+        };
             CurrentMenuItem = MenuItems[0];
         }
         private void RefreshMenuList()
@@ -83,7 +101,6 @@ namespace XiaFControlDemo.ViewModels
                 new MenuItem{ Icon="InformationLine", Name = GetLanguageContent(nameof(MessageInfoDemo)),Key=nameof(MessageInfoDemo),Content=new MessageInfoDemo{} },
                 new MenuItem{ Icon="CheckboxFill", Name = GetLanguageContent(nameof(MessageBoxDemo)),Key=nameof(MessageBoxDemo),Content = new MessageBoxDemo{ DataContext= new MessageBoxViewModel()} },
                 new MenuItem{ Icon="CopperDiamondFill", Name = GetLanguageContent(nameof(DialogDemo)),Key=nameof(DialogDemo),Content = new DialogDemo{ DataContext= new DialogViewModel()} },
-                //new MenuItem{ Icon="MenuUnfoldLine", Name = GetLanguageContent(nameof(HamburgerMenuDemo)),Key=nameof(HamburgerMenuDemo),Content = new HamburgerMenuDemo(){ DataContext=new HamburgerMenuViewModel()} },
                 new MenuItem{ Icon="ListOrdered", Name = GetLanguageContent(nameof(StepBarDemo)),Key=nameof(StepBarDemo),Content = new StepBarDemo{ DataContext= new StepBarViewModel()} }
             };
         }

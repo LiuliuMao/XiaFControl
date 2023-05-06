@@ -35,10 +35,10 @@
             </GroupBox>
             <GroupBox Header="圆角按钮-Button" Margin="0 0 0 10" Grid.Row="1">
                 <StackPanel Orientation="Horizontal" Margin="5">
-                    <Button Width="100" control:ButtonHelper.CornerRadius="14" Margin="6">普通按钮</Button>
-                    <Button Width="100" Style="{DynamicResource LightButton}" control:ButtonHelper.CornerRadius="14" Margin="6">亮色按钮</Button>
-                    <Button Width="100" Style="{DynamicResource DarkButton}"  control:ButtonHelper.CornerRadius="14" Margin="6">暗色按钮</Button>
-                    <Button Width="100" Style="{DynamicResource AccentButton}"  control:ButtonHelper.CornerRadius="14" Margin="6">强调按钮</Button>
+                    <Button Width="100" control:ControlHelper.CornerRadius="14" Margin="6">普通按钮</Button>
+                    <Button Width="100" Style="{DynamicResource LightButton}" control:ControlHelper.CornerRadius="14" Margin="6">亮色按钮</Button>
+                    <Button Width="100" Style="{DynamicResource DarkButton}"  control:ControlHelper.CornerRadius="14" Margin="6">暗色按钮</Button>
+                    <Button Width="100" Style="{DynamicResource AccentButton}"  control:ControlHelper.CornerRadius="14" Margin="6">强调按钮</Button>
                 </StackPanel>
             </GroupBox>
             <GroupBox Header="文字按钮-Button" Margin="0 0 0 10" Grid.Row="2">
