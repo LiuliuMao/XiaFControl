@@ -96,6 +96,7 @@
             <GroupBox Header="数据表格-DataGrid" Margin="0 0 10 10" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
                 <DataGrid AutoGenerateColumns="False" CanUserAddRows="False"
                           ItemsSource="{Binding Persons}" Margin="5" Height="200" GridLinesVisibility="None"
+                          xiaFControl:DataGridHelper.HeadFontSize="{DynamicResource DefaultFontSize}"
                           xiaFControl:DataGridHelper.HeadBackground="{DynamicResource Primary}"
                           xiaFControl:DataGridHelper.HeadForeground="{DynamicResource PrimaryForeground}">
                     <DataGrid.Columns>
