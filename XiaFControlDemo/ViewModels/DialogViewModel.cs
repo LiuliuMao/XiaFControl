@@ -6,9 +6,12 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using System.Windows;
 using XiaFControl.Controls;
 using XiaFControlDemo.Views;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace XiaFControlDemo.ViewModels
 {

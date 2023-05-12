@@ -14,10 +14,10 @@ namespace XiaFControlDemo.ViewModels
     {
         public StepBarViewModel()
         {
-            NextStepCommand=new DelegateCommand(NextStep);
+            NextStepCommand=new DelegateCommand(NextStep); 
             Models = new ObservableCollection<StepModel>
             {
-                new StepModel { Content = "第 1 步" , Description = DateTime.Now.ToString("HH:mm:ss") },
+                new StepModel { Content = "第 1 步" , Description = "顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶" },
                 new StepModel { Content = "第 2 步" , Description = DateTime.Now.AddHours(1).ToString("HH:mm:ss") },
                 new StepModel { Content = "第 3 步" , Description = DateTime.Now.AddHours(2).ToString("HH:mm:ss") },
                 new StepModel { Content = "第 4 步" , Description = DateTime.Now.AddHours(3).ToString("HH:mm:ss") },

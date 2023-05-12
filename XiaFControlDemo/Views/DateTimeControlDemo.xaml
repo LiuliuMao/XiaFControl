@@ -30,17 +30,17 @@
             </GroupBox>
             <GroupBox Header="日期选择框-DatePicker" Margin="0 0 0 10" Width="Auto" Grid.Row="1">
                 <StackPanel Orientation="Horizontal" Margin="5">
-                    <DatePicker Width="120"/>
+                    <DatePicker Width="140"/>
                 </StackPanel>
             </GroupBox>
             <GroupBox Header="时间选择框-TimePicker" Margin="10 0 0 10" Width="Auto" Grid.Row="1" Grid.Column="1">
                 <StackPanel Orientation="Horizontal" Margin="5">
-                    <control:TimePicker Width="120"/>
+                    <control:TimePicker Width="140"/>
                 </StackPanel>
             </GroupBox>
             <GroupBox Header="日期时间选择框-DateTimePicker" Margin="10 0 0 10" Width="Auto" Grid.Row="1" Grid.Column="2">
                 <StackPanel Orientation="Horizontal" Margin="5">
-                    <control:DateTimePicker Width="180"/>
+                    <control:DateTimePicker Width="140"/>
                 </StackPanel>
             </GroupBox>
         </Grid>

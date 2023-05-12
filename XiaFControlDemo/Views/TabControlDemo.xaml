@@ -99,12 +99,12 @@
                     </Grid.ColumnDefinitions>
 
                     <!--Top-->
-                    <TabControl ItemsSource="{Binding Poetries}"
-                                TabStripPlacement="Top" Grid.Row="0" Grid.Column="1" Height="170"
-                                Style="{StaticResource CardTabControl}">
+                    <TabControl ItemsSource="{Binding Poetries}" xiaFControl:TabControlHelper.IsClearable="True"
+                                TabStripPlacement="Top" Grid.Row="0" Grid.Column="1" Height="170" BorderThickness="0 1 0 0" BorderBrush="{DynamicResource BorderGray}"
+                                Style="{StaticResource CardTabControl2}">
                         <TabControl.ItemTemplate>
                             <DataTemplate>
-                                <TextBlock Text="{Binding Title}"/>
+                                <TextBlock Text="{Binding Title}" Style="{x:Null}"/>
                             </DataTemplate>
                         </TabControl.ItemTemplate>
                         <TabControl.ContentTemplate>
@@ -117,10 +117,11 @@
                     <!--Bottom-->
                     <TabControl ItemsSource="{Binding Poetries}" xiaFControl:TabControlHelper.IsClearable="True"
                                 TabStripPlacement="Bottom" Grid.Row="1" Grid.Column="1"
+                                xiaFControl:TabControlHelper.FocusedForegroundBrush="Yellow"
                                 xiaFControl:TabControlHelper.FocusedBrush="{DynamicResource Accent}" Style="{StaticResource CardTabControl}">
                         <TabControl.ItemTemplate>
                             <DataTemplate>
-                                <TextBlock Text="{Binding Title}"/>
+                                <TextBlock Text="{Binding Title}" Style="{x:Null}"/>
                             </DataTemplate>
                         </TabControl.ItemTemplate>
                         <TabControl.ContentTemplate>

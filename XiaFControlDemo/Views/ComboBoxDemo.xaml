@@ -99,7 +99,9 @@
             </GroupBox>
             <GroupBox Header="多选下拉框" Margin="0 0 0 10">
                 <WrapPanel Width="{Binding ElementName=group,Path=ActualWidth}">
-                    <xiaFControl:MultiSelectComboBox  Margin="10" ItemsSource="{Binding DataList}" SelectedItems="{Binding SelectedItems}">
+                    <xiaFControl:MultiSelectComboBox  Margin="10" 
+                                                      ItemsSource="{Binding DataList}"
+                                                      SelectedItems="{Binding SelectedItems,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
                     </xiaFControl:MultiSelectComboBox>
                 </WrapPanel>
             </GroupBox>

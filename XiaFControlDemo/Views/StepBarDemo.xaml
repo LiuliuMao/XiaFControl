@@ -20,7 +20,7 @@
                             Content="下一步" />
 
                     <GroupBox Header="垂直步骤条 - StepBar">
-                        <StackPanel>
+                        <StackPanel Width="650">
                             <xiaFControl:StepBar Margin="10" CurrentIndex="{Binding CurrentIndex}">
                                 <xiaFControl:StepBarItem Description="description 1">Step 1</xiaFControl:StepBarItem>
                                 <xiaFControl:StepBarItem Description="description 2">Step 2</xiaFControl:StepBarItem>
