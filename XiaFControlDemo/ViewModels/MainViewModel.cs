@@ -69,6 +69,7 @@ namespace XiaFControlDemo.ViewModels
         public MainViewModel()
         {
             Title = "XiaF UI";
+            AboutCommand = new DelegateCommand(About);
             LanguageCommand = new DelegateCommand<string>(SetLanguage);
             RefreshMenuList();
             Items = new ObservableCollection<string>
@@ -126,6 +127,13 @@ namespace XiaFControlDemo.ViewModels
             }
         }
 
+        public DelegateCommand AboutCommand { get; set; }
+        private void About()
+        {
+            XiaFControlDemo.Views.About about = new About();
+            about.Owner = Application.Current.MainWindow;
+            about.ShowDialog();
+        }
 
         private string GetLanguageContent(string key)
         {
