@@ -120,3 +120,5 @@ D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\St
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\ComboBoxDemo.baml
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\HamburgerMenuDemo.baml
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\StepBarDemo.baml
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\NumericBoxDemo.g.cs
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\NumericBoxDemo.baml

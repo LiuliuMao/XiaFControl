@@ -87,6 +87,7 @@ namespace XiaFControlDemo.ViewModels
                 new MenuItem{ Icon="BrushLine", Name = GetLanguageContent(nameof(ColorTool)),Key=nameof(ColorTool), Content=new ColorTool(){ DataContext=new ColorToolViewModel() } },
                 new MenuItem{ Icon="EditBoxLine", Name = GetLanguageContent(nameof(ButtonDemo)),Key=nameof(ButtonDemo), Content=new ButtonDemo()},
                 new MenuItem{ Icon="InputMethodLine", Name = GetLanguageContent(nameof(InputBoxDemo)),Key=nameof(InputBoxDemo), Content=new InputBoxDemo(){ DataContext=new InputViewModel()} },
+                new MenuItem{ Icon="PinterestFill", Name = GetLanguageContent(nameof(NumericBoxDemo)),Key=nameof(NumericBoxDemo), Content=new NumericBoxDemo()},
                 new MenuItem{ Icon="ListUnordered", Name = GetLanguageContent(nameof(ComboBoxDemo)),Key=nameof(ComboBoxDemo), Content=new ComboBoxDemo(){ DataContext=new InputViewModel()} },
                 new MenuItem{ Icon="BankCardLine", Name = GetLanguageContent(nameof(SelectBoxDemo)),Key=nameof(SelectBoxDemo), Content=new SelectBoxDemo()},
                 new MenuItem{ Icon="DatabaseLine", Name = GetLanguageContent(nameof(DataBarDemo)),Key=nameof(DataBarDemo),Content=new DataBarDemo()},

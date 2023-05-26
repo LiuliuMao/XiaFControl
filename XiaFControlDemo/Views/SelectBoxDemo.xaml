@@ -54,10 +54,10 @@
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal" Margin="10">
-                        <ToggleButton Style="{DynamicResource CircleMidToggleButton}" Content="默认" xiaFControl:ButtonHelper.CircleDima="50" Margin="10 0" IsChecked="True"/>
-                        <ToggleButton Style="{DynamicResource CircleLightToggleButton}" Content="亮色" xiaFControl:ButtonHelper.CircleDima="50" Margin="10 0" IsChecked="True"/>
-                        <ToggleButton Style="{DynamicResource CircleDarkToggleButton}" Content="暗色" xiaFControl:ButtonHelper.CircleDima="50" Margin="10 0" IsChecked="True"/>
-                        <ToggleButton Style="{DynamicResource CircleAccentToggleButton}" Content="强调" xiaFControl:ButtonHelper.CircleDima="50" Margin="10 0" IsChecked="True"/>
+                        <ToggleButton Style="{DynamicResource CircleMidToggleButton}" Content="默认" xiaFControl:ButtonHelper.CircleDiameter="50" Margin="10 0" IsChecked="True"/>
+                        <ToggleButton Style="{DynamicResource CircleLightToggleButton}" Content="亮色" xiaFControl:ButtonHelper.CircleDiameter="50" Margin="10 0" IsChecked="True"/>
+                        <ToggleButton Style="{DynamicResource CircleDarkToggleButton}" Content="暗色" xiaFControl:ButtonHelper.CircleDiameter="50" Margin="10 0" IsChecked="True"/>
+                        <ToggleButton Style="{DynamicResource CircleAccentToggleButton}" Content="强调" xiaFControl:ButtonHelper.CircleDiameter="50" Margin="10 0" IsChecked="True"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Margin="10">
                         <ToggleButton Style="{DynamicResource SwitchMidToggle}" Margin="10 0">

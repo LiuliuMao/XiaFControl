@@ -6,6 +6,7 @@
         xmlns:avalonEdit="http://icsharpcode.net/sharpdevelop/avalonedit"
         xmlns:local="clr-namespace:XiaFControlDemo.Views"
                          Style="{DynamicResource XiaFWindow}"
+                        WindowState="Maximized"
         xmlns:xiaFControl="clr-namespace:XiaFControl.Controls;assembly=XiaFControl"
                         xmlns:converter="clr-namespace:XiaFControlDemo.Converters"
                         mc:Ignorable="d" Foreground="{DynamicResource DefaultForeground}"
@@ -97,6 +98,7 @@
                     </Grid>
                 </TabItem>
             </TabControl>
+            
         </xiaFControl:Card>
 
         <xiaFControl:MessageContainer Identifier="MessageContainer" Grid.ColumnSpan="2"/>

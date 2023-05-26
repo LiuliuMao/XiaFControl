@@ -27,10 +27,10 @@
                     </Button>
                     <Button Width="100" Style="{DynamicResource LightButton}" Margin="5">亮色按钮</Button>
                     <Button Width="100" Style="{DynamicResource DarkButton}" Margin="5">暗色按钮</Button>
-                    <Button Width="100" Background="{DynamicResource InfoBrush}" Margin="5">消息按钮</Button>
-                    <Button Width="100" Background="{DynamicResource WarningBrush}" Margin="5">警告按钮</Button>
-                    <Button Width="100" Background="{DynamicResource SuccessBrush}" Margin="5">成功按钮</Button>
-                    <Button Width="100" Background="{DynamicResource ErrorBrush}" Margin="5">错误按钮</Button>
+                    <Button Width="100" Style="{DynamicResource InfoButton}" Margin="5">消息按钮</Button>
+                    <Button Width="100" Style="{DynamicResource WaringButton}" Margin="5">警告按钮</Button>
+                    <Button Width="100" Style="{DynamicResource SuccessButton}" Margin="5">成功按钮</Button>
+                    <Button Width="100" Style="{DynamicResource ErrorButton}" Margin="5">错误按钮</Button>
                 </WrapPanel>
             </GroupBox>
             <GroupBox Header="圆角按钮-Button" Margin="0 0 0 10" Grid.Row="1">
@@ -51,16 +51,20 @@
             </GroupBox>
             <GroupBox Header="圆型按钮-Button" Margin="0 0 0 10" Grid.Row="3">
                 <StackPanel Orientation="Horizontal" Margin="5">
-                    <Button Style="{DynamicResource CircleMidButton}" Margin="10 0">
+                    <Button control:ButtonHelper.CircleDiameter="30" Background="{DynamicResource Primary}"
+                                control:ButtonHelper.Shape="Circle" Margin="10 0">
                         <control:Icon Type="QqFill"/>
                     </Button>
-                    <Button Style="{DynamicResource CircleLightButton}" control:ButtonHelper.CircleDima="40" Margin="10 0">
+                    <Button control:ButtonHelper.CircleDiameter="40" Background="{DynamicResource Accent}"
+                                control:ButtonHelper.Shape="Circle" Margin="10 0">
                         <control:Icon Type="WechatFill" Height="30" Width="30"/>
                     </Button>
-                    <Button Style="{DynamicResource CircleDarkButton}" control:ButtonHelper.CircleDima="50" Margin="10 0">
+                    <Button control:ButtonHelper.CircleDiameter="50"  Background="{DynamicResource Light}"
+                                control:ButtonHelper.Shape="Circle" Margin="10 0">
                         <control:Icon Type="WeiboFill" Height="40" Width="40"/>
                     </Button>
-                    <Button Style="{DynamicResource CircleAccentButton}" control:ButtonHelper.CircleDima="60" Margin="10 0">
+                    <Button control:ButtonHelper.CircleDiameter="60" Background="{DynamicResource Dark}"
+                                control:ButtonHelper.Shape="Circle" Margin="10 0">
                         <control:Icon Type="GithubFill" Height="50" Width="50"/>
                     </Button>
                 </StackPanel>
