@@ -38,7 +38,10 @@
                         <ListBoxItem Content="香蕉"/>
                         <ListBoxItem Content="苹果"/>
                     </ListBox>
-                    <ListBox x:Name="listBox1" Width="150" BorderThickness="0" Style="{StaticResource PopularListBox}">
+                    <ListBox x:Name="listBox1" Width="150" BorderThickness="0" Style="{StaticResource PopularListBox}"
+                 xiaFControl:ControlHelper.FocusedBrush="{DynamicResource Primary}"
+                 xiaFControl:ControlHelper.MouseOverBrush="{DynamicResource BackgroundGray}"
+                 xiaFControl:ControlHelper.FocusedForegroundBrush="{DynamicResource DefaultForeground}">
                         <ListBoxItem>
                             <StackPanel Orientation="Horizontal">
                                 <xiaFControl:Icon Type="QqFill" Margin="0 0 5 0" Height="26" Width="26"/>
