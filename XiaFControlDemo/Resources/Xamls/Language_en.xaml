@@ -23,6 +23,7 @@
     <sys:String x:Key="DashboardDemo">Dashboard</sys:String>
     <sys:String x:Key="HamburgerMenuDemo">Hamburger</sys:String>
     <sys:String x:Key="StepBarDemo">StepBar</sys:String>
+    <sys:String x:Key="NumericBoxDemo">NumericBox</sys:String>
 
     <!--text-->
     <sys:String x:Key="zhuti">主题</sys:String>

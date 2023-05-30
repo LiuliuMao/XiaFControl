@@ -10,7 +10,7 @@
         "dependencies": {
           "AvalonEdit": "6.3.0.90",
           "Prism.DryIoc": "8.1.97",
-          "XiaFControl": "2.1.1"
+          "XiaFControl": "2.1.3"
         },
         "runtime": {
           "XiaFControlDemo.dll": {}
@@ -159,7 +159,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "XiaFControl/2.1.1": {
+      "XiaFControl/2.1.3": {
         "dependencies": {
           "ControlzEx": "5.0.2",
           "NetCore5.0.Microsoft.Expression.Drawing": "1.0.0",
@@ -167,8 +167,8 @@
         },
         "runtime": {
           "lib/net6.0-windows7.0/XiaFControl.dll": {
-            "assemblyVersion": "2.1.1.0",
-            "fileVersion": "2.1.1.0"
+            "assemblyVersion": "2.1.3.0",
+            "fileVersion": "2.1.3.0"
           }
         }
       }
@@ -320,12 +320,12 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
-    "XiaFControl/2.1.1": {
+    "XiaFControl/2.1.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-im/A3OhXTNdwK0masvxiKJtLzuXTVL+ugGnp4+Vimcu6u//NLXyW1w1IKZ0Do1hRVT4YDJNplVmUgIB7Hbk1kg==",
-      "path": "xiafcontrol/2.1.1",
-      "hashPath": "xiafcontrol.2.1.1.nupkg.sha512"
+      "sha512": "sha512-PMr5/xlH6h6+Ir53BIIYt7VeiVZ8/f9rU/ke5EZlGSVnfZDtYH1jAqeXWYpX/wAgplj7qbpIQtzIQz/zXQ5Ccw==",
+      "path": "xiafcontrol/2.1.3",
+      "hashPath": "xiafcontrol.2.1.3.nupkg.sha512"
     }
   }
 }

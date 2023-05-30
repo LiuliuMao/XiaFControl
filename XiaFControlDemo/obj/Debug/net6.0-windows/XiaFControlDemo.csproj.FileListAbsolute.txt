@@ -122,3 +122,5 @@ D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\Ha
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\StepBarDemo.baml
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\NumericBoxDemo.g.cs
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\NumericBoxDemo.baml
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\About.g.cs
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\About.baml

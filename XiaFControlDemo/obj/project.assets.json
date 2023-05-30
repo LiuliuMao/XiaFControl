@@ -293,7 +293,7 @@
           }
         }
       },
-      "XiaFControl/2.1.2": {
+      "XiaFControl/2.1.3": {
         "type": "package",
         "dependencies": {
           "ControlzEx": "5.0.2",
@@ -1181,17 +1181,17 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "XiaFControl/2.1.2": {
-      "sha512": "LNFxmMWwMFR4y+9IlBYjaziTAxsNDfPrSxV4UM/zujQsMhevHh7ljg5mIhSJ27jtBtkX7oN1KvLOky6W7ZnYRA==",
+    "XiaFControl/2.1.3": {
+      "sha512": "PMr5/xlH6h6+Ir53BIIYt7VeiVZ8/f9rU/ke5EZlGSVnfZDtYH1jAqeXWYpX/wAgplj7qbpIQtzIQz/zXQ5Ccw==",
       "type": "package",
-      "path": "xiafcontrol/2.1.2",
+      "path": "xiafcontrol/2.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/XiaFControl.dll",
         "lib/net472/XiaFControl.dll",
         "lib/net6.0-windows7.0/XiaFControl.dll",
-        "xiafcontrol.2.1.2.nupkg.sha512",
+        "xiafcontrol.2.1.3.nupkg.sha512",
         "xiafcontrol.nuspec"
       ]
     }
@@ -1200,7 +1200,7 @@
     "net6.0-windows7.0": [
       "AvalonEdit >= 6.3.0.90",
       "Prism.DryIoc >= 8.1.97",
-      "XiaFControl >= 2.1.2"
+      "XiaFControl >= 2.1.3"
     ]
   },
   "packageFolders": {
@@ -1258,7 +1258,7 @@
           },
           "XiaFControl": {
             "target": "Package",
-            "version": "[2.1.2, )"
+            "version": "[2.1.3, )"
           }
         },
         "imports": [

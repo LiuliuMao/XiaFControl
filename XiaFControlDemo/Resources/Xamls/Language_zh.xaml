@@ -21,7 +21,8 @@
     <sys:String x:Key="DialogDemo">对话框</sys:String>
     <sys:String x:Key="DashboardDemo">仪表盘</sys:String>
     <sys:String x:Key="HamburgerMenuDemo">汉堡包</sys:String>
-    <sys:String x:Key="StepBarDemo">步骤条</sys:String> 
+    <sys:String x:Key="StepBarDemo">步骤条</sys:String>
+    <sys:String x:Key="NumericBoxDemo">数字输入框</sys:String>
 
     <!--text-->
     <sys:String x:Key="zhuti">主题</sys:String>
