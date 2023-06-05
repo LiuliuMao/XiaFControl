@@ -25,11 +25,11 @@
                             Height="22" Width="22" Margin="10 0" VerticalAlignment="Center"/>
                 <TextBlock Text="{Binding Title}" Foreground="{StaticResource PrimaryForeground}"/>
                 <TextBlock Margin="5 0 0 0" x:Name="version" Foreground="{DynamicResource PrimaryForeground}"/>
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20 0 0 0">
+                <!--<StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20 0 0 0">
                     <xiaFControl:Icon Type="QqFill"  Foreground="{DynamicResource WhiteForeground}" />
                     <TextBlock Text="群："  Foreground="{DynamicResource WhiteForeground}"/>
                     <TextBlock Text="371769310"  Foreground="{DynamicResource WhiteForeground}" FontWeight="Bold"/>
-                </StackPanel>
+                </StackPanel>-->
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="1" >
                 <Menu WindowChrome.IsHitTestVisibleInChrome="True" 
