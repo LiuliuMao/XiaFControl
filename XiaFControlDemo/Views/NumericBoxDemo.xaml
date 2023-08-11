@@ -29,7 +29,7 @@
                     <xiaFControl:NumericBox Width="120" xiaFControl:ControlHelper.FocusBorderBrush="{DynamicResource SuccessBrush}" xiaFControl:ControlHelper.MouseOverBrush="{DynamicResource SuccessBrush}" MaxValue="10" MinValue="-10" Value="1" />
                     <Label Content="加减间隔 2:" />
                     
-                    <xiaFControl:NumericBox Width="120" xiaFControl:TextBoxHelper.Placeholder="Interval=2" Interval="2" Value="0" />
+                    <xiaFControl:NumericBox Width="120" Text="1" xiaFControl:TextBoxHelper.Placeholder="Interval=2" Interval="2" Value="0"/>
                     <Label Content="不显示按钮:" />
                     <xiaFControl:NumericBox Width="120" xiaFControl:TextBoxHelper.IsClearable="True" ShowButton="False" Value="1" />
                 </StackPanel>
@@ -45,13 +45,17 @@
             <GroupBox Grid.Row="3">
                 <StackPanel xiaFControl:PanelHelper.Spacing="10" Orientation="Horizontal">
                     <xiaFControl:NumericBox MinWidth="150" TextFormat="E2" Value="1" />
-                    <xiaFControl:NumericBox MinWidth="120" xiaFControl:TextBoxHelper.PreContent="身高" TextFormat="0cm" Value="177" />
+                    <xiaFControl:NumericBox MinWidth="120" 
+                                            xiaFControl:TextBoxHelper.PreContentForeground="{StaticResource BorderGray}"
+                                            xiaFControl:TextBoxHelper.PreContent="身高" TextFormat="0cm" Value="177" />
                 </StackPanel>
             </GroupBox>
             <GroupBox Grid.Row="4">
                 <StackPanel xiaFControl:PanelHelper.Spacing="10" Orientation="Horizontal">
                     <xiaFControl:NumericBox Style="{StaticResource FilledNumericBox}" MinWidth="120" Value="1" />
-                    <xiaFControl:NumericBox MinWidth="120" Value="1" />
+                    <xiaFControl:NumericBox MinWidth="120" Value="1" 
+                                            xiaFControl:ControlHelper.MouseOverBrush="Red"
+                                            xiaFControl:ControlHelper.FocusBorderBrush="Red"/>
                 </StackPanel>
             </GroupBox>
         </Grid>

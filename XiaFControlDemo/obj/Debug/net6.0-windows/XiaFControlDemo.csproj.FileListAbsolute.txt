@@ -115,12 +115,12 @@ D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\Mu
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\DashboardDemo.baml
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\MultiSelectComboBox.baml
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\ComboBoxDemo.g.cs
-D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\HamburgerMenuDemo.g.cs
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\StepBarDemo.g.cs
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\ComboBoxDemo.baml
-D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\HamburgerMenuDemo.baml
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\StepBarDemo.baml
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\NumericBoxDemo.g.cs
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\NumericBoxDemo.baml
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\About.g.cs
 D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\About.baml
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\DataGridDemo.g.cs
+D:\Company\Project\XiaFControl\XiaFControlDemo\obj\Debug\net6.0-windows\Views\DataGridDemo.baml

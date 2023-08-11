@@ -95,6 +95,7 @@ namespace XiaFControlDemo.ViewModels
                 new MenuItem{ Icon="PaletteFill", Name = GetLanguageContent(nameof(IconDemo)),Key=nameof(IconDemo),Content=new IconDemo(){ DataContext=new IconViewModel()} },
                 new MenuItem{ Icon="CheckboxMultipleBlankLine", Name = GetLanguageContent(nameof(GroupBoxDemo)),Key=nameof(GroupBoxDemo),Content=new GroupBoxDemo() },
                 new MenuItem{ Icon="NodeTree", Name = GetLanguageContent(nameof(ListsTreeDemo)),Key=nameof(ListsTreeDemo),Content=new ListsTreeDemo{ DataContext = new ListsViewModel()} },
+                new MenuItem{ Icon="DatabaseLine", Name = GetLanguageContent(nameof(DataGridDemo)),Key=nameof(DataGridDemo),Content=new DataGridDemo{ DataContext = new ListsViewModel()} },
                 new MenuItem{ Icon="RestoreLine", Name = GetLanguageContent(nameof(TabControlDemo)),Key=nameof(TabControlDemo),Content=new TabControlDemo{ DataContext = new TabControlViewModel()} },
                 new MenuItem{ Icon="TimeLine", Name = GetLanguageContent(nameof(DateTimeControlDemo)),Key=nameof(DateTimeControlDemo),Content=new DateTimeControlDemo{} },
                 new MenuItem{ Icon="Menu2Line", Name = GetLanguageContent(nameof(MenuBarDemo)),Key=nameof(MenuBarDemo),Content=new MenuBarDemo{} },

@@ -33,6 +33,9 @@
                     <ComboBox x:Name="heightCombo" Width="120" IsEditable="False" Margin="0 0 10 0"
                               xiaFControl:ComboBoxHelper.PreContent="身高" xiaFControl:ComboBoxHelper.PostContent="cm"
                               xiaFControl:ComboBoxHelper.FocusedBrush="{DynamicResource Accent}" >
+                        <ComboBoxItem Content="170"/>
+                        <ComboBoxItem Content="175"/>
+                        <ComboBoxItem Content="180"/>
                     </ComboBox>
 
                     <ComboBox Width="150" Margin="0 0 10 0" 
@@ -86,7 +89,7 @@
                             <ComboBoxItem Content="选项三"/>
                         </ComboBox>
 
-                        <ComboBox Width="120" IsEditable="True" Margin="0 0 10 0" 
+                        <ComboBox Width="120" IsEditable="True" Margin="0 0 10 0"
                           xiaFControl:ComboBoxHelper.PreContent="体重" 
                           xiaFControl:ComboBoxHelper.PostContent="kg"
                           xiaFControl:ComboBoxHelper.FocusedBrush="{DynamicResource Accent}">
