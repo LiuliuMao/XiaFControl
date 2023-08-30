@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using XiaFControl.Controls;
 
 namespace XiaFControlDemo.Views
 {
@@ -23,6 +24,10 @@ namespace XiaFControlDemo.Views
         public ButtonDemo()
         {
             InitializeComponent();
+        }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ButtonHelper.SetLoading(loadingButton, !ButtonHelper.GetLoading(loadingButton));
         }
     }
 }

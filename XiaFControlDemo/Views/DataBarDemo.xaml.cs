@@ -26,9 +26,5 @@ namespace XiaFControlDemo.Views
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            ButtonHelper.SetLoading(loadingButton, !ButtonHelper.GetLoading(loadingButton));
-        }
     }
 }

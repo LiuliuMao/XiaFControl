@@ -4,13 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:avalonEdit="http://icsharpcode.net/sharpdevelop/avalonedit"
+             xmlns:behavior="http://schemas.microsoft.com/xaml/behaviors" 
         xmlns:local="clr-namespace:XiaFControlDemo.Views"
-                         Style="{DynamicResource XiaFWindow}"
+                        Foreground="{StaticResource DefaultForeground}"
+                         Style="{StaticResource XiaFWindow}"
+                        Background="{StaticResource WindowBackground}"
+                        BorderBrush="{DynamicResource DefaultBackground}"
                         WindowState="Maximized"
         xmlns:xiaFControl="clr-namespace:XiaFControl.Controls;assembly=XiaFControl"
                         xmlns:converter="clr-namespace:XiaFControlDemo.Converters"
-                        mc:Ignorable="d" Foreground="{DynamicResource DefaultForeground}"
-        Title="MainView" Height="680" Width="1120" Icon="/Resources/Images/小女孩.ico">
+                        mc:Ignorable="d"
+        Title="MainView" Height="760" Width="1240" Icon="/Resources/Images/小女孩.ico">
     <Window.Resources>
         <converter:IsSelectedToIconConverter x:Key="IsSelectedToIcon" />
     </Window.Resources>
@@ -23,33 +27,27 @@
             <StackPanel Orientation="Horizontal">
                 <Image Source="{Binding Icon,RelativeSource={RelativeSource AncestorType={x:Type Window}}}" 
                             Height="22" Width="22" Margin="10 0" VerticalAlignment="Center"/>
-                <TextBlock Text="{Binding Title}" Foreground="{StaticResource PrimaryForeground}"/>
-                <TextBlock Margin="5 0 0 0" x:Name="version" Foreground="{DynamicResource PrimaryForeground}"/>
-                <!--<StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20 0 0 0">
-                    <xiaFControl:Icon Type="QqFill"  Foreground="{DynamicResource WhiteForeground}" />
-                    <TextBlock Text="群："  Foreground="{DynamicResource WhiteForeground}"/>
-                    <TextBlock Text="371769310"  Foreground="{DynamicResource WhiteForeground}" FontWeight="Bold"/>
-                </StackPanel>-->
+                <TextBlock Text="{Binding Title}"/>
+                <TextBlock Margin="5 0 0 0" x:Name="version"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="1" >
-                <Menu WindowChrome.IsHitTestVisibleInChrome="True" 
-                  Foreground="{DynamicResource DefaultForeground}" >
+                <Menu WindowChrome.IsHitTestVisibleInChrome="True" >
                     <MenuItem >
                         <MenuItem.Header>
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="帮助" Foreground="#FFFFFF"/>
-                                <xiaFControl:Icon Type="QuestionFill" Foreground="#FFFFFF" Margin="5 0 0 0"/>
+                                <TextBlock Text="帮助"/>
+                                <xiaFControl:Icon Type="QuestionFill"  Margin="5 0 0 0"/>
                             </StackPanel>
                         </MenuItem.Header>
                         <MenuItem Header="关于" Command="{Binding AboutCommand}"/>
                     </MenuItem>
                 </Menu>
-                <Menu WindowChrome.IsHitTestVisibleInChrome="True" Foreground="{DynamicResource DefaultForeground}" >
+                <Menu WindowChrome.IsHitTestVisibleInChrome="True">
                     <MenuItem >
                         <MenuItem.Header>
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Language" Foreground="#FFFFFF"/>
-                                <xiaFControl:Icon Type="CharacterRecognitionFill" Foreground="#FFFFFF" Margin="5 0 0 0"/>
+                                <TextBlock Text="Language"/>
+                                <xiaFControl:Icon Type="CharacterRecognitionFill" Margin="5 0 0 0"/>
                             </StackPanel>
                         </MenuItem.Header>
                         <MenuItem Header="中文简体" Command="{Binding LanguageCommand}" CommandParameter="中文简体"/>
@@ -64,32 +62,38 @@
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <xiaFControl:Card Margin="20 20 10 20" CornerRadius="8">
-            <ListBox ItemsSource="{Binding MenuItems}" SelectedItem="{Binding CurrentMenuItem}" SelectedIndex="0"
-                         SelectionChanged="ListBox_SelectionChanged" Margin="20"
-                     xiaFControl:ListBoxHelper.IsShowLittleBar="true"
-                      xiaFControl:ControlHelper.FocusedBrush="{DynamicResource Primary}"
-                             xiaFControl:ControlHelper.FocusedForegroundBrush="{DynamicResource PrimaryForeground}">
+        <xiaFControl:Card Width="200" Margin="20">
+            <ListBox x:Name="listbox" ItemsSource="{Binding MenuItems}" Margin="10 20" 
+                 Background="{StaticResource DefaultBackground}"
+              SelectionChanged="ListBox_SelectionChanged"
+          xiaFControl:ListBoxHelper.IsShowLittleBar="true"
+           xiaFControl:ControlHelper.FocusedBrush="{DynamicResource Primary}"
+                  xiaFControl:ControlHelper.FocusedForegroundBrush="{DynamicResource PrimaryForeground}">
+                <behavior:Interaction.Triggers>
+                    <behavior:EventTrigger EventName="SelectionChanged">
+                        <behavior:InvokeCommandAction Command="{Binding SelectItemCommand}" CommandParameter="{Binding ElementName=listbox,Path=SelectedItem}"/>
+                    </behavior:EventTrigger>
+                </behavior:Interaction.Triggers>
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel MinWidth="120" Orientation="Horizontal">
                             <xiaFControl:Icon Type="{Binding Icon}" Height="18" Width="18"/>
                             <TextBlock HorizontalAlignment="Center" Text="{Binding Name,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Margin="8 5"
-                                           TextTrimming="CharacterEllipsis" Style="{x:Null}"/>
+                                TextTrimming="CharacterEllipsis" Style="{x:Null}"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
         </xiaFControl:Card>
-        <xiaFControl:Card Grid.Column="1" Margin="0 20 20 20" CornerRadius="8">
-            <TabControl x:Name="Tab">
-                <TabItem Width="200">
+        <xiaFControl:Card Grid.Column="1" Margin="20" CornerRadius="6">
+            <TabControl x:Name="Tab" >
+                <TabItem >
                     <TabItem.Header>
                         <TextBlock Text="{Binding CurrentMenuItem.Name}" FontSize="14"/>
                     </TabItem.Header>
                     <ContentControl Margin="20" Content="{Binding CurrentMenuItem.Content}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
                 </TabItem>
-                <TabItem Width="100">
+                <TabItem>
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal" Margin="0">
                             <xiaFControl:Icon Type="CodeSSlashFill" Margin="0 0 8 0" FontSize="14"/>
@@ -98,14 +102,12 @@
                     </TabItem.Header>
                     <Grid>
                         <avalonEdit:TextEditor x:Name="textEditor" ShowLineNumbers="True" FontFamily="Consolas" FontSize="10pt" 
-                                               VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Background="{DynamicResource DefaultBackground}" Foreground="{DynamicResource DefaultForeground}">
+                                     VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Background="{DynamicResource DefaultBackground}" Foreground="{DynamicResource DefaultForeground}">
                         </avalonEdit:TextEditor>
                     </Grid>
                 </TabItem>
             </TabControl>
-            
         </xiaFControl:Card>
-
         <xiaFControl:MessageContainer Identifier="MessageContainer" Grid.ColumnSpan="2"/>
         <xiaFControl:MessageBoxContainer Identifier="DialogContaioner" Grid.ColumnSpan="2"/>
         <xiaFControl:DialogBox Identifier="MainDialog" Title="主对话框" Grid.ColumnSpan="2"/>

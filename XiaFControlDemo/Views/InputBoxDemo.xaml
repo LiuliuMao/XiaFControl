@@ -10,73 +10,63 @@
     <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition/>
             </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <GroupBox Header="基础文本框-TextBox" Margin="0 0 0 10" Grid.Row="0" Grid.ColumnSpan="2">
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="5">
-                    <TextBox Width="150" xiaFControl:TextBoxHelper.Placeholder="默认"/>
-                    <TextBox Width="150" Style="{DynamicResource LightTextBox}" Margin="10 0" xiaFControl:TextBoxHelper.Placeholder="亮色"/>
-                    <TextBox Width="150" Style="{DynamicResource DarkTextBox}" Margin="10 0" xiaFControl:TextBoxHelper.Placeholder="暗色"/>
-                    <TextBox Width="150" Style="{DynamicResource AccentTextBox}" Margin="10 0" xiaFControl:TextBoxHelper.Placeholder="强调色"/>
-                </StackPanel>
-            </GroupBox>
-            <GroupBox Header="带清除按钮文本框-TextBox" Margin="0 0 0 10" Grid.Row="1">
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="5">
-                    <TextBox Style="{DynamicResource AccentTextBox}" Width="150" xiaFControl:TextBoxHelper.IsClearable="True"
+            <WrapPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="5">
+                <TextBox Width="150" xiaFControl:TextBoxHelper.Placeholder="默认"/>
+                <TextBox Width="150" Style="{DynamicResource LightTextBox}" Margin="10 0" xiaFControl:TextBoxHelper.Placeholder="亮色"/>
+                <TextBox Width="150" Style="{DynamicResource DarkTextBox}" Margin="10 0" xiaFControl:TextBoxHelper.Placeholder="暗色"/>
+                <TextBox Width="150" Style="{DynamicResource AccentTextBox}" Margin="10 0" xiaFControl:TextBoxHelper.Placeholder="强调色"/>
+            </WrapPanel>
+            <WrapPanel Orientation="Horizontal" Margin="5" Grid.Row="1">
+                <TextBox Style="{DynamicResource AccentTextBox}" Width="150" xiaFControl:TextBoxHelper.IsClearable="True"
                          xiaFControl:TextBoxHelper.Placeholder="可清除"/>
-                </StackPanel>
-            </GroupBox>
-            <GroupBox Header="大文本框-TextBox" Grid.Row="1" Grid.Column="1" Margin="10 0 0 10">
-                <TextBox Width="Auto" Height="50" Style="{StaticResource BigTextBox}"
-                         xiaFControl:TextBoxHelper.Placeholder="大文本框" />
-            </GroupBox>
-            <GroupBox Header="验证错误文本框-TextBox" Grid.Column="0" Grid.Row="2" Margin="0 0 10 10">
-                <TextBox Text="55" Width="150" 
-                     xiaFControl:TextBoxHelper.Placeholder="绑定了 int 类型" HorizontalAlignment="Left" Margin="5 10"/>
-            </GroupBox>
-            <GroupBox Header="带提示文本框-TextBox-PasswordBox" Margin="0 0 0 10" Grid.Row="2" Grid.Column="1">
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="5">
-                    <TextBox Width="150" xiaFControl:TextBoxHelper.Placeholder="账号">
-                        <xiaFControl:TextBoxHelper.PreContent>
-                            <xiaFControl:Icon Type="UserFill"/>
-                        </xiaFControl:TextBoxHelper.PreContent>
-                    </TextBox>
-                    <PasswordBox Width="150" xiaFControl:TextBoxHelper.Placeholder="密码" Margin="10 0"
-                                 xiaFControl:PasswordHelper.ShowSwitchButton="True"
-                                 xiaFControl:PasswordHelper.Password="xiafcontrol">
-                        <xiaFControl:TextBoxHelper.PreContent>
-                            <xiaFControl:Icon Type="LockPasswordFill"/>
-                        </xiaFControl:TextBoxHelper.PreContent>
-                    </PasswordBox>
-                </StackPanel>
-            </GroupBox>
-            
-           
-            <GroupBox Header="前置后置内容文本框-TextBox" Margin="0 0 0 10" Grid.Row="3" Grid.ColumnSpan="2">
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="5">
-                    <TextBox Width="150">
-                        <xiaFControl:TextBoxHelper.PreContent>
-                            <xiaFControl:Icon Type="QqFill"/>
-                        </xiaFControl:TextBoxHelper.PreContent>
-                    </TextBox>
-                    <TextBox Width="200" Margin="10 0" xiaFControl:TextBoxHelper.PreContent="http://" xiaFControl:TextBoxHelper.PostContent=".com"/>
-                    <TextBox Width="150">
-                        <xiaFControl:TextBoxHelper.PostContent>
-                            <Button Style="{StaticResource TextMidButton}" Height="26">
-                                <xiaFControl:Icon Type="RefreshLine"/>
-                            </Button>
-                        </xiaFControl:TextBoxHelper.PostContent>
-                    </TextBox>
-                </StackPanel>
-            </GroupBox>
+            </WrapPanel>
+            <WrapPanel Orientation="Horizontal" Margin="5" Grid.Row="2">
+                <TextBox Width="300" Height="100" Style="{StaticResource BigTextBox}"
+            xiaFControl:TextBoxHelper.Placeholder="大文本框" />
+            </WrapPanel>
+            <WrapPanel Orientation="Horizontal" Margin="5" Grid.Row="3">
+                <TextBox Width="150"
+          xiaFControl:TextBoxHelper.Placeholder="绑定了 int 类型" HorizontalAlignment="Left" Margin="5 10"/>
+            </WrapPanel>
+            <WrapPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="5" Grid.Row="4">
+                <TextBox Width="150" xiaFControl:TextBoxHelper.Placeholder="账号">
+                    <xiaFControl:TextBoxHelper.PreContent>
+                        <xiaFControl:Icon Type="UserFill"/>
+                    </xiaFControl:TextBoxHelper.PreContent>
+                </TextBox>
+                <PasswordBox Width="150" xiaFControl:TextBoxHelper.Placeholder="密码" Margin="10 0"
+                  xiaFControl:PasswordHelper.ShowSwitchButton="True"
+                  xiaFControl:PasswordHelper.Password="xiafcontrol">
+                    <xiaFControl:TextBoxHelper.PreContent>
+                        <xiaFControl:Icon Type="LockPasswordFill"/>
+                    </xiaFControl:TextBoxHelper.PreContent>
+                </PasswordBox>
+            </WrapPanel>
+
+
+            <WrapPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="5" Grid.Row="5">
+                <TextBox Width="150">
+                    <xiaFControl:TextBoxHelper.PreContent>
+                        <xiaFControl:Icon Type="QqFill"/>
+                    </xiaFControl:TextBoxHelper.PreContent>
+                </TextBox>
+                <TextBox Width="200" Margin="10 0" xiaFControl:TextBoxHelper.PreContent="http://" xiaFControl:TextBoxHelper.PostContent=".com"/>
+                <TextBox Width="150">
+                    <xiaFControl:TextBoxHelper.PostContent>
+                        <Button Style="{StaticResource TextMidButton}" Height="26">
+                            <xiaFControl:Icon Type="RefreshLine"/>
+                        </Button>
+                    </xiaFControl:TextBoxHelper.PostContent>
+                </TextBox>
+            </WrapPanel>
         </Grid>
     </ScrollViewer>
 </UserControl>

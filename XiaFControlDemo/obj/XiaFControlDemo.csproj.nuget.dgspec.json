@@ -55,7 +55,7 @@
             },
             "XiaFControl": {
               "target": "Package",
-              "version": "[2.1.10, )"
+              "version": "[2.1.12, )"
             }
           },
           "imports": [
@@ -77,7 +77,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

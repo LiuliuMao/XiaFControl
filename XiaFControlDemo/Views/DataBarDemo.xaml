@@ -78,30 +78,7 @@
                     </StackPanel>
                 </StackPanel>
             </GroupBox>
-            <GroupBox Header="加载按钮" Grid.Row="2">
-                <StackPanel Margin="5" Orientation="Horizontal">
-                    <Button x:Name="loadingButton"
-                                Width="100"
-                                Margin="10 0"
-                                control:ButtonHelper.Loading="False"
-                                control:ButtonHelper.LoadingContent="加载中"
-                                Click="Button_Click"
-                                Content="点我" />
-                    <Button Style="{DynamicResource AccentButton}"
-                                Margin="10 0"  Width="100"
-                                control:ButtonHelper.Loading="True"
-                                control:ButtonHelper.LoadingContent="强调按钮"
-                                control:ButtonHelper.Shape="Round"
-                                Content="强调按钮" />
-                    <Button Margin="10 0" Width="100" Style="{StaticResource InfoButton}"
-                                control:ButtonHelper.Loading="True"
-                                control:ButtonHelper.Shape="Circle" />
-                    <Button Style="{StaticResource TextDarkButton}"
-                                Margin="10 0"  Width="120"
-                                control:ButtonHelper.Loading="True"
-                                control:ButtonHelper.Shape="Circle" />
-                </StackPanel>
-            </GroupBox>
+            
         </Grid>
     </ScrollViewer>
 </UserControl>

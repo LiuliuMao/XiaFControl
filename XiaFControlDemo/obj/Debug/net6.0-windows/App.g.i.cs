@@ -49,7 +49,7 @@ namespace XiaFControlDemo {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.4.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.10.0")]
         public void InitializeComponent() {
             if (_contentLoaded) {
                 return;
@@ -61,7 +61,7 @@ namespace XiaFControlDemo {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/XiaFControlDemo;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/XiaFControlDemo;V1.0.0.0;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
@@ -75,7 +75,7 @@ namespace XiaFControlDemo {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.4.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.10.0")]
         public static void Main() {
             XiaFControlDemo.App app = new XiaFControlDemo.App();
             app.InitializeComponent();

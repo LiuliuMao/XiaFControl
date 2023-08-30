@@ -8,6 +8,7 @@ using ICSharpCode.AvalonEdit.Highlighting;
 using XiaFControl.Controls;
 using XiaFControl.Enums;
 using System.Windows.Controls.Primitives;
+using System.Threading.Tasks;
 
 namespace XiaFControlDemo.Views
 {
@@ -42,7 +43,6 @@ namespace XiaFControlDemo.Views
 
                 textEditor.SyntaxHighlighting = HighlightingManager.Instance.GetDefinitionByExtension(".xaml");
                 textEditor.Load(fileName);
-
                 Tab.SelectedIndex = 0;
             }
             catch (Exception) { }

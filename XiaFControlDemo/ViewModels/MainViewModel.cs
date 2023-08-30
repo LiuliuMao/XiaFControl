@@ -71,16 +71,12 @@ namespace XiaFControlDemo.ViewModels
             Title = "XiaF UI";
             AboutCommand = new DelegateCommand(About);
             LanguageCommand = new DelegateCommand<string>(SetLanguage);
+            SelectItemCommand = new DelegateCommand<MenuItem>(SelectItemVoid);
             RefreshMenuList();
-            Items = new ObservableCollection<string>
-        {
-            "显示        ",
-            "声音        ",
-            "通知和操作  ",
-            "电源和睡眠  ",
-        };
-            CurrentMenuItem = MenuItems[0];
+            SelectItemVoid(MenuItems[0]);
         }
+        public DelegateCommand<MenuItem> SelectItemCommand { get; set; }
+        Dictionary<string, MenuItem> keyValuePairs = new Dictionary<string, MenuItem>();
         private void RefreshMenuList()
         {
             MenuItems = new ObservableCollection<MenuItem>
@@ -106,6 +102,18 @@ namespace XiaFControlDemo.ViewModels
                 new MenuItem{ Icon="CopperDiamondFill", Name = GetLanguageContent(nameof(DialogDemo)),Key=nameof(DialogDemo),Content = new DialogDemo{ DataContext= new DialogViewModel()} },
                 new MenuItem{ Icon="ListOrdered", Name = GetLanguageContent(nameof(StepBarDemo)),Key=nameof(StepBarDemo),Content = new StepBarDemo{ DataContext= new StepBarViewModel()} }
             };
+        }
+        private void SelectItemVoid(MenuItem menuItem)
+        {
+            if (menuItem == null)
+                return;
+            if (keyValuePairs.ContainsKey(menuItem.Name))
+                CurrentMenuItem = keyValuePairs[menuItem.Name];
+            else
+            {
+                keyValuePairs.Add(menuItem.Name, menuItem);
+                CurrentMenuItem = menuItem;
+            }
         }
 
         public DelegateCommand<string> LanguageCommand { get; set; }

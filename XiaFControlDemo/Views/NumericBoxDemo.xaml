@@ -11,19 +11,22 @@
     <ScrollViewer>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition />
             </Grid.RowDefinitions>
-            <GroupBox Header="数值框会自动限制数值外的字符输入和粘贴等">
-                <StackPanel xiaFControl:PanelHelper.Spacing="10" Orientation="Horizontal">
+            <GroupBox Header="数值框会自动限制数值外的字符输入和粘贴等" BorderThickness="0" Margin="10">
+                <StackPanel xiaFControl:PanelHelper.Spacing="10" Orientation="Horizontal" VerticalAlignment="Center">
                     <xiaFControl:NumericBox Width="120" Value="1" Style="{StaticResource XiaFNumericBox}"/>
                 <xiaFControl:NumericBox Width="120" NumericType="Double" Value="0.1" />
                 </StackPanel>
             </GroupBox>
-            <GroupBox Grid.Row="1" Header="通过 MaxValue 和 MinValue 设置最大最小值  通过 Interval 设置加减间隔  通过 ShowButton 设置加减按钮显示">
+            <GroupBox Grid.Row="1" Header="通过 MaxValue 和 MinValue 设置最大最小值  通过 Interval 设置加减间隔  通过 ShowButton 设置加减按钮显示"
+                       BorderThickness="0" VerticalAlignment="Center" Margin="10">
                 <StackPanel xiaFControl:PanelHelper.Spacing="10" Orientation="Horizontal">
                     <Label Content="-10 ~ 10:" />
                     <xiaFControl:NumericBox Width="120" xiaFControl:ControlHelper.FocusBorderBrush="{DynamicResource SuccessBrush}" xiaFControl:ControlHelper.MouseOverBrush="{DynamicResource SuccessBrush}" MaxValue="10" MinValue="-10" Value="1" />
@@ -34,30 +37,24 @@
                     <xiaFControl:NumericBox Width="120" xiaFControl:TextBoxHelper.IsClearable="True" ShowButton="False" Value="1" />
                 </StackPanel>
             </GroupBox>
-            <GroupBox Grid.Row="2">
-                <StackPanel xiaFControl:PanelHelper.Spacing="10" Orientation="Horizontal">
-                    <xiaFControl:NumericBox Width="120" Value="1" />
-                    <TextBlock Text="int 值:1" />
-                    <xiaFControl:NumericBox MinWidth="120" Interval="0.1" NumericType="Double" TextFormat="F2" Value="0.1" />
-                    <TextBlock Text="double 值: 0.1" />
-                </StackPanel>
-            </GroupBox>
-            <GroupBox Grid.Row="3">
-                <StackPanel xiaFControl:PanelHelper.Spacing="10" Orientation="Horizontal">
-                    <xiaFControl:NumericBox MinWidth="150" TextFormat="E2" Value="1" />
-                    <xiaFControl:NumericBox MinWidth="120" 
+            <StackPanel xiaFControl:PanelHelper.Spacing="10" Orientation="Horizontal" Grid.Row="2" Margin="10">
+                <xiaFControl:NumericBox Width="120" Value="1" />
+                <TextBlock Text="int 值:1" />
+                <xiaFControl:NumericBox MinWidth="120" Interval="0.1" NumericType="Double" TextFormat="F2" Value="0.1" />
+                <TextBlock Text="double 值: 0.1" />
+            </StackPanel>
+            <StackPanel xiaFControl:PanelHelper.Spacing="10" Orientation="Horizontal" Grid.Row="3" Margin="10">
+                <xiaFControl:NumericBox MinWidth="150" TextFormat="E2" Value="1" />
+                <xiaFControl:NumericBox MinWidth="120" 
                                             xiaFControl:TextBoxHelper.PreContentForeground="{StaticResource BorderGray}"
                                             xiaFControl:TextBoxHelper.PreContent="身高" TextFormat="0cm" Value="177" />
-                </StackPanel>
-            </GroupBox>
-            <GroupBox Grid.Row="4">
-                <StackPanel xiaFControl:PanelHelper.Spacing="10" Orientation="Horizontal">
-                    <xiaFControl:NumericBox Style="{StaticResource FilledNumericBox}" MinWidth="120" Value="1" />
-                    <xiaFControl:NumericBox MinWidth="120" Value="1" 
+            </StackPanel>
+            <StackPanel xiaFControl:PanelHelper.Spacing="10" Orientation="Horizontal" Grid.Row="4" Margin="10">
+                <xiaFControl:NumericBox Style="{StaticResource FilledNumericBox}" MinWidth="120" Value="1" />
+                <xiaFControl:NumericBox MinWidth="120" Value="1" 
                                             xiaFControl:ControlHelper.MouseOverBrush="Red"
                                             xiaFControl:ControlHelper.FocusBorderBrush="Red"/>
-                </StackPanel>
-            </GroupBox>
+            </StackPanel>
         </Grid>
     </ScrollViewer>
 </UserControl>
