@@ -21,7 +21,7 @@
 		<PackageReference Include="Prism.DryIoc" Version="8.1.97" />
 	</ItemGroup>
 	<ItemGroup>
-	  <PackageReference Include="XiaFControl" Version="2.1.12" />
+	  <PackageReference Include="XiaFControl" Version="2.1.13" />
 	</ItemGroup>
 
 	<ItemGroup>
