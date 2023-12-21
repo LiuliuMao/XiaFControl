@@ -1204,23 +1204,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\liumao\\.nuget\\packages\\": {},
+    "C:\\Users\\13967\\.nuget\\packages\\": {},
     "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Company\\Project\\XiaFControl\\XiaFControlDemo\\XiaFControlDemo.csproj",
+      "projectUniqueName": "D:\\Project\\XiaFControl\\XiaFControlDemo\\XiaFControlDemo.csproj",
       "projectName": "XiaFControlDemo",
-      "projectPath": "D:\\Company\\Project\\XiaFControl\\XiaFControlDemo\\XiaFControlDemo.csproj",
-      "packagesPath": "C:\\Users\\liumao\\.nuget\\packages\\",
-      "outputPath": "D:\\Company\\Project\\XiaFControl\\XiaFControlDemo\\obj\\",
+      "projectPath": "D:\\Project\\XiaFControl\\XiaFControlDemo\\XiaFControlDemo.csproj",
+      "packagesPath": "C:\\Users\\13967\\.nuget\\packages\\",
+      "outputPath": "D:\\Project\\XiaFControl\\XiaFControlDemo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\liumao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\13967\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1280,7 +1280,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

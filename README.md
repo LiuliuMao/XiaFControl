@@ -48,12 +48,8 @@ Step 3: 添加命名空间:
 ## 概览
 
 ![1](https://gitee.com/lm961031/drawing-bed/raw/master/img/1.png)
-
 ![2](https://gitee.com/lm961031/drawing-bed/raw/master/img/2.png)
-
 ![3](https://gitee.com/lm961031/drawing-bed/raw/master/img/3.png)
-
-
 ![combobox](https://gitee.com/lm961031/drawing-bed/raw/master/XiaFControlFiles2.0.3/combobox.png)
 ![databar](https://gitee.com/lm961031/drawing-bed/raw/master/XiaFControlFiles2.0.3/databar.png)
 ![datetime](https://gitee.com/lm961031/drawing-bed/raw/master/XiaFControlFiles2.0.3/datetime.png)
