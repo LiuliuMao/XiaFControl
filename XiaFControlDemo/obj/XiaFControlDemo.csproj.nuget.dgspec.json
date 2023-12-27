@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\XiaFControl\\XiaFControlDemo\\XiaFControlDemo.csproj": {}
+    "D:\\Company\\Project\\github\\XiaFControl\\XiaFControlDemo\\XiaFControlDemo.csproj": {}
   },
   "projects": {
-    "D:\\Project\\XiaFControl\\XiaFControlDemo\\XiaFControlDemo.csproj": {
+    "D:\\Company\\Project\\github\\XiaFControl\\XiaFControlDemo\\XiaFControlDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\XiaFControl\\XiaFControlDemo\\XiaFControlDemo.csproj",
+        "projectUniqueName": "D:\\Company\\Project\\github\\XiaFControl\\XiaFControlDemo\\XiaFControlDemo.csproj",
         "projectName": "XiaFControlDemo",
-        "projectPath": "D:\\Project\\XiaFControl\\XiaFControlDemo\\XiaFControlDemo.csproj",
-        "packagesPath": "C:\\Users\\13967\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\XiaFControl\\XiaFControlDemo\\obj\\",
+        "projectPath": "D:\\Company\\Project\\github\\XiaFControl\\XiaFControlDemo\\XiaFControlDemo.csproj",
+        "packagesPath": "C:\\Users\\liumao\\.nuget\\packages\\",
+        "outputPath": "D:\\Company\\Project\\github\\XiaFControl\\XiaFControlDemo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\13967\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\liumao\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,7 +27,8 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/P8FkTs7165cdklTbuRcyUzkzinxnzyVjCkhJ6ah7br8DvRZ2PI/api/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
@@ -55,7 +56,7 @@
             },
             "XiaFControl": {
               "target": "Package",
-              "version": "[2.1.15, )"
+              "version": "[2.2.1, )"
             }
           },
           "imports": [

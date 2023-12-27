@@ -9,6 +9,7 @@
         Foreground="{StaticResource DefaultForeground}"
         Style="{StaticResource XiaFWindow}"
         BorderBrush="{DynamicResource DefaultBackground}"
+        ResizeMode="NoResize"
         IsShowWindowTitle="True"
         IsShowShadow="True"
         WindowState="Maximized"
